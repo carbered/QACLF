@@ -1,5 +1,5 @@
 {
-  "release_name": "FICPF_GitHub_20260831",
+  "release_name": "QACLF_GitHub_20260831",
   "created_date": "2026-08-31",
   "locked_macro_c_index": 0.7050168897889689,
   "locked_alpha": 0.2,
@@ -11,7 +11,7 @@
     "luad",
     "ucec"
   ],
-  "scope": "QACLF analysis package; historical FICPF paths retained",
+  "scope": "QACLF analysis package; historical QACLF paths retained",
   "package_limit_mib": 50,
   "individual_file_limit_mib": 25,
   "latest_content_update": "2026-10-28",
@@ -25,6 +25,7 @@
     "preprocessed RNA-seq/CNV tables"
   ],
   "current_model": "QACLF",
-  "former_model_name": "FICPF",
-  "current_results": "result/qaclf-nested-v1-unified-evaluation-20261027"
+  "current_results": "result/qaclf-nested-v1-unified-evaluation-20261027",
+  "repository_url": "https://github.com/carbered/QACLF",
+  "naming_normalized": true
 }

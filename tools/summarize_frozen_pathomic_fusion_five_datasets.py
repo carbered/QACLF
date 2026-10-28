@@ -26,11 +26,11 @@ EXPERIMENTS = {
     "UCEC": (0.7571, "result/ucec-frozen-pathomic-fusion-outer5-20260820"),
 }
 CURVE_EXPERIMENTS = {
-    "BLCA": "result/blca-ficpf-survival-curves-20260820",
-    "BRCA": "result/brca-ficpf-survival-curves-20260820",
-    "GBMLGG": "result/gbmlgg-ficpf-survival-curves-20260820",
-    "LUAD": "result/luad-ficpf-survival-curves-20260820",
-    "UCEC": "result/ucec-ficpf-survival-curves-20260820",
+    "BLCA": "result/blca-qaclf-survival-curves-20260820",
+    "BRCA": "result/brca-qaclf-survival-curves-20260820",
+    "GBMLGG": "result/gbmlgg-qaclf-survival-curves-20260820",
+    "LUAD": "result/luad-qaclf-survival-curves-20260820",
+    "UCEC": "result/ucec-qaclf-survival-curves-20260820",
 }
 
 
@@ -88,42 +88,42 @@ def main():
         curve_rows.append({
             "dataset": dataset,
             "baseline_ibs": summary["baseline_ibs_mean"],
-            "ficpf_ibs": summary["ficpf_ibs_mean"],
+            "qaclf_ibs": summary["qaclf_ibs_mean"],
             "ibs_gain": summary["ibs_gain_mean"],
             "baseline_mae": summary["baseline_mae_mean"],
-            "ficpf_mae": summary["ficpf_mae_mean"],
+            "qaclf_mae": summary["qaclf_mae_mean"],
             "mae_gain": summary["mae_gain_mean"],
             "baseline_d_calibration_pass_folds": summary[
                 "baseline_d_calibration_pass_folds"
             ],
-            "ficpf_d_calibration_pass_folds": summary[
-                "ficpf_d_calibration_pass_folds"
+            "qaclf_d_calibration_pass_folds": summary[
+                "qaclf_d_calibration_pass_folds"
             ],
             "baseline_km_calibration": summary["baseline_km_calibration_mean"],
-            "ficpf_km_calibration": summary["ficpf_km_calibration_mean"],
+            "qaclf_km_calibration": summary["qaclf_km_calibration_mean"],
         })
     curve_table = pd.DataFrame(curve_rows)
     curve_overall = {
         "curve_projection": "positive_monotone_cox_scale_plus_breslow_outer_train_only",
         "baseline_ibs_macro_mean": float(curve_table["baseline_ibs"].mean()),
-        "ficpf_ibs_macro_mean": float(curve_table["ficpf_ibs"].mean()),
+        "qaclf_ibs_macro_mean": float(curve_table["qaclf_ibs"].mean()),
         "ibs_gain_macro_mean": float(curve_table["ibs_gain"].mean()),
         "ibs_positive_datasets": int((curve_table["ibs_gain"] > 0).sum()),
         "baseline_mae_macro_mean": float(curve_table["baseline_mae"].mean()),
-        "ficpf_mae_macro_mean": float(curve_table["ficpf_mae"].mean()),
+        "qaclf_mae_macro_mean": float(curve_table["qaclf_mae"].mean()),
         "mae_gain_macro_mean": float(curve_table["mae_gain"].mean()),
         "mae_positive_datasets": int((curve_table["mae_gain"] > 0).sum()),
         "baseline_d_calibration_pass_folds": int(
             curve_table["baseline_d_calibration_pass_folds"].sum()
         ),
-        "ficpf_d_calibration_pass_folds": int(
-            curve_table["ficpf_d_calibration_pass_folds"].sum()
+        "qaclf_d_calibration_pass_folds": int(
+            curve_table["qaclf_d_calibration_pass_folds"].sum()
         ),
         "baseline_km_calibration_macro_mean": float(
             curve_table["baseline_km_calibration"].mean()
         ),
-        "ficpf_km_calibration_macro_mean": float(
-            curve_table["ficpf_km_calibration"].mean()
+        "qaclf_km_calibration_macro_mean": float(
+            curve_table["qaclf_km_calibration"].mean()
         ),
     }
 

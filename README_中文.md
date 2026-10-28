@@ -1,14 +1,13 @@
 # QACLF
 
-QACLF（Quantile-Aligned Conservative Late Fusion，分位数对齐保守晚期融合）原名
-FICPF。方法复用冻结的 VLSA 病理分支，在外层训练折内拟合 PCA-Cox 组学分支，
+QACLF（Quantile-Aligned Conservative Late Fusion，分位数对齐保守晚期融合）
+复用冻结的 VLSA 病理分支，在外层训练折内拟合 PCA-Cox 组学分支，
 通过训练折 ECDF 对齐得分尺度，再按病理/组学权重 0.80/0.20 融合。组学缺失时
 回退到病理分位数；生存曲线由训练折 Cox-Breslow 映射得到，尺度对齐不等于概率校准。
 
 ![QACLF 方法图](figures/qaclf_current/QACLF_method_overview.png)
 
-仓库地址暂保留 `https://github.com/carbered/FICPF`，避免旧链接失效。历史文件名和
-原始结果键保留 `ficpf/FICPF`，用于追溯，不表示两个不同模型。当前中文 Word 初稿不上传。
+仓库地址：[carbered/QACLF](https://github.com/carbered/QACLF)。当前中文 Word 初稿不上传。
 
 ## 当前结果
 
@@ -43,7 +42,7 @@ QACLF 的锁定主结果未改动，配对宏平均增益为 0.0092，95% bootst
 - D-calibration 在60个月行政删失后计算，不拒绝折数仅作描述，不能解释为整体校准通过。
 - 全时间均值 hinge MAE 仅保留作诊断，不声称已解决曲线尾部外推问题。
 - 方案调整属于事后补充，复用了原有外层划分，不构成独立外部验证。
-- 历史 MCAT/CAT 结果、旧窗口指标及 `docs/FICPF*` 草稿保留，但不是当前稿件，不能混用。
+- 历史 MCAT/CAT 结果、旧窗口指标保留用于审计，与当前结果分开，不能混用。
 - 固定输入推理计时仍为 VLSA 25.61 ms、QACLF 62.17 ms，不声称 QACLF 推理更快。
 
 ## 安装与校验
@@ -62,6 +61,6 @@ python tools/verify_qaclf_results.py --recompute-c-index --recompute-probability
 
 原始数据及完整重训仍需按 [DATA.md](DATA.md) 补齐上游输入。
 当前包包含固定患者划分、生存标签、预测曲线、结果和制图代码，不包含权重、原始切片、
-大型组学表、训练日志和当前中文 Word 稿。历史文件保持原始结果身份，不做全局替换改名。
+大型组学表、训练日志和当前中文 Word 稿。文件与标签统一命名，不改变实验数值和协议身份。
 
 详细边界见 [当前结果说明](docs/CURRENT_RESULTS.md)、[英文说明](README.md) 和 [NOTICE.md](NOTICE.md)。

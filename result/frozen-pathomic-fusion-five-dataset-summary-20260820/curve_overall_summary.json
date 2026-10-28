@@ -1,15 +1,15 @@
 {
   "curve_projection": "positive_monotone_cox_scale_plus_breslow_outer_train_only",
   "baseline_ibs_macro_mean": 0.22957836421293226,
-  "ficpf_ibs_macro_mean": 0.20008227976830772,
+  "qaclf_ibs_macro_mean": 0.20008227976830772,
   "ibs_gain_macro_mean": 0.029496084444624544,
   "ibs_positive_datasets": 5,
   "baseline_mae_macro_mean": 25.230121560425513,
-  "ficpf_mae_macro_mean": 29.89075174269046,
+  "qaclf_mae_macro_mean": 29.89075174269046,
   "mae_gain_macro_mean": -4.660630182264944,
   "mae_positive_datasets": 0,
   "baseline_d_calibration_pass_folds": 14,
-  "ficpf_d_calibration_pass_folds": 25,
+  "qaclf_d_calibration_pass_folds": 25,
   "baseline_km_calibration_macro_mean": 0.028292032610702546,
-  "ficpf_km_calibration_macro_mean": 0.01780489532533717
+  "qaclf_km_calibration_macro_mean": 0.01780489532533717
 }

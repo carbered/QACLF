@@ -1,0 +1,263 @@
+{
+  "metric_contract": "SurvivalEVAL_mean_continuous_comparable_all_ties",
+  "locked_primary": {
+    "pca_components": 64,
+    "alpha": 0.2
+  },
+  "evaluated_pca_components": [
+    64
+  ],
+  "sensitivity_for_reporting_only": true,
+  "standardization_fit": "outer_training_patients_only",
+  "pca_fit": "outer_training_patients_only",
+  "cox_fit": "outer_training_patients_only",
+  "ecdf_fit": "outer_training_predictions_only",
+  "test_labels_used_for_parameter_selection": false,
+  "runtime": {
+    "torch": "2.12.0.dev20260408+cu128",
+    "sklearn": "1.7.2",
+    "numpy": "1.26.4",
+    "torch_num_threads": 1
+  },
+  "omics_table_dir": "E:\\VLSA-main\\external\\CAT-with-TPL-master\\dataset_csv",
+  "signatures_sha256": "6bf0a195a67a04774df3fec808748e06a87176506b17d3cd1e8e9049d2624477",
+  "all_patient_sets_equal": true,
+  "all_labels_equal": true,
+  "pca64_omics_prediction_max_abs_delta": 1.6053175561083894,
+  "pca64_omics_ecdf_max_abs_delta": 0.2483516483516483,
+  "pca64_fused_prediction_max_abs_delta": 0.04967032967032958,
+  "datasets": {
+    "blca": {
+      "qaclf_source": "E:\\VLSA-main\\result\\blca-frozen-pathomic-fusion-cloud-baseline-outer5-20260820\\patient_predictions.csv",
+      "selected_omics": 3062,
+      "omics_table": "E:\\VLSA-main\\external\\CAT-with-TPL-master\\dataset_csv\\tcga_blca_all_clean.csv.zip",
+      "omics_table_sha256": "386e0adf343eb8b947385d175133a53b75e90a152ae2e0ceb1c180f82c8037e8",
+      "signature_group_sizes": {
+        "Tumor Suppressor Genes": 94,
+        "Oncogenes": 334,
+        "Protein Kinases": 521,
+        "Cell Differentiation Markers": 468,
+        "Transcription Factors": 1496,
+        "Cytokines and Growth Factors": 479
+      },
+      "splits": {
+        "0": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_blca\\splits_0.csv",
+          "sha256": "35713c1adde0c08e24fe54162242ae91e1711fe295f0fb43f9bb06d7c6b1fb01",
+          "train_patients": 298,
+          "test_patients": 75
+        },
+        "1": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_blca\\splits_1.csv",
+          "sha256": "224e3442f16284fabb6ac586881e2f196eb5a9e9bbbb9bcb5bd61295c15c34cd",
+          "train_patients": 298,
+          "test_patients": 75
+        },
+        "2": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_blca\\splits_2.csv",
+          "sha256": "44e16945cc3ee88a9459fd9fcc55a6eb7384e28def48f1d3c16f486e292c5311",
+          "train_patients": 298,
+          "test_patients": 75
+        },
+        "3": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_blca\\splits_3.csv",
+          "sha256": "3c811ebffab6ea3f386870c834a5d7e90396381b9e951da440bf1335e78cce0b",
+          "train_patients": 299,
+          "test_patients": 74
+        },
+        "4": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_blca\\splits_4.csv",
+          "sha256": "504f616774e136f3c18fde869073d36ea277eea0d995ea3e3df9ed88c21378fc",
+          "train_patients": 299,
+          "test_patients": 74
+        }
+      }
+    },
+    "brca": {
+      "qaclf_source": "E:\\VLSA-main\\result\\brca-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
+      "selected_omics": 3189,
+      "omics_table": "E:\\VLSA-main\\external\\CAT-with-TPL-master\\dataset_csv\\tcga_brca_all_clean.csv.zip",
+      "omics_table_sha256": "ebd2d31abb871ae1aec59606a9c4a5f7280fe238ce440ab376c70cac8bf6e974",
+      "signature_group_sizes": {
+        "Tumor Suppressor Genes": 91,
+        "Oncogenes": 353,
+        "Protein Kinases": 553,
+        "Cell Differentiation Markers": 480,
+        "Transcription Factors": 1566,
+        "Cytokines and Growth Factors": 480
+      },
+      "splits": {
+        "0": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_brca\\splits_0.csv",
+          "sha256": "cd0fef824431ac396ed75ac93203a5d64d65ee419746be981789ba1dfabd4d0d",
+          "train_patients": 764,
+          "test_patients": 192
+        },
+        "1": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_brca\\splits_1.csv",
+          "sha256": "2dee790eafe66d0c9b9d91a82eaa98f28a91471c6817ff215e28ee231c18c3d2",
+          "train_patients": 765,
+          "test_patients": 191
+        },
+        "2": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_brca\\splits_2.csv",
+          "sha256": "4e9572ba7d1c8ca1adaacd159b74479a5aa71f4604d91f138ce00fbb1ca57008",
+          "train_patients": 765,
+          "test_patients": 191
+        },
+        "3": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_brca\\splits_3.csv",
+          "sha256": "751ce860ba1669ee4a8b570fc9984c8f93cade89db02397eeb64c5e001310c93",
+          "train_patients": 765,
+          "test_patients": 191
+        },
+        "4": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_brca\\splits_4.csv",
+          "sha256": "7bb014ec7cae42bddebd0bd116879515252a57785468d6b6489933b6f70bc2a5",
+          "train_patients": 765,
+          "test_patients": 191
+        }
+      }
+    },
+    "gbmlgg": {
+      "qaclf_source": "E:\\VLSA-main\\result\\gbmlgg-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
+      "selected_omics": 2832,
+      "omics_table": "E:\\VLSA-main\\external\\CAT-with-TPL-master\\dataset_csv\\tcga_gbmlgg_all_clean.csv.zip",
+      "omics_table_sha256": "6b4fc7a938dbf49bcf536f17e24eb52a8fc0721ac9243ab6fd671194d157d345",
+      "signature_group_sizes": {
+        "Tumor Suppressor Genes": 84,
+        "Oncogenes": 314,
+        "Protein Kinases": 498,
+        "Cell Differentiation Markers": 415,
+        "Transcription Factors": 1396,
+        "Cytokines and Growth Factors": 428
+      },
+      "splits": {
+        "0": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_gbmlgg\\splits_0.csv",
+          "sha256": "cc9eb343cd1d1c3079b98b682ee61a36132c71e28a705a220f8328ec62b0d41c",
+          "train_patients": 455,
+          "test_patients": 114
+        },
+        "1": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_gbmlgg\\splits_1.csv",
+          "sha256": "a90556f1e8e6de54259702c11e3c9c5f09801d1eea539a6e9c24419ff161c16c",
+          "train_patients": 455,
+          "test_patients": 114
+        },
+        "2": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_gbmlgg\\splits_2.csv",
+          "sha256": "e21f683b33d11cb729eea8dee22a56cac2be9f9a47015cfbf6b244ce5c93d1a0",
+          "train_patients": 455,
+          "test_patients": 114
+        },
+        "3": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_gbmlgg\\splits_3.csv",
+          "sha256": "69a0151e349a824d5d26f3323f81ffcd70f400afb4a827e1a7d3237f32d814b4",
+          "train_patients": 455,
+          "test_patients": 114
+        },
+        "4": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_gbmlgg\\splits_4.csv",
+          "sha256": "266b9de737fc32c4e310743fcb12b1048fb2415eaacb770ed5022fd577d7e2bd",
+          "train_patients": 456,
+          "test_patients": 113
+        }
+      }
+    },
+    "luad": {
+      "qaclf_source": "E:\\VLSA-main\\result\\luad-frozen-pathomic-fusion-cloud-baseline-outer5-20260820\\patient_predictions.csv",
+      "selected_omics": 3096,
+      "omics_table": "E:\\VLSA-main\\external\\CAT-with-TPL-master\\dataset_csv\\tcga_luad_all_clean.csv.zip",
+      "omics_table_sha256": "e90a1a28c79cab829737c56c2306cd7912bbf7b4485828a507d6b82033a174d1",
+      "signature_group_sizes": {
+        "Tumor Suppressor Genes": 89,
+        "Oncogenes": 334,
+        "Protein Kinases": 534,
+        "Cell Differentiation Markers": 471,
+        "Transcription Factors": 1510,
+        "Cytokines and Growth Factors": 482
+      },
+      "splits": {
+        "0": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_luad\\splits_0.csv",
+          "sha256": "d976be2835a5f3488bd2e851481ec726044429ced5a49f8d0b323796f87dfb0a",
+          "train_patients": 362,
+          "test_patients": 91
+        },
+        "1": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_luad\\splits_1.csv",
+          "sha256": "5be58f24b9a58707487a4dc84d8a3415bf4aeaddc2fc92c82747a6c17892c395",
+          "train_patients": 362,
+          "test_patients": 91
+        },
+        "2": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_luad\\splits_2.csv",
+          "sha256": "7a54e47261efc2509d0f7d8ddc213ee01ed6d0ad78ad6ec5d4fd81262e8da06e",
+          "train_patients": 362,
+          "test_patients": 91
+        },
+        "3": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_luad\\splits_3.csv",
+          "sha256": "5ab10da514755dc41c4a16ae1179f30e9f6cf92868e378b976e55603a0a8def4",
+          "train_patients": 363,
+          "test_patients": 90
+        },
+        "4": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_luad\\splits_4.csv",
+          "sha256": "a560353629ca37eed0feffcd9b6d01b55567b22cc758c07d6d5592ec6415d90e",
+          "train_patients": 363,
+          "test_patients": 90
+        }
+      }
+    },
+    "ucec": {
+      "qaclf_source": "E:\\VLSA-main\\result\\ucec-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
+      "selected_omics": 123,
+      "omics_table": "E:\\VLSA-main\\external\\CAT-with-TPL-master\\dataset_csv\\tcga_ucec_all_clean.csv.zip",
+      "omics_table_sha256": "215bf025477bcf8ff6c7865f8c7a9a1a26ee0619eb36aba64618bd6f3e9d8e1b",
+      "signature_group_sizes": {
+        "Tumor Suppressor Genes": 3,
+        "Oncogenes": 24,
+        "Protein Kinases": 21,
+        "Cell Differentiation Markers": 22,
+        "Transcription Factors": 65,
+        "Cytokines and Growth Factors": 15
+      },
+      "splits": {
+        "0": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_ucec\\splits_0.csv",
+          "sha256": "5825f3dd86a2a07f72264879f02e22ed8e24af9bd34e758a2ab98fb1b06076f3",
+          "train_patients": 384,
+          "test_patients": 96
+        },
+        "1": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_ucec\\splits_1.csv",
+          "sha256": "28690792775373ff0ba341071fe68320b29843f3296dd5f20c025166f5f5f514",
+          "train_patients": 384,
+          "test_patients": 96
+        },
+        "2": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_ucec\\splits_2.csv",
+          "sha256": "674e1d97eb46bbd5d42d33d683c221351abcfb23ac92e10eaac034564c0eacd1",
+          "train_patients": 384,
+          "test_patients": 96
+        },
+        "3": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_ucec\\splits_3.csv",
+          "sha256": "14d2ed83adb34b51cbe53d8ee2723e060f974b9b51c82e3408a08497c83b8d31",
+          "train_patients": 384,
+          "test_patients": 96
+        },
+        "4": {
+          "path": "E:\\VLSA-main\\data_split\\5foldcv\\tcga_ucec\\splits_4.csv",
+          "sha256": "860fa1b0e63b3c61fa11c56ae67dc12755115bb7671caf30454b9d278f370bc6",
+          "train_patients": 384,
+          "test_patients": 96
+        }
+      }
+    }
+  },
+  "pca64_evaluated": true,
+  "pca64_exact_reproduction": false
+}

@@ -1,7 +1,6 @@
 {
   "model": "QACLF",
   "full_name": "Quantile-Aligned Conservative Late Fusion",
-  "former_name": "FICPF",
   "updated_date": "2026-10-28",
   "current_result_directory": "result/qaclf-nested-v1-unified-evaluation-20261027",
   "frozen_qaclf_primary_result_unchanged": true,
@@ -13,10 +12,11 @@
   "private_manuscript_included": false,
   "model_weights_included": false,
   "historical_results_preserved": true,
-  "repository_url_unchanged": "https://github.com/carbered/FICPF",
   "limitations": [
     "Post-hoc protocol/evaluation revision reuses previous outer splits.",
     "Full-time mean MAE is diagnostic; no claim to repair extrapolated tails.",
     "No independent external cohort validation."
-  ]
+  ],
+  "repository_url": "https://github.com/carbered/QACLF",
+  "naming_normalized": true
 }

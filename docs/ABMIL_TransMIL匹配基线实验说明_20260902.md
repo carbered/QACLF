@@ -2,7 +2,7 @@
 
 ## 实验目的
 
-该实验用于扩展 FICPF 论文的病理主干比较范围，回答 FICPF 的实验结论是否仅建立在 VLSA 一种病理模型之上。ABMIL 代表经典注意力多实例学习，TransMIL 代表 Transformer 多实例学习。
+该实验用于扩展 QACLF 论文的病理主干比较范围，回答 QACLF 的实验结论是否仅建立在 VLSA 一种病理模型之上。ABMIL 代表经典注意力多实例学习，TransMIL 代表 Transformer 多实例学习。
 
 ## 数据与协议
 

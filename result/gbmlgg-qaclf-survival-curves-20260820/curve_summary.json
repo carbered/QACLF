@@ -1,0 +1,17 @@
+{
+  "dataset": "tcga_gbmlgg",
+  "curve_projection": "positive_monotone_cox_scale_plus_breslow_outer_train_only",
+  "c_index_projection_max_abs_delta": 0.0,
+  "baseline_c_index_mean": 0.8004703042754624,
+  "qaclf_c_index_mean": 0.8182166738369396,
+  "baseline_ibs_mean": 0.22601840823013383,
+  "qaclf_ibs_mean": 0.1949426801656872,
+  "ibs_gain_mean": 0.03107572806444665,
+  "baseline_mae_mean": 20.72109462951876,
+  "qaclf_mae_mean": 23.538233018355847,
+  "mae_gain_mean": -2.817138388837087,
+  "baseline_d_calibration_pass_folds": 2,
+  "qaclf_d_calibration_pass_folds": 5,
+  "baseline_km_calibration_mean": 0.014148667534631499,
+  "qaclf_km_calibration_mean": 0.008004791506781085
+}

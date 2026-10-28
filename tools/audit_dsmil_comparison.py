@@ -21,9 +21,9 @@ sys.path.insert(0, str(ROOT))
 from eval.SurvivalEVAL.Evaluations.Concordance import concordance
 from eval.SurvivalEVAL.Evaluations.util import predict_mean_survival_time
 
-ARCHIVE = ROOT / "downloads/FICPF_DSMIL_results.tar.gz"
-EXTRACT = ROOT / "downloads/FICPF_DSMIL_results_no_weights"
-OUT = ROOT / "result/ficpf-eight-method-comparison"
+ARCHIVE = ROOT / "downloads/QACLF_DSMIL_results.tar.gz"
+EXTRACT = ROOT / "downloads/QACLF_DSMIL_results_no_weights"
+OUT = ROOT / "result/qaclf-eight-method-comparison"
 COHORTS = ["blca", "brca", "gbmlgg", "luad", "ucec"]
 EXPECTED_SHA = "90c304a9067f7158d61b4ba00f729c8a074d077c2adb7858e0bbb56f42504a66"
 
@@ -176,7 +176,7 @@ def main():
     folds.to_csv(OUT / "dsmil_fold_metrics.csv", index=False)
     summary.to_csv(OUT / "dsmil_dataset_summary.csv", index=False)
     patient_frame.to_csv(OUT / "dsmil_patient_predictions.csv", index=False)
-    seven = pd.read_csv(ROOT / "result/ficpf-seven-method-comparison/seven_method_dataset_summary.csv")
+    seven = pd.read_csv(ROOT / "result/qaclf-seven-method-comparison/seven_method_dataset_summary.csv")
     row = {"method": "DSMIL-CONCH", "modality": "pathology"}
     for cohort in COHORTS:
         result = summary[summary.dataset == cohort.upper()].iloc[0]

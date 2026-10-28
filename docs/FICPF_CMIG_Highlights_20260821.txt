@@ -1,5 +1,0 @@
-FICPF adds compact molecular survival evidence to frozen VLSA-CONCH.
-Training-fold ECDFs align pathology and molecular prediction scales.
-Five-cohort macro C-index improves from 0.6958 to 0.7050.
-A fixed 0.80/0.20 fusion rule limits weak-modality negative transfer.
-Pathology fallback supports patients with missing molecular data.

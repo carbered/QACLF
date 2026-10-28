@@ -1,7 +1,6 @@
 # Current QACLF Evidence
 
-QACLF is the current method name; FICPF is the earlier name of the same frozen
-fusion analysis. The 2026-10-28 update publishes code, retained predictions,
+The 2026-10-28 update publishes QACLF code, retained predictions,
 derived results and figures, not the current Chinese Word manuscript.
 
 ## Canonical Inputs and Outputs
@@ -18,13 +17,13 @@ derived results and figures, not the current Chinese Word manuscript.
   original source SHA256 and their public NPZ SHA256. These are predictions,
   not weights or feature embeddings. Native MCAT/CAT risk scores are included.
 
-## Compatibility and Historical Files
+## Naming and Protocol Records
 
-The legacy directories, identifiers and entry points are intentionally retained.
-Earlier cohort-wide-bin MCAT/CAT adaptations and old-window curve metrics are not
-current comparators. Existing `docs/FICPF*` manuscripts/captions are historical;
-they have not been rewritten to disguise the protocol change. Do not cite them
-as the current submission. `tools/verify_current_results.py` is a compatibility
+Distributed labels and paths use QACLF. Naming normalization does not alter
+numerical experimental results. Earlier cohort-wide-bin MCAT/CAT adaptations and
+old-window curve metrics remain scientific audit records, not current comparators.
+Outdated manuscript drafts and superseded figure sets are removed from the current
+tree; prior repository commits remain intact. `tools/verify_current_results.py` is a compatibility
 entry point for the current verifier. The original October-20 verifier is retained
 as `tools/verify_historical_results.py`.
 

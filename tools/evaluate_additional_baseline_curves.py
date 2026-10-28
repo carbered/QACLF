@@ -21,20 +21,20 @@ sys.path.insert(0, str(ROOT))
 from eval.SurvivalEVAL import SurvivalEvaluator
 
 # Load the exact metric functions without unrelated feature-loading dependencies.
-metric_path = ROOT / "tools/evaluate_ficpf_survival_curves.py"
+metric_path = ROOT / "tools/evaluate_qaclf_survival_curves.py"
 metric_tree = ast.parse(metric_path.read_text(encoding="utf-8"))
 metric_nodes = [node for node in metric_tree.body if isinstance(node, ast.FunctionDef)
                 and node.name in {"common_ibs_times", "finite_metric", "evaluate_curve"}]
 assert len(metric_nodes) == 3
 exec(compile(ast.Module(body=metric_nodes, type_ignores=[]), str(metric_path), "exec"), globals())
 
-OUT = ROOT / "result/ficpf-six-method-curve-comparison"
+OUT = ROOT / "result/qaclf-six-method-curve-comparison"
 MIL = ROOT / "downloads/matched_mil_backbones_complete_20260903/result/matched-mil-backbones/seed_42"
 RUNS = {
     "ABMIL-CONCH": (MIL / "abmil", "ABMIL"),
     "TransMIL-CONCH": (MIL / "transmil", "TransMIL"),
-    "ILRA-CONCH": (ROOT / "downloads/FICPF_ILRA_results_no_weights/result/additional-vlsa-baselines/seed_42/ilra", "ILRA"),
-    "DSMIL-CONCH": (ROOT / "downloads/FICPF_DSMIL_results_no_weights/result/additional-vlsa-baselines/seed_42/dsmil", "DSMIL"),
+    "ILRA-CONCH": (ROOT / "downloads/QACLF_ILRA_results_no_weights/result/additional-vlsa-baselines/seed_42/ilra", "ILRA"),
+    "DSMIL-CONCH": (ROOT / "downloads/QACLF_DSMIL_results_no_weights/result/additional-vlsa-baselines/seed_42/dsmil", "DSMIL"),
 }
 COHORTS = ["blca", "brca", "gbmlgg", "luad", "ucec"]
 METRICS = ["c_index", "ibs", "mae_hinge", "d_calibration_p", "km_calibration"]
@@ -46,7 +46,7 @@ def sha(path):
 
 def label_class(retained_root=None):
     path = (retained_root / "label_converter.py" if retained_root else
-            ROOT / "downloads/FICPF_DSMIL_results_no_weights/dataset/label_converter.py")
+            ROOT / "downloads/QACLF_DSMIL_results_no_weights/dataset/label_converter.py")
     spec = importlib.util.spec_from_file_location("retained_cloud_curve_labels", path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -90,18 +90,18 @@ def main():
             {key: (retained_root / name.lower(), name) for key, (_, name) in RUNS.items()})
     Meta = label_class(retained_root)
     expected = pd.concat([
-        pd.read_csv(ROOT / "result/ficpf-six-method-comparison/mil_fold_metrics.csv").assign(
+        pd.read_csv(ROOT / "result/qaclf-six-method-comparison/mil_fold_metrics.csv").assign(
             method=lambda d: d.model + "-CONCH"),
-        pd.read_csv(ROOT / "result/ficpf-seven-method-comparison/ilra_fold_metrics.csv").assign(method="ILRA-CONCH"),
-        pd.read_csv(ROOT / "result/ficpf-eight-method-comparison/dsmil_fold_metrics.csv").assign(method="DSMIL-CONCH"),
+        pd.read_csv(ROOT / "result/qaclf-seven-method-comparison/ilra_fold_metrics.csv").assign(method="ILRA-CONCH"),
+        pd.read_csv(ROOT / "result/qaclf-eight-method-comparison/dsmil_fold_metrics.csv").assign(method="DSMIL-CONCH"),
     ], ignore_index=True)
     reference = pd.read_csv(ROOT / "result/external_multimodal_comparison_20260821/unified/paired_patient_predictions.csv")
-    evaluator_files = [ROOT / "tools/evaluate_ficpf_survival_curves.py"] + list(
+    evaluator_files = [ROOT / "tools/evaluate_qaclf_survival_curves.py"] + list(
         (ROOT / "eval/SurvivalEVAL").rglob("*.py"))
     evaluator_hashes = {str(p.relative_to(ROOT)): sha(p) for p in sorted(evaluator_files)}
     records, audits = [], []
     for cohort in args.datasets:
-        retained = pd.read_csv(ROOT / f"result/{cohort}-ficpf-survival-curves-20260820/curve_metrics.csv").set_index("fold")
+        retained = pd.read_csv(ROOT / f"result/{cohort}-qaclf-survival-curves-20260820/curve_metrics.csv").set_index("fold")
         for fold in args.folds:
             split_path = ROOT / f"data_split/5foldcv/tcga_{cohort}/splits_{fold}.csv"
             label_path = ROOT / f"data_split/5foldcv/tcga_{cohort}/mahmoodlab_tcga_{cohort}_survival.csv"
@@ -109,10 +109,10 @@ def main():
             columns = [c for c in split if not c.startswith("Unnamed")]
             train_ids, test_ids = [split[c].dropna().tolist() for c in columns[:2]]
             assert not set(train_ids) & set(test_ids)
-            npz_path = ROOT / f"result/{cohort}-ficpf-survival-curves-20260820/fold_{fold}_ficpf_survival_curves.npz"
+            npz_path = ROOT / f"result/{cohort}-qaclf-survival-curves-20260820/fold_{fold}_qaclf_survival_curves.npz"
             with np.load(npz_path, allow_pickle=False) as saved:
                 coordinates = saved["time_coordinates"].copy()
-                ficpf_curves = saved["survival_curves"].copy()
+                qaclf_curves = saved["survival_curves"].copy()
                 assert saved["patient_ids"].tolist() == test_ids
             for method, (base, network) in runs.items():
                 started = time.monotonic()
@@ -154,13 +154,13 @@ def main():
                                "ibs_times": ibs_times.tolist(), "warnings": warning_counts})
                 print(f"PASS {method} {cohort} {fold}: IBS={values['ibs']:.4f} MAE={values['mae_hinge']:.2f} ({time.monotonic()-started:.1f}s)", flush=True)
                 if method == "ABMIL-CONCH":
-                    validate_curves(ficpf_curves, coordinates)
-                    ficpf, notes = evaluate_with_diagnostics(ficpf_curves, coordinates, actual, train, ibs_times)
+                    validate_curves(qaclf_curves, coordinates)
+                    qaclf, notes = evaluate_with_diagnostics(qaclf_curves, coordinates, actual, train, ibs_times)
                     for key in METRICS:
-                        assert np.isclose(ficpf[key], retained.loc[fold, "ficpf_" + key], atol=1e-10, rtol=1e-9), (cohort, fold, key)
-                    audits.append({"method": "FICPF", "dataset": cohort, "fold": fold,
+                        assert np.isclose(qaclf[key], retained.loc[fold, "qaclf_" + key], atol=1e-10, rtol=1e-9), (cohort, fold, key)
+                    audits.append({"method": "QACLF", "dataset": cohort, "fold": fold,
                                    "prediction_sha256": sha(npz_path), "retained_metrics_reproduced": True, "warnings": notes})
-            for method, prefix in [("Matched VLSA", "baseline"), ("FICPF", "ficpf")]:
+            for method, prefix in [("Matched VLSA", "baseline"), ("QACLF", "qaclf")]:
                 records.append({"method": method, "dataset": cohort.upper(), "fold": fold,
                                 "n_test": len(test_ids), "events": int(actual.e.sum()),
                                 **{key: float(retained.loc[fold, prefix + "_" + key]) for key in METRICS}})

@@ -1,6 +1,6 @@
 # QACLF
 
-**Quantile-Aligned Conservative Late Fusion**, formerly named FICPF, is a
+**Quantile-Aligned Conservative Late Fusion** is a
 pathology-omics survival prediction framework. It reuses a frozen VLSA pathology
 predictor with CONCH patch features, fits a training-fold RNA-seq/CNV PCA-Cox
 branch, aligns both scores using training-fold ECDF percentiles, and combines
@@ -10,9 +10,7 @@ Score alignment is not itself survival-probability calibration.
 
 ![QACLF method overview](figures/qaclf_current/QACLF_method_overview.png)
 
-The repository URL remains `https://github.com/carbered/FICPF` to preserve links.
-Historical `ficpf` filenames and raw result identifiers remain unchanged for
-reproducibility; they refer to the same method, not a different model.
+Repository: [carbered/QACLF](https://github.com/carbered/QACLF).
 The current Chinese Word manuscript is private and is not included.
 
 ## Current Results
@@ -67,15 +65,14 @@ Unrestricted mean-time hinge MAE is diagnostic only; no tail-repair claim is mad
 The comparator rerun, mapping control and revised evaluation window are post-hoc
 and reuse earlier outer splits. This is not an independent untouched test.
 All cohorts are from TCGA; independent external validation remains necessary.
-The older MCAT/CAT adaptations, old-window metrics and `docs/FICPF*` drafts remain
-historical records. Do not mix their numbers with the current tables or treat
-them as the current manuscript. Historical inputs/results are not relabelled or
-overwritten merely to hide discrepancies.
+The older MCAT/CAT adaptations and old-window metrics remain distinct scientific
+records. Do not mix their numbers with the current tables. Naming normalization
+changes labels and paths, not numerical results or the distinction between protocols.
 
 ## Data and Resources
 
 The included analysis covers 2,831 patients, 3,529 available slides and 15,615,143
-patches. See [dataset statistics](result/ficpf-dataset-resource-audit/dataset_statistics.csv).
+patches. See [dataset statistics](result/qaclf-dataset-resource-audit/dataset_statistics.csv).
 The representative BLCA fold-0 benchmark uses 6,956 patches, cached text features,
 RTX 5070 Ti Laptop GPU and single-thread i9-14900HX CPU processing. Median
 feature-to-curve-and-mean-time latency is 25.61 ms for VLSA and 62.17 ms for QACLF
@@ -110,13 +107,13 @@ This additionally recomputes 100 retained MIL C-indices, all 225 current
 probability evaluations and 50 nested native-risk C-indices without the omitted
 weights/features/omics tables. It uses the same fixed-window metric function as
 the retained cloud runtime. Historical-only verification remains available as
-`tools/verify_historical_results.py`; original `ficpf` entry points are retained.
+`tools/verify_historical_results.py`.
 
 ## Figure Regeneration
 
 ```bash
-python tools/plot_ficpf_six_method_comparison.py --include-dsmil --canonical-names --model-label QACLF --nested-rerun --data-summary result/qaclf-nested-v1-unified-evaluation-20261027/updated_eight_method_dataset_summary.csv --output-stem figures/reproduced_eight_method_comparison
-python tools/refine_ficpf_main_figure.py --tinted --canonical-names --model-label QACLF --output-stem figures/reproduced_method
+python tools/plot_qaclf_six_method_comparison.py --include-dsmil --canonical-names --model-label QACLF --nested-rerun --data-summary result/qaclf-nested-v1-unified-evaluation-20261027/updated_eight_method_dataset_summary.csv --output-stem figures/reproduced_eight_method_comparison
+python tools/refine_qaclf_main_figure.py --tinted --canonical-names --model-label QACLF --output-stem figures/reproduced_method
 python tools/plot_qaclf_unified_probability.py
 ```
 

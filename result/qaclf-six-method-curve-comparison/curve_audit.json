@@ -1,0 +1,2867 @@
+{
+  "complete": true,
+  "new_training": false,
+  "curves_modified": false,
+  "methods": [
+    "ABMIL-CONCH",
+    "TransMIL-CONCH",
+    "ILRA-CONCH",
+    "DSMIL-CONCH",
+    "Matched VLSA",
+    "QACLF"
+  ],
+  "fold_metric_rows": 150,
+  "evaluator_sha256": {
+    "eval\\SurvivalEVAL\\__init__.py": "353bbccf33a9900b4b7f8036d55d3a5f27c78d6986bfcf7775da3134713f75a2",
+    "eval\\SurvivalEVAL\\Evaluations\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "eval\\SurvivalEVAL\\Evaluations\\AreaUnderCurve.py": "1d754fe3b27d6545147e7c9bb463a9c1461a9ba0282af90331716322691b6139",
+    "eval\\SurvivalEVAL\\Evaluations\\BrierScore.py": "a920aa498fad3c97e42fbeea021a118a1d2c4b15b90a9b262230dc38f604102b",
+    "eval\\SurvivalEVAL\\Evaluations\\Concordance.py": "5792cd8a3c1810f32e48e1752a477ecaf2336f0b0ec7bde16bae9f199513062c",
+    "eval\\SurvivalEVAL\\Evaluations\\custom_types.py": "5a6077be38fb6cc36154897d09544669a890caaf53c09253825c195bc0d57ed3",
+    "eval\\SurvivalEVAL\\Evaluations\\D_Calibration.py": "016c740e9a5fca130b48aba99b8c85cef55f40b038110ae726fcb0631f3e6dc2",
+    "eval\\SurvivalEVAL\\Evaluations\\KM_Calibration.py": "810965bfc6da48095a1fd5a9695b8ab82136b5ea796e4106dfd769b68b9f79ca",
+    "eval\\SurvivalEVAL\\Evaluations\\MeanError.py": "b53c2f21104484a3b968a880568f57ddf0f3e706b8c45b9c2331043908126644",
+    "eval\\SurvivalEVAL\\Evaluations\\OneCalibration.py": "2dd36e2e45acc74ee52bce7289f8d044f32bd3abfe1411e367a6952e1757c29a",
+    "eval\\SurvivalEVAL\\Evaluations\\util.py": "7745bcb3e0ae2b1213f2db6b40ccddbfad05824d3be41cc030f30e32663a5e48",
+    "eval\\SurvivalEVAL\\Evaluator.py": "ee9326189481ad99c120e7ff3140bc144208d7f00f3fc17be87a79575f0b5a53",
+    "tools\\evaluate_qaclf_survival_curves.py": "3c59f8cbd81a3443cad526b60d08d835276f9e251c2dcd2b25b7b85547f4947c"
+  },
+  "folds": [
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "blca",
+      "fold": 0,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\blca-ABMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "e36789e7dc4350448498a9b1c0fc6f19db60251a29f6af5f0d2c63674b85864f",
+      "config_sha256": "73c54b981364ada7f2a16ff36f634041fa9cda7dd223a64b849db66ba785835f",
+      "split_sha256": "35713c1adde0c08e24fe54162242ae91e1711fe295f0fb43f9bb06d7c6b1fb01",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.086666666666668,
+        16.173333333333336,
+        24.260000000000005,
+        32.34666666666667,
+        40.43333333333334,
+        48.52000000000001,
+        56.606666666666676,
+        64.69333333333334,
+        72.78000000000002,
+        80.86666666666667
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 75
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "blca",
+      "fold": 0,
+      "prediction_sha256": "54fd49a6d8daece4ac216a9c04e47449525934a1362f96c2fb275cccab68c8a5",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 71
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "blca",
+      "fold": 0,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\blca-TransMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "bbed0ff4c8a3ec716123ad3728779554184114d30fdc381521d6a9e62c0be044",
+      "config_sha256": "c28bd927b1a7221f03d0113f56c3ebb819912f46a470e3d444f7a030b12c94a5",
+      "split_sha256": "35713c1adde0c08e24fe54162242ae91e1711fe295f0fb43f9bb06d7c6b1fb01",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.086666666666668,
+        16.173333333333336,
+        24.260000000000005,
+        32.34666666666667,
+        40.43333333333334,
+        48.52000000000001,
+        56.606666666666676,
+        64.69333333333334,
+        72.78000000000002,
+        80.86666666666667
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 74
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "blca",
+      "fold": 0,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\blca-ILRA-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "cdd95645505f181d7b2ea6fdada5c08f31c87d0988fa801a019be7b803f8e836",
+      "config_sha256": "5b77a4daa5f1b3b10cec7429822f78c35a71051d9c3c74157f0fc5ca99ca14d2",
+      "split_sha256": "35713c1adde0c08e24fe54162242ae91e1711fe295f0fb43f9bb06d7c6b1fb01",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.086666666666668,
+        16.173333333333336,
+        24.260000000000005,
+        32.34666666666667,
+        40.43333333333334,
+        48.52000000000001,
+        56.606666666666676,
+        64.69333333333334,
+        72.78000000000002,
+        80.86666666666667
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 51
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "blca",
+      "fold": 0,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\blca-DSMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "f28c6d2020de668a3ddcd1880612ca31bedd628102bdf8747ef9c4637853014b",
+      "config_sha256": "0be6b8da7fac3b87e5033c6809e7d699f35689194f68dce1f953ceff5d2c726a",
+      "split_sha256": "35713c1adde0c08e24fe54162242ae91e1711fe295f0fb43f9bb06d7c6b1fb01",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.086666666666668,
+        16.173333333333336,
+        24.260000000000005,
+        32.34666666666667,
+        40.43333333333334,
+        48.52000000000001,
+        56.606666666666676,
+        64.69333333333334,
+        72.78000000000002,
+        80.86666666666667
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 73
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "blca",
+      "fold": 1,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\blca-ABMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "f8e90dd5cef8e577710433d4850802b11a07c3bffb4e3331fee20dec04c67994",
+      "config_sha256": "66a1b6ce000fa66314fefc6b4b0b9acf76f3acd305375dc0cba3f8e8db3f478d",
+      "split_sha256": "224e3442f16284fabb6ac586881e2f196eb5a9e9bbbb9bcb5bd61295c15c34cd",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 75
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "blca",
+      "fold": 1,
+      "prediction_sha256": "247ae649f08a30681c1e39696c57f118b2312006888a98fa16a9629761e8ec4a",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 57
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "blca",
+      "fold": 1,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\blca-TransMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "d9bd9a0d983ac971fa97ce32afa1171e5e8aab1eaf920020c7a5fd4d437a9509",
+      "config_sha256": "5cb18b7e4474beaefb5ac3dbdcd163eaba4f402adc2db54374b5d0f8d62b3aae",
+      "split_sha256": "224e3442f16284fabb6ac586881e2f196eb5a9e9bbbb9bcb5bd61295c15c34cd",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 75
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "blca",
+      "fold": 1,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\blca-ILRA-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "978373409de2aa7bb1a33bcaf91a9031e4c21fd38b4510942833bacdae84dd22",
+      "config_sha256": "511c857b901bc3036826e5d0e403b0e075bdc59cec8ed3be17f683538fcf7020",
+      "split_sha256": "224e3442f16284fabb6ac586881e2f196eb5a9e9bbbb9bcb5bd61295c15c34cd",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 51
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "blca",
+      "fold": 1,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\blca-DSMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "6b73e3401bc44fa11a04606fdcf17247d8cac371b262b45bdb859b09b97cfb30",
+      "config_sha256": "940ac56a365e5cb52c340996acd13d4205089714e5c8d4c2cbe5456035782b37",
+      "split_sha256": "224e3442f16284fabb6ac586881e2f196eb5a9e9bbbb9bcb5bd61295c15c34cd",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 75
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "blca",
+      "fold": 2,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\blca-ABMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "a662f399cd1dd304068282d8e872dee238c1731af1cf4eec41d178ffba729cd6",
+      "config_sha256": "df2885800e56b42d92cb673e6625bda5a46d09c6b75b6d667eb927c8fdb2d0f7",
+      "split_sha256": "44e16945cc3ee88a9459fd9fcc55a6eb7384e28def48f1d3c16f486e292c5311",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 74
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "blca",
+      "fold": 2,
+      "prediction_sha256": "96f4966901fe6577f6a317719a9f8a6c43a3fd354ef56ab80fd90ed2761dc03c",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 65
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "blca",
+      "fold": 2,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\blca-TransMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "c447b0762b01f88620d05efaee282f61a287d8e2ea4cb0f4d4114000ce5bbca6",
+      "config_sha256": "dbadd142bc5a5fd3a15b51412b21dee1e508601c9b793f8f11e022eb7ff47fcc",
+      "split_sha256": "44e16945cc3ee88a9459fd9fcc55a6eb7384e28def48f1d3c16f486e292c5311",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 74
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "blca",
+      "fold": 2,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\blca-ILRA-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "f9944601b2a288443e17072e64cbcb316a49d440417371243800a6a6c0e7425e",
+      "config_sha256": "b456902a0acf948b753a6e6657dbafc00ebb49416b9cce4f2cd7de3ceacc318c",
+      "split_sha256": "44e16945cc3ee88a9459fd9fcc55a6eb7384e28def48f1d3c16f486e292c5311",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 60
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "blca",
+      "fold": 2,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\blca-DSMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "cf5ff49221146cf025a55ea5a81381a44c67cf83290a07be4e8b990106ba15a8",
+      "config_sha256": "e4904ea0d74f36e67d8ae5c1cdbea5e2f567530909e419bcef1cf0109d948baa",
+      "split_sha256": "44e16945cc3ee88a9459fd9fcc55a6eb7384e28def48f1d3c16f486e292c5311",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 75
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "blca",
+      "fold": 3,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\blca-ABMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "6a493029681d53e6201cc7867ab04497d6fe53347b65703d5ca2032773b2bba3",
+      "config_sha256": "bea9ea66f47e02506675fc0eb46bcb41ba40a94faa0a7bdc53b27f88967fb773",
+      "split_sha256": "3c811ebffab6ea3f386870c834a5d7e90396381b9e951da440bf1335e78cce0b",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 74
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "blca",
+      "fold": 3,
+      "prediction_sha256": "aea305a0b38e0ae647caaef270f8ccf0593b9d9ed25b3a9c1276f03fb8f4d423",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 70
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "blca",
+      "fold": 3,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\blca-TransMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "0ba00589239ce7ae4aaec13f508e429c678ea86f837447bdab36659c9f9fe226",
+      "config_sha256": "44dcb6c3150d24e9134e389a7ac70fca1c0eedb264553c0200272c7e91868553",
+      "split_sha256": "3c811ebffab6ea3f386870c834a5d7e90396381b9e951da440bf1335e78cce0b",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 72
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "blca",
+      "fold": 3,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\blca-ILRA-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "49cfb03402b8a9d8fe7e786845572e5dc55e78243af8b351983f9d5e544e0093",
+      "config_sha256": "5e3470481d397c51272501f672b6ddc40df59e05d87684ccad3d0fef732448f8",
+      "split_sha256": "3c811ebffab6ea3f386870c834a5d7e90396381b9e951da440bf1335e78cce0b",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 52
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "blca",
+      "fold": 3,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\blca-DSMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "d7aad83cbc42e25ad7be561760829115decbd1c3b34cff9058e5a1c283ee3c43",
+      "config_sha256": "a81a66954a522d41be08f0341f186834b7f8d21a87b9be62cd6c7db809da1e20",
+      "split_sha256": "3c811ebffab6ea3f386870c834a5d7e90396381b9e951da440bf1335e78cce0b",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 74
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "blca",
+      "fold": 4,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\blca-ABMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "3bb3c7dbb9147ea527e29ccf56620d909489306bb442b54f60085f51825b9ad1",
+      "config_sha256": "3719db90714ce1ee8473bd64c1ca9653d42b1eabf0298c4aafed6e3f107cf534",
+      "split_sha256": "504f616774e136f3c18fde869073d36ea277eea0d995ea3e3df9ed88c21378fc",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 74
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "blca",
+      "fold": 4,
+      "prediction_sha256": "b110633775abe4d7bfb250dbdeaca5b7b7577573b700c8a08308b62ec35e9ae2",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 63
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "blca",
+      "fold": 4,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\blca-TransMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "3bbe9906e3bc2196e483a37766dbda9e5a16da16abad2a93e8a58c15f6e2ee50",
+      "config_sha256": "9efafd769ef8e0f03a145a3675ffc737931e642ceb9caa87ab5b3dc25e41d08a",
+      "split_sha256": "504f616774e136f3c18fde869073d36ea277eea0d995ea3e3df9ed88c21378fc",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 74
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "blca",
+      "fold": 4,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\blca-ILRA-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "804ed8d74b19791c823232d406af9bcb57b91e5fd8a95a49c90b2c20eba12920",
+      "config_sha256": "4a6f75b4fef28d1a9c84a8d4df6ff936490950b3dfd2574cddb10659c233c81d",
+      "split_sha256": "504f616774e136f3c18fde869073d36ea277eea0d995ea3e3df9ed88c21378fc",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 54
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "blca",
+      "fold": 4,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\blca-DSMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "072768a505b9bd63eee6a9d7031908c56b8e0240babd7605b2c87d6426c387c3",
+      "config_sha256": "f701fec941847a374c7fcc4bc0038ac02496b4fa58d11d28f6ab6865f71e5ba9",
+      "split_sha256": "504f616774e136f3c18fde869073d36ea277eea0d995ea3e3df9ed88c21378fc",
+      "label_sha256": "a9219ef73b1c11f7beb2482c26a26e298a4eaf816f8aa8b35bce824b13dffe6e",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        8.714166666666666,
+        17.42833333333333,
+        26.1425,
+        34.85666666666666,
+        43.570833333333326,
+        52.285,
+        60.99916666666666,
+        69.71333333333332,
+        78.4275,
+        87.14166666666665
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 73
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "brca",
+      "fold": 0,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\brca-ABMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "aadad9704b63b1ad0224a1a8949c64b912d0eaee3d38c63832837760065cb02a",
+      "config_sha256": "38d3b5c189c3f7a1a842582f6f7ca192ed3e45dca2f933c7647e0f4aefe2efc7",
+      "split_sha256": "cd0fef824431ac396ed75ac93203a5d64d65ee419746be981789ba1dfabd4d0d",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "brca",
+      "fold": 0,
+      "prediction_sha256": "bdbd908e6ec6b6b29d5d1b8b6afc5c0b311dd5e4c6ce88a705db0ef8f9ca0835",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "brca",
+      "fold": 0,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\brca-TransMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "657f8e9afbac1f247056cedf1f76183d65fceb5c45d9c8c0a58eabf286fe163a",
+      "config_sha256": "98ce5a7cf6ee875a6c353bb94f375f1fed72152c192476a128180f1897e166fb",
+      "split_sha256": "cd0fef824431ac396ed75ac93203a5d64d65ee419746be981789ba1dfabd4d0d",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "brca",
+      "fold": 0,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\brca-ILRA-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "733410b4f9778ad7361ebe190bfce7ca5b087456f80513285e544daf0bf21229",
+      "config_sha256": "1d8d957167d93fbf12191759df41aad74dca7b43cc57e4ba9d264dff6816ff39",
+      "split_sha256": "cd0fef824431ac396ed75ac93203a5d64d65ee419746be981789ba1dfabd4d0d",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "brca",
+      "fold": 0,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\brca-DSMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "e7421d6eecae4a089eb80c2cf353a8c095243a3f02101d89c7ac718d301005f8",
+      "config_sha256": "709f980fed06d89797a54bdfd588721025b69f6de9a6d5d3ca3cf229002148a0",
+      "split_sha256": "cd0fef824431ac396ed75ac93203a5d64d65ee419746be981789ba1dfabd4d0d",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "brca",
+      "fold": 1,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\brca-ABMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "5a80013509c18d1b1ab05166e9a0ad9b067de3bbe9466bab4aa5d9faafaf1a5d",
+      "config_sha256": "9230e5777eb115d837ff09fe35f0603f9e298ca63c34ceaf722336aa52d9449a",
+      "split_sha256": "2dee790eafe66d0c9b9d91a82eaa98f28a91471c6817ff215e28ee231c18c3d2",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "brca",
+      "fold": 1,
+      "prediction_sha256": "1d97774ea7d74bd6b9609d200cbca218fe1c7c209839f056d8aa056e64ec9aff",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "brca",
+      "fold": 1,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\brca-TransMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "14216539ab3abbcd9d1005abfc171d07ef27c9ff20dd944c17de226e73632b20",
+      "config_sha256": "b83c4b2d2cdb2002af9b56a61b6badf51d1e259546ad4cdf0fb50ff2e415a594",
+      "split_sha256": "2dee790eafe66d0c9b9d91a82eaa98f28a91471c6817ff215e28ee231c18c3d2",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "brca",
+      "fold": 1,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\brca-ILRA-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "42e4750a6e21cbcc02e17ea493953e17954fc3ad6ba185951d974cc4de6f2494",
+      "config_sha256": "da04b20b923b54ee5da564bc07bf6b21c78b0324a3ba28a67cb472afc935c85c",
+      "split_sha256": "2dee790eafe66d0c9b9d91a82eaa98f28a91471c6817ff215e28ee231c18c3d2",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 5.551115123125783e-17,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "brca",
+      "fold": 1,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\brca-DSMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "26bc37cf8da41be35ccfe9819f39c4f1aba67ca52056a91e58dea0f03b8e1278",
+      "config_sha256": "e6579750f67e80acbb3554e4efdf1d4d3353487116070ebb5647233b2bb61546",
+      "split_sha256": "2dee790eafe66d0c9b9d91a82eaa98f28a91471c6817ff215e28ee231c18c3d2",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "brca",
+      "fold": 2,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\brca-ABMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "a26937e37e019e5ac23f3573d1164899ef84e91e61b66a3fbb5ebc35ed7c94fe",
+      "config_sha256": "ca7a67f9f609046f283ad949704a223bac627bfe5abe9e3c8a96627a046d1ca2",
+      "split_sha256": "4e9572ba7d1c8ca1adaacd159b74479a5aa71f4604d91f138ce00fbb1ca57008",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        19.69,
+        39.38,
+        59.07000000000001,
+        78.76,
+        98.45,
+        118.14000000000001,
+        137.83,
+        157.52,
+        177.21
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "brca",
+      "fold": 2,
+      "prediction_sha256": "caf6cd00c20ca071acca525266dce29e9080c439be212b123628f937848218e1",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "brca",
+      "fold": 2,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\brca-TransMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "bfb8cf7751f6c03eca7ec796a747011197dd99dfb6a96923919a981333f3f70e",
+      "config_sha256": "1706e9f98419125a23b7480374ed49032f23301b4bf352c3f2f19f8356ee79df",
+      "split_sha256": "4e9572ba7d1c8ca1adaacd159b74479a5aa71f4604d91f138ce00fbb1ca57008",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        19.69,
+        39.38,
+        59.07000000000001,
+        78.76,
+        98.45,
+        118.14000000000001,
+        137.83,
+        157.52,
+        177.21
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "brca",
+      "fold": 2,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\brca-ILRA-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "edf4b1e9167119ee50bc7d7f3de5db7dd6c8e900162cafac821a391288e418ae",
+      "config_sha256": "180e1435a9a8f34e3716094061a3834127c2885c81d2851a32ea83dde2af2a3b",
+      "split_sha256": "4e9572ba7d1c8ca1adaacd159b74479a5aa71f4604d91f138ce00fbb1ca57008",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        19.69,
+        39.38,
+        59.07000000000001,
+        78.76,
+        98.45,
+        118.14000000000001,
+        137.83,
+        157.52,
+        177.21
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "brca",
+      "fold": 2,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\brca-DSMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "52a95bd4b97f9b2901b3b75fc82915abba63c0e8cae7b8a86c62ad3e6a3d7af6",
+      "config_sha256": "d0f8610b4e68773e4b10c71916732d8668cdc5dc18c6164d0312c531c330be44",
+      "split_sha256": "4e9572ba7d1c8ca1adaacd159b74479a5aa71f4604d91f138ce00fbb1ca57008",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        19.69,
+        39.38,
+        59.07000000000001,
+        78.76,
+        98.45,
+        118.14000000000001,
+        137.83,
+        157.52,
+        177.21
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "brca",
+      "fold": 3,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\brca-ABMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "8cf14a09a0ecaeae9bcdb5d36cef9173396919f6c2537b1e65f85e3a67813bb8",
+      "config_sha256": "269efa8ef0f925fefdb4b4bb5c028d64f8f48a65c772338a2533d8e2dfb950ef",
+      "split_sha256": "751ce860ba1669ee4a8b570fc9984c8f93cade89db02397eeb64c5e001310c93",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "brca",
+      "fold": 3,
+      "prediction_sha256": "4c25644e4201d1824b4312205cf0f584aee621b927fe9e295068dde2b6e913e2",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "brca",
+      "fold": 3,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\brca-TransMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "375a86eec64671f7ecbafaf4e94ea262736ee351d70df28696f68138d9fae43d",
+      "config_sha256": "a2316b1a101b2399c72158c23507bba09cbfb3d303d827aed51033dc9591d02d",
+      "split_sha256": "751ce860ba1669ee4a8b570fc9984c8f93cade89db02397eeb64c5e001310c93",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "brca",
+      "fold": 3,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\brca-ILRA-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "251732c5a0d3e1820de97fb21df33ac810c6fdc22616c8737c8751aeb823857a",
+      "config_sha256": "4f7d75b3fa7a9477a355392e87bcc87f357c37053241a7ab0824a25e60d6c75a",
+      "split_sha256": "751ce860ba1669ee4a8b570fc9984c8f93cade89db02397eeb64c5e001310c93",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "brca",
+      "fold": 3,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\brca-DSMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "871aad2ce8ddff295d9b6e1c7ed08fc014fea74e9ae4463bcbffbce656ed7e0b",
+      "config_sha256": "2e03ca635a01bb86ab68aca526f6d5731b056095b01dcaf1c74937261c958460",
+      "split_sha256": "751ce860ba1669ee4a8b570fc9984c8f93cade89db02397eeb64c5e001310c93",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "brca",
+      "fold": 4,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\brca-ABMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "6f47d522f76b95ef0bbdba2fdc898d35fbcf91e88bc446a06e3c5d91ee4589b8",
+      "config_sha256": "132653b3dacba42da37ba95b80a5b16fff92a6ccba2afe2a9c657cd6b209031b",
+      "split_sha256": "7bb014ec7cae42bddebd0bd116879515252a57785468d6b6489933b6f70bc2a5",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "brca",
+      "fold": 4,
+      "prediction_sha256": "ab00a01e3c6354b12b10e7c90614d5a541e2ae110f40b5bec2553e27dcfadacd",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "brca",
+      "fold": 4,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\brca-TransMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "11e3fd93242debdba4c6fab668b7a5438267d7e533cc9b229a3e39677300f1e4",
+      "config_sha256": "a437ff599cbfcda2e8b4b50633fd13c9c98d5977a1e5f08a4b4ee4f0a50a61ad",
+      "split_sha256": "7bb014ec7cae42bddebd0bd116879515252a57785468d6b6489933b6f70bc2a5",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "brca",
+      "fold": 4,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\brca-ILRA-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "a9bcce83bb0f0cda7aef19b3e4083131babd3d04af49e3491a197c6c9487f234",
+      "config_sha256": "e2859091f6739a8a2012fcf659c847398bb15c49c0d1acefb5a5c4453a437fea",
+      "split_sha256": "7bb014ec7cae42bddebd0bd116879515252a57785468d6b6489933b6f70bc2a5",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "brca",
+      "fold": 4,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\brca-DSMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "7e3802d93ac7b12e7c3b10258afef2599dd9deff61b79c024e45418c8d09eaaa",
+      "config_sha256": "c9f8bb0accc30665e3af34fac47f6c334e892cb0610089c1c528ba0807cdca90",
+      "split_sha256": "7bb014ec7cae42bddebd0bd116879515252a57785468d6b6489933b6f70bc2a5",
+      "label_sha256": "37fad319229afe76ec97f030de609e60e1197d5bfe78ab306d0ae340dd81738f",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        22.264545454545456,
+        44.52909090909091,
+        66.79363636363637,
+        89.05818181818182,
+        111.32272727272728,
+        133.58727272727273,
+        155.8518181818182,
+        178.11636363636364,
+        200.38090909090909
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 0,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\gbmlgg-ABMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "52382f68340448e264e09e106efd378ab16d2ce8afbda90b7e8f0be50f3384ea",
+      "config_sha256": "d8a088cf6c04b737d39aca7bd05df724f6aa89cd4fc8876aadf760537e7a4817",
+      "split_sha256": "cc9eb343cd1d1c3079b98b682ee61a36132c71e28a705a220f8328ec62b0d41c",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "gbmlgg",
+      "fold": 0,
+      "prediction_sha256": "4c4369ee3159d95647fdddb0eae86f85705d781f8edf73d34b3cc12144372688",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 0,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\gbmlgg-TransMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "5e782c21c8ce3f3357f314cd0e1d138687fc0d8ef6a81ea5f95946b055b152b4",
+      "config_sha256": "5a7f6c5b2f2e28489ef7ff3975c3e5d7d69f53d3a9ac5809210a6b426e6e4e5f",
+      "split_sha256": "cc9eb343cd1d1c3079b98b682ee61a36132c71e28a705a220f8328ec62b0d41c",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 0,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\gbmlgg-ILRA-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "989ca5cfa0cd3c7b5731a9a9f95dce029fbe3c9303706905e8eb0c83df922193",
+      "config_sha256": "e3626667d7a35c381f1c95c56df98201cb338549da72e7a2ba24c8ae0beb1116",
+      "split_sha256": "cc9eb343cd1d1c3079b98b682ee61a36132c71e28a705a220f8328ec62b0d41c",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 0,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\gbmlgg-DSMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "3a8ea731d2c9d180a5e7cecce86628c5eb7d60b3c44041ebf8b0dba25a8bed0d",
+      "config_sha256": "26603ee32c0fc19694e6e45beb116f4dee565db881405b8708007b8a5c95aea3",
+      "split_sha256": "cc9eb343cd1d1c3079b98b682ee61a36132c71e28a705a220f8328ec62b0d41c",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 1,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\gbmlgg-ABMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "737b495fac25f60e621a653be3b2a29f72b861f656eb26d9d0b6b98d5fedc40a",
+      "config_sha256": "5af8c27b19be22b886ae89a92d75edd35045bb11b7319c532c1b576fc7f339f9",
+      "split_sha256": "a90556f1e8e6de54259702c11e3c9c5f09801d1eea539a6e9c24419ff161c16c",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "gbmlgg",
+      "fold": 1,
+      "prediction_sha256": "84e8076066769fc37b86c6dc209d96c62fe8b6d974ab50a9cbdcd680949385af",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 1,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\gbmlgg-TransMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "8b6b7a39a2406daae39237d35db5aa4be65fe2a9913075576b1a40d2a54f9cd8",
+      "config_sha256": "436ee72733c7491043365170c7fba506e060f442fff5736d2017f26829e5ab1d",
+      "split_sha256": "a90556f1e8e6de54259702c11e3c9c5f09801d1eea539a6e9c24419ff161c16c",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 1,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\gbmlgg-ILRA-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "bc41badc52c27a1b140f256b34c73b9a403b10e774d2312321d7a2241e81c955",
+      "config_sha256": "33061c82aaf6e20d90a84619896f3ce8369f97972f915afdd6a77e3059499fa5",
+      "split_sha256": "a90556f1e8e6de54259702c11e3c9c5f09801d1eea539a6e9c24419ff161c16c",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 1,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\gbmlgg-DSMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "383854631d23d659883986bfb8d7e29b80eadb4dd00efa392575819339210131",
+      "config_sha256": "f7192d695e1831118c35b944ed977ebf6a225c072df9ba44dd94e94bf0e668f6",
+      "split_sha256": "a90556f1e8e6de54259702c11e3c9c5f09801d1eea539a6e9c24419ff161c16c",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 2,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\gbmlgg-ABMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "3723d99fd92fa9e95bfbd2d89969720884219a74f12878c9a88f643e43d4f9a8",
+      "config_sha256": "c9d3e7be77210b32082f5ef686b943d373c86c8f98f0f8378d2ad1a19fdbc2fd",
+      "split_sha256": "e21f683b33d11cb729eea8dee22a56cac2be9f9a47015cfbf6b244ce5c93d1a0",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        11.864615384615385,
+        23.72923076923077,
+        35.59384615384616,
+        47.45846153846154,
+        59.323076923076925,
+        71.18769230769232,
+        83.05230769230769,
+        94.91692307692308,
+        106.78153846153847,
+        118.64615384615385,
+        130.51076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "gbmlgg",
+      "fold": 2,
+      "prediction_sha256": "9e1cd84eabc2d946cce08435c4f16562d419ce2407005773fd0db23078fa130a",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 2,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\gbmlgg-TransMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "f4b5b2cc9042420d6e1b0e0c701346c7dc58a97f2edb3ad445a01bd877d650a0",
+      "config_sha256": "04569c36849502ee41a25a3a6627371212d6dff40d36b6a5ea45a7a790dee2e5",
+      "split_sha256": "e21f683b33d11cb729eea8dee22a56cac2be9f9a47015cfbf6b244ce5c93d1a0",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        11.864615384615385,
+        23.72923076923077,
+        35.59384615384616,
+        47.45846153846154,
+        59.323076923076925,
+        71.18769230769232,
+        83.05230769230769,
+        94.91692307692308,
+        106.78153846153847,
+        118.64615384615385,
+        130.51076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 2,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\gbmlgg-ILRA-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "393c37720d3f7e403517d75d7902b64bc3498abe371e7728eb352e9387b1b68b",
+      "config_sha256": "fdc1a7a8a0a3ecabe3ec37fa6b021d996f21c01cb053d663c96e72e285a6a3d4",
+      "split_sha256": "e21f683b33d11cb729eea8dee22a56cac2be9f9a47015cfbf6b244ce5c93d1a0",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        11.864615384615385,
+        23.72923076923077,
+        35.59384615384616,
+        47.45846153846154,
+        59.323076923076925,
+        71.18769230769232,
+        83.05230769230769,
+        94.91692307692308,
+        106.78153846153847,
+        118.64615384615385,
+        130.51076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 2,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\gbmlgg-DSMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "bf0118b5f97460ca8d6165eab768393061afd68bbb37a6d44d8e7be9d09d9319",
+      "config_sha256": "afed1d3bac75f72c5f99e4916a2699d7be47212b3041f405c12381291bf6940f",
+      "split_sha256": "e21f683b33d11cb729eea8dee22a56cac2be9f9a47015cfbf6b244ce5c93d1a0",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        11.864615384615385,
+        23.72923076923077,
+        35.59384615384616,
+        47.45846153846154,
+        59.323076923076925,
+        71.18769230769232,
+        83.05230769230769,
+        94.91692307692308,
+        106.78153846153847,
+        118.64615384615385,
+        130.51076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 3,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\gbmlgg-ABMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "4c686c6932e8a65e61f6f4f6979575fb555c0161648970d884cea7011ff17c8b",
+      "config_sha256": "ff6d1393fedba349b3dda2bbe6ddff948b513dafcdb1e21ecee47e86cc579275",
+      "split_sha256": "69a0151e349a824d5d26f3323f81ffcd70f400afb4a827e1a7d3237f32d814b4",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "gbmlgg",
+      "fold": 3,
+      "prediction_sha256": "a00fd9efcec54b592bac7f6abc9b315862a2a2b817584f77d8628251b6dc0b54",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 3,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\gbmlgg-TransMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "12cdc2b1721c92074f0f523eae98ce8f288f86dc6c121211b33e8077a78941f5",
+      "config_sha256": "0ae9bebe1c6abb0945d7be18a2a1d8af6fe5f22bbc1546192b65cd0d5fc195bc",
+      "split_sha256": "69a0151e349a824d5d26f3323f81ffcd70f400afb4a827e1a7d3237f32d814b4",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 3,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\gbmlgg-ILRA-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "f6a877ed45b0b7a2633c9515097941f5a297c893bbca42c906e3f8f89ba907cf",
+      "config_sha256": "fc24cef45d7d380f866e2e26b84b599dcc451973d98c41b0b26919591961cc20",
+      "split_sha256": "69a0151e349a824d5d26f3323f81ffcd70f400afb4a827e1a7d3237f32d814b4",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 3,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\gbmlgg-DSMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "eb550ce0cbc3b05f634b1451173f4acafcd7c1cc1c7e4da7e8d45e33c722a301",
+      "config_sha256": "ed339c96cc2fc8973d9078a1be39647157fdb8a64356222d072b6e465290eafa",
+      "split_sha256": "69a0151e349a824d5d26f3323f81ffcd70f400afb4a827e1a7d3237f32d814b4",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 4,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\gbmlgg-ABMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "0931efbffca5192471a01e1897867653980fe055af2af9e1c02a9c802899bbfe",
+      "config_sha256": "c17a7327d70872e322a60747e9e5944074e7b9b0614f8f2de156a59271fb238d",
+      "split_sha256": "266b9de737fc32c4e310743fcb12b1048fb2415eaacb770ed5022fd577d7e2bd",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "gbmlgg",
+      "fold": 4,
+      "prediction_sha256": "ceaf4d8fed7255106585d7ffec075eb887c7c7fdcd279d35d07a94050bcb1970",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 4,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\gbmlgg-TransMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "a27e7ef4840a972416bd4cd1f1abd72529627a8546effc338966fc9c6f17b3d1",
+      "config_sha256": "f065b4e16723ed59df5cca9a1954adda119b80af247b1fb54044da8d20c49afd",
+      "split_sha256": "266b9de737fc32c4e310743fcb12b1048fb2415eaacb770ed5022fd577d7e2bd",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 4,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\gbmlgg-ILRA-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "9aa75415dd9a97a4c1c36518005ab3d6a2afad85679aef65d9863af4248eacb0",
+      "config_sha256": "9f5ebde7d65addee0dda06690eb2c310402871706926c75e1f12fca57643abff",
+      "split_sha256": "266b9de737fc32c4e310743fcb12b1048fb2415eaacb770ed5022fd577d7e2bd",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "gbmlgg",
+      "fold": 4,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\gbmlgg-DSMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "fcd2b5d05c821794ae0b8d417aa4db047600745202d632fc99709f39e421318e",
+      "config_sha256": "425a757f36659775976977faf6c8157166c4c52723f6170c81236cc1be24452f",
+      "split_sha256": "266b9de737fc32c4e310743fcb12b1048fb2415eaacb770ed5022fd577d7e2bd",
+      "label_sha256": "5c801c37e814fe2bba106cc50ef9a531abab4ea81f88a69386c2e44daed1477a",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.054615384615385,
+        26.10923076923077,
+        39.16384615384615,
+        52.21846153846154,
+        65.27307692307693,
+        78.3276923076923,
+        91.38230769230769,
+        104.43692307692308,
+        117.49153846153847,
+        130.54615384615386,
+        143.60076923076923
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "luad",
+      "fold": 0,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\luad-ABMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "633d6521c4ba7f59c642fdb4053f2498e35f2ce5bb66047fb439dbf3d3899d47",
+      "config_sha256": "e5b3310b14d6b4e1c46f8ca97358e813804aa597ab0337ee8d33f8e9e3cc4d5e",
+      "split_sha256": "d976be2835a5f3488bd2e851481ec726044429ced5a49f8d0b323796f87dfb0a",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 90
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "luad",
+      "fold": 0,
+      "prediction_sha256": "425add474b62f4c18018ae10caf51ae6f14db2efcb8049562ca1d5ea2dfa057e",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 88
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "luad",
+      "fold": 0,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\luad-TransMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "3832dbd9214de50220e6312fbade6308a5575a23b6a8217642bdb52ecbcfc953",
+      "config_sha256": "b74a58248bff5945d9175228ce9a7a2badd53b7207ccd7034e1bb5177a533e0d",
+      "split_sha256": "d976be2835a5f3488bd2e851481ec726044429ced5a49f8d0b323796f87dfb0a",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 89
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "luad",
+      "fold": 0,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\luad-ILRA-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "8f3bd21e313995b10b697cbfe357e49e617d89130963e639b8f676ed1314aaf8",
+      "config_sha256": "d6ac6a2503895dac43e9d518fc92ea5969a4a7b5fa0cb6e3855c109db840e550",
+      "split_sha256": "d976be2835a5f3488bd2e851481ec726044429ced5a49f8d0b323796f87dfb0a",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 61
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "luad",
+      "fold": 0,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\luad-DSMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "a300c9c7c630d588ef950c6b9a927cab352610ac20221859d07fe380a0eb8708",
+      "config_sha256": "d8cfe72cdc5e3f28ed4fab5798091270d682f20f3c954b87bccbba200f1fd445",
+      "split_sha256": "d976be2835a5f3488bd2e851481ec726044429ced5a49f8d0b323796f87dfb0a",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 89
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "luad",
+      "fold": 1,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\luad-ABMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "7760ac289c4059b67901415eb1d59c9eba7fbbc89d08aec24ab55d3f9650d8cb",
+      "config_sha256": "e50e9167ee3c99caebe01e7729d9efccb60207cd257faa427d26d822ec228cce",
+      "split_sha256": "5be58f24b9a58707487a4dc84d8a3415bf4aeaddc2fc92c82747a6c17892c395",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 91
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "luad",
+      "fold": 1,
+      "prediction_sha256": "fb3c1507bd21f0c1cdaa9980958820b51d24c89199af04895a5b045549129de7",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 84
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "luad",
+      "fold": 1,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\luad-TransMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "4db8b569d19e358e1a75657694e5b06057be8b37043df4ab405b1db24d3e218b",
+      "config_sha256": "a48e8cc841b44f3c4ab396ad8d1b61f1574708e35dde097094e9209038dbd5d2",
+      "split_sha256": "5be58f24b9a58707487a4dc84d8a3415bf4aeaddc2fc92c82747a6c17892c395",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 88
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "luad",
+      "fold": 1,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\luad-ILRA-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "b470c57f455ee5b4a493d8ff337bcf4bcdcd0e8a6f345316aeb2220fa513361f",
+      "config_sha256": "cf6372cd3c597e43bc132b166d4c71dc5181d3609b7119051b09c4144fecc597",
+      "split_sha256": "5be58f24b9a58707487a4dc84d8a3415bf4aeaddc2fc92c82747a6c17892c395",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 55
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "luad",
+      "fold": 1,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\luad-DSMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "6871efdf8261ec5496bf216b62cef25dc7e520b2dc4d702c2260694e4cf99185",
+      "config_sha256": "958c1573afd545d22dc77fb3480797bd1966e251a4c77a3aa3062290a0919bf7",
+      "split_sha256": "5be58f24b9a58707487a4dc84d8a3415bf4aeaddc2fc92c82747a6c17892c395",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 91
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "luad",
+      "fold": 2,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\luad-ABMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "517b74cefdf5219c1e80fe756599a8e6d889d77268253f5118eaccd59e2de324",
+      "config_sha256": "530be1ea672b7801b7b025eb023d79dc150aba0fdd21a3a25191049940c67a42",
+      "split_sha256": "7a54e47261efc2509d0f7d8ddc213ee01ed6d0ad78ad6ec5d4fd81262e8da06e",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        7.339166666666666,
+        14.678333333333333,
+        22.0175,
+        29.356666666666666,
+        36.69583333333333,
+        44.035,
+        51.37416666666667,
+        58.71333333333333,
+        66.0525,
+        73.39166666666667
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 91
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "luad",
+      "fold": 2,
+      "prediction_sha256": "4a3c54a4ee33f44267399db51fe06568f80b0c2180fe6bba2bc495d41ab9587a",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 88
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "luad",
+      "fold": 2,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\luad-TransMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "61d38bcd7a6ce46b08a533bc0ef063f1486843738494ef72fbce512022165390",
+      "config_sha256": "84bfeeb2f91a521d7e9aca8852f4c6071b2b6e9d093837421ae960925776e8c5",
+      "split_sha256": "7a54e47261efc2509d0f7d8ddc213ee01ed6d0ad78ad6ec5d4fd81262e8da06e",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        7.339166666666666,
+        14.678333333333333,
+        22.0175,
+        29.356666666666666,
+        36.69583333333333,
+        44.035,
+        51.37416666666667,
+        58.71333333333333,
+        66.0525,
+        73.39166666666667
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 82
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "luad",
+      "fold": 2,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\luad-ILRA-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "cef536ab1cb274514729344166572a1677644ccadf53f725195b7bb76c642884",
+      "config_sha256": "fcf8e9b9acd73ec7901bf0a837030e4203034176f5f5460a3adb985879295a31",
+      "split_sha256": "7a54e47261efc2509d0f7d8ddc213ee01ed6d0ad78ad6ec5d4fd81262e8da06e",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        7.339166666666666,
+        14.678333333333333,
+        22.0175,
+        29.356666666666666,
+        36.69583333333333,
+        44.035,
+        51.37416666666667,
+        58.71333333333333,
+        66.0525,
+        73.39166666666667
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 52
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "luad",
+      "fold": 2,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\luad-DSMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "a2bb47b244d8ef7a737f1c4ca7fd71ccccd7fd24c63c2cea4574f88744face8a",
+      "config_sha256": "177be22d064572ba35e16e6e1d4e2e33c1bb23ff167aa06c5a5f286870aa1369",
+      "split_sha256": "7a54e47261efc2509d0f7d8ddc213ee01ed6d0ad78ad6ec5d4fd81262e8da06e",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        7.339166666666666,
+        14.678333333333333,
+        22.0175,
+        29.356666666666666,
+        36.69583333333333,
+        44.035,
+        51.37416666666667,
+        58.71333333333333,
+        66.0525,
+        73.39166666666667
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 86
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "luad",
+      "fold": 3,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\luad-ABMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "06737a2cce24f81c4f8bf30a5ded4f0f4ac74d86bb67f35114703392d94c832f",
+      "config_sha256": "8cffe1586efb85d8f3b80b22dfa489f285fceb23f64c31a6f9aadd25b504304e",
+      "split_sha256": "5ab10da514755dc41c4a16ae1179f30e9f6cf92868e378b976e55603a0a8def4",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 90
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "luad",
+      "fold": 3,
+      "prediction_sha256": "d8bd4b04e8529e5378eaf991e5bb5f497fc5af0cb595b1d0e4790871767f3904",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 84
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "luad",
+      "fold": 3,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\luad-TransMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "794253a60dd9a049059a88af8ff49dcfff22b37ba8e07fe09c263b0fe596306c",
+      "config_sha256": "db9077c280865aa55779a1b4c0a0eefd0051745ffbc0a85f0db4fb99e0ab70d1",
+      "split_sha256": "5ab10da514755dc41c4a16ae1179f30e9f6cf92868e378b976e55603a0a8def4",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 5.551115123125783e-17,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 84
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "luad",
+      "fold": 3,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\luad-ILRA-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "28e9234f8548ec6890e5aa213d66fa9de03b2954a5a787acf489ce62a219612f",
+      "config_sha256": "9980d82135e3a5ce9ab62d2272b40928c63ae989f8ee7e25f8cbd652fee85a88",
+      "split_sha256": "5ab10da514755dc41c4a16ae1179f30e9f6cf92868e378b976e55603a0a8def4",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 32
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "luad",
+      "fold": 3,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\luad-DSMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "3d3c70a3233069e909aaf5c76969b86c4bf5ad20de680f39652c0c4dfa50ec96",
+      "config_sha256": "42f2dc36eb273900d26dcdbdfc5a678622019856beb3169a081483f000ea603c",
+      "split_sha256": "5ab10da514755dc41c4a16ae1179f30e9f6cf92868e378b976e55603a0a8def4",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 88
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "luad",
+      "fold": 4,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\luad-ABMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "962cf94117a727dfe5d83440a8082c6cccd008b41b333c0854df495dba1e16fc",
+      "config_sha256": "90f171179a37357a6cd658988f2834f2d6b39026d44d0716e06a2a7c53b7c2d0",
+      "split_sha256": "a560353629ca37eed0feffcd9b6d01b55567b22cc758c07d6d5592ec6415d90e",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 89
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "luad",
+      "fold": 4,
+      "prediction_sha256": "817078c083fd6ac876255bfc4b2c8afd605c078e91bed0c0397489707733dbbf",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 87
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "luad",
+      "fold": 4,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\luad-TransMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "7103a78b1b97701bbfdebc0d702a2aea49dde63cd9cbc772e37661e7738bd88c",
+      "config_sha256": "ecb4180d2bd7336279c4e936f9544512d95004f7be815101f98ed1091f97c19d",
+      "split_sha256": "a560353629ca37eed0feffcd9b6d01b55567b22cc758c07d6d5592ec6415d90e",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 90
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "luad",
+      "fold": 4,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\luad-ILRA-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "f17623c2bdf11f6de4423a6f54573542064a0f86ba51953e9521676832c120b0",
+      "config_sha256": "39e699b52f80efeee9a20851c1b8dcaaef88344bda33202a99046b5274cac7fb",
+      "split_sha256": "a560353629ca37eed0feffcd9b6d01b55567b22cc758c07d6d5592ec6415d90e",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 5.551115123125783e-17,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 49
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "luad",
+      "fold": 4,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\luad-DSMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "a63431e549e8599d7fa02370aece8b1740958943ca7553308991eae6a0f55a06",
+      "config_sha256": "90910d0830a87443d1c93e23bc153e7620fbc34f61e169fb6248bfe7b99af939",
+      "split_sha256": "a560353629ca37eed0feffcd9b6d01b55567b22cc758c07d6d5592ec6415d90e",
+      "label_sha256": "03c64d6a0702c788bdf4c6679cd5d98bd35aceca1e6307d0b4db410262302884",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        9.200833333333334,
+        18.401666666666667,
+        27.6025,
+        36.803333333333335,
+        46.00416666666667,
+        55.205,
+        64.40583333333333,
+        73.60666666666667,
+        82.8075,
+        92.00833333333334
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 83
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 0,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\ucec-ABMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "0984b816cedcde9c073a35b66c78c2793bf43a65e9d06cfb167a7eb20e5083a2",
+      "config_sha256": "0596413682ad0cd7650dc08b888a54d509813260d40eacdaec85a7145ab4c1c5",
+      "split_sha256": "5825f3dd86a2a07f72264879f02e22ed8e24af9bd34e758a2ab98fb1b06076f3",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.7525,
+        27.505,
+        41.2575,
+        55.01,
+        68.7625,
+        82.515
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 89
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "ucec",
+      "fold": 0,
+      "prediction_sha256": "3841eeb821da2f620bd6b7dee321beeba03f15ce8fb43fa530aeb9fe2d90fbd8",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 93
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 0,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\ucec-TransMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "98d1951de251106926b60170f5c085d7340397bfc03acc22abf5ffb3488057af",
+      "config_sha256": "a23ec0c8140d720ce5a5ace9c76c5dc7854174ee6f0e5fac5cead5a60675c4db",
+      "split_sha256": "5825f3dd86a2a07f72264879f02e22ed8e24af9bd34e758a2ab98fb1b06076f3",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.7525,
+        27.505,
+        41.2575,
+        55.01,
+        68.7625,
+        82.515
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 78
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "ucec",
+      "fold": 0,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\ucec-ILRA-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "67d9539440d95af962f0e324c98144a1ab60eec5d1593e7735942b7bc0d46d0c",
+      "config_sha256": "e5a4c99197fbbfd764d3a99d000eddd19f72398bfde2bca3e290249f578599e6",
+      "split_sha256": "5825f3dd86a2a07f72264879f02e22ed8e24af9bd34e758a2ab98fb1b06076f3",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.7525,
+        27.505,
+        41.2575,
+        55.01,
+        68.7625,
+        82.515
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 42
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 0,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\ucec-DSMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "d2afd7bb07938c1f9aeafe9d22ca229bb33e62164e32d7f9c657267efdc85793",
+      "config_sha256": "5c5705fbbb458d6ab0089e0fd90b07c4c895bd0b77842b948c668f261576edb5",
+      "split_sha256": "5825f3dd86a2a07f72264879f02e22ed8e24af9bd34e758a2ab98fb1b06076f3",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.7525,
+        27.505,
+        41.2575,
+        55.01,
+        68.7625,
+        82.515
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 79
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 1,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\ucec-ABMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "82af0d1ae22f063676d5b2d083d0ca75b46c82ae066e104d4c45b7b1d0474fb8",
+      "config_sha256": "959f2db942a4ed2a5b207b3e4057d2b812ddeee55b8a4a441ba8093fcbf280f3",
+      "split_sha256": "28690792775373ff0ba341071fe68320b29843f3296dd5f20c025166f5f5f514",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 95
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "ucec",
+      "fold": 1,
+      "prediction_sha256": "c493ac8f316cfc5790701cd9aee00a5a7385fdf14d84eff9c66b69c6ebfc45ab",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 93
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 1,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\ucec-TransMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "3ba81ba4b36d7a1e8271b791f6053ace5a0ea7fbc03448c681f95c52384a2ce8",
+      "config_sha256": "6d93f42fae1dabca6cfde737394f61e45f0b5f62b2e8e865916c3daf00e60fad",
+      "split_sha256": "28690792775373ff0ba341071fe68320b29843f3296dd5f20c025166f5f5f514",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 80
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "ucec",
+      "fold": 1,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\ucec-ILRA-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "e574bc92eb209ae81f31921c646b27fde40e95b24dbda9baba2067a769d29634",
+      "config_sha256": "e26a4e7412f5127a4811e462a1b6b2adc3426ad8f754cc1366cd20600bebb827",
+      "split_sha256": "28690792775373ff0ba341071fe68320b29843f3296dd5f20c025166f5f5f514",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 51
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 1,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\ucec-DSMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "f66133cbe3da2df13d85445f7676bcaf065581d109e5077aba848478a05a3815",
+      "config_sha256": "85b3f441cd07b99acfce86408614e248aaebc1c624b09edb03badbac311ecd47",
+      "split_sha256": "28690792775373ff0ba341071fe68320b29843f3296dd5f20c025166f5f5f514",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 96
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 2,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\ucec-ABMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "a5d0cd264ed0253ded7f71b847993746a8b166974dcbc2e66abcb5fef5d81edd",
+      "config_sha256": "11c858b7872e135224300978d6a115d51bb158ed204c82134a2d9bfff7443118",
+      "split_sha256": "674e1d97eb46bbd5d42d33d683c221351abcfb23ac92e10eaac034564c0eacd1",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 95
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "ucec",
+      "fold": 2,
+      "prediction_sha256": "450ebce061f5e8f8ce5bf9381fe54c68837cd696ff8532d69823a55e85c5b085",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 96
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 2,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\ucec-TransMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "d5f1aeee5964b4c7bb4305210bb455813d88839c051259f870d0ce401e8734e3",
+      "config_sha256": "cf6dd75bc4f160fea79f03fe947cb83cb754caed13ced843ef6abcb6461a5919",
+      "split_sha256": "674e1d97eb46bbd5d42d33d683c221351abcfb23ac92e10eaac034564c0eacd1",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 80
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "ucec",
+      "fold": 2,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\ucec-ILRA-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "ddc254aa257a3d3d5c2788319db87f2e5f9accbe3fce71ea09c8aafa1381c701",
+      "config_sha256": "7846b2c03ac7cfab095d796c90740cce02ec7c0e12138927af880caed8662129",
+      "split_sha256": "674e1d97eb46bbd5d42d33d683c221351abcfb23ac92e10eaac034564c0eacd1",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 50
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 2,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\ucec-DSMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "3374a4d5ff287aabb7d015286dcd32fd26d475969f2b2064d453a6c0ebf43454",
+      "config_sha256": "1ec998e18eef4cbe1c21215758e73ee62e881d15b6429c17a8ea5d1b29b27016",
+      "split_sha256": "674e1d97eb46bbd5d42d33d683c221351abcfb23ac92e10eaac034564c0eacd1",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 89
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 3,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\ucec-ABMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "3fcfcbd635dc5344536754894312b448dd7b56affb3bfeca49243b0a5b89af5d",
+      "config_sha256": "0372216f4b05a3aebe57885cd289a8add10cb4f53e37da699c1dfeac737606f3",
+      "split_sha256": "14d2ed83adb34b51cbe53d8ee2723e060f974b9b51c82e3408a08497c83b8d31",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 94
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "ucec",
+      "fold": 3,
+      "prediction_sha256": "c8d58797acd247aada51fc03fb8b0fbbd87dc33561f3c0c7a5ec3a74f861483b",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 96
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 3,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\ucec-TransMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "79967dd8cbc4a56ade415d1490e32700b913009c19cac154377929f6837b5d41",
+      "config_sha256": "750a19f46fe0bbfbe924c239af4b6f93475e199ed1ecade56c5362118489ee8c",
+      "split_sha256": "14d2ed83adb34b51cbe53d8ee2723e060f974b9b51c82e3408a08497c83b8d31",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 87
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "ucec",
+      "fold": 3,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\ucec-ILRA-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "d56a561c5112ad3ffa4cd96f6c1fdd5ce70944679b90e1479cb8ab362d2bdc3c",
+      "config_sha256": "3a516f887e060b24a4c4ea41fddfa8b75d3129883ad8f2aceafcbd5915ebc2a8",
+      "split_sha256": "14d2ed83adb34b51cbe53d8ee2723e060f974b9b51c82e3408a08497c83b8d31",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 59
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 3,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\ucec-DSMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "f21368749f66d847bf0c63506d85879d2dfe20087c725573b0983746c57e23e4",
+      "config_sha256": "002ac0def5ded2b8d3305d50ed2ba5fd01175f113332d136abc417e991a7f605",
+      "split_sha256": "14d2ed83adb34b51cbe53d8ee2723e060f974b9b51c82e3408a08497c83b8d31",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 94
+      }
+    },
+    {
+      "method": "ABMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 4,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\ucec-ABMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "1a04fc480358960aee932446cc4c5c43c5173828ca7c9164810fa0440822d671",
+      "config_sha256": "37544e455c8f050abff07e52f607806397f05c4e9c69926ad25e02a621cdcb0a",
+      "split_sha256": "860fa1b0e63b3c61fa11c56ae67dc12755115bb7671caf30454b9d278f370bc6",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 95
+      }
+    },
+    {
+      "method": "QACLF",
+      "dataset": "ucec",
+      "fold": 4,
+      "prediction_sha256": "8037b7da694edaf954eb0b3c1c8f7ebcc45891d11306acecd65dcd2d0926fc21",
+      "retained_metrics_reproduced": true,
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 96
+      }
+    },
+    {
+      "method": "TransMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 4,
+      "prediction_path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\ucec-TransMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "1013135fc6eb5089b89145250b6709855d8e967fe5e0fa8db0057842e13218e2",
+      "config_sha256": "8a928e962223609b79d3348bed76be5f457f2b551273dcf497533910ddc5d1fb",
+      "split_sha256": "860fa1b0e63b3c61fa11c56ae67dc12755115bb7671caf30454b9d278f370bc6",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 89
+      }
+    },
+    {
+      "method": "ILRA-CONCH",
+      "dataset": "ucec",
+      "fold": 4,
+      "prediction_path": "downloads\\QACLF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\ucec-ILRA-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "8f3ae281377a6f0c960cb97f187488db4312a93d745688f1ab3acf46581431f8",
+      "config_sha256": "5e28cc0b851634e3c3c83bddb4a66cad79ca076272671964e5a58bd64f3437cb",
+      "split_sha256": "860fa1b0e63b3c61fa11c56ae67dc12755115bb7671caf30454b9d278f370bc6",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 48
+      }
+    },
+    {
+      "method": "DSMIL-CONCH",
+      "dataset": "ucec",
+      "fold": 4,
+      "prediction_path": "downloads\\QACLF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\ucec-DSMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+      "prediction_sha256": "b5f920d9f469749de564b6e503a96fe7a2698470f76f8dfeb4ea56442ed212ec",
+      "config_sha256": "1fdfc0c9765bc15674f0b38a3805d4e84eacea1a29945acfd35a0a7e506908d6",
+      "split_sha256": "860fa1b0e63b3c61fa11c56ae67dc12755115bb7671caf30454b9d278f370bc6",
+      "label_sha256": "55d9d5fecd1fda2d4a3277fe4d9bbe67a27a1a2f063cd4a603f5cb85ae2a6cbf",
+      "c_index_abs_delta": 0.0,
+      "ibs_times": [
+        13.81875,
+        27.6375,
+        41.45625,
+        55.275,
+        69.09375,
+        82.9125
+      ],
+      "warnings": {
+        "DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.": 2,
+        "IntegrationWarning: The occurrence of roundoff error is detected, which prevents \n  the requested tolerance from being achieved.  The error may be \n  underestimated.": 93
+      }
+    }
+  ],
+  "comparison_contract": "Mean/Linear; common original per-fold IBS grid; train-fold censoring; continuous outcomes; ten-bin D-calibration.",
+  "aggregation": "Equal fold average within each cohort, then equal cohort average; D-calibration counts are descriptive fold counts, not pooled p values.",
+  "matched_vlsa_metrics": "Retained previously verified fold metrics on identical patient labels, time coordinates, and IBS evaluation grid.",
+  "excluded_methods": {
+    "MCAT-CONCH": "Retained prediction files contain scalar risk, not curves.",
+    "CAT-TPL-CONCH": "Retained prediction files contain scalar risk, not curves."
+  }
+}

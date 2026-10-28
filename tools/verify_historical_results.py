@@ -14,7 +14,7 @@ COHORTS = ["BLCA", "BRCA", "GBMLGG", "LUAD", "UCEC"]
 EXPECTED = {"ABMIL-CONCH": .6215081007645225, "TransMIL-CONCH": .6447394829142735,
             "ILRA-CONCH": .6363855177059747, "DSMIL-CONCH": .6591261613970387,
             "Matched VLSA": .695781808041706, "MCAT-CONCH": .649507380758086,
-            "CAT-TPL-CONCH": .6614402367838548, "FICPF": .7050168897889689}
+            "CAT-TPL-CONCH": .6614402367838548, "QACLF": .7050168897889689}
 
 
 def rows(relative):
@@ -27,14 +27,14 @@ def near(a, b, tolerance=1e-9):
 
 
 def verify(recompute=False):
-    comparison = rows("result/ficpf-eight-method-comparison/eight_method_dataset_summary.csv")
+    comparison = rows("result/qaclf-eight-method-comparison/eight_method_dataset_summary.csv")
     assert len(comparison) == 8
     for row in comparison:
         near(statistics.fmean(float(row[c]) for c in COHORTS), row["MACRO"])
         near(row["MACRO"], EXPECTED[row["method"]], 2e-8)
-    folds = rows("result/ficpf-six-method-curve-comparison/fold_curve_metrics.csv")
-    dataset_metrics = rows("result/ficpf-six-method-curve-comparison/dataset_curve_metrics.csv")
-    macro_metrics = rows("result/ficpf-six-method-curve-comparison/macro_curve_metrics.csv")
+    folds = rows("result/qaclf-six-method-curve-comparison/fold_curve_metrics.csv")
+    dataset_metrics = rows("result/qaclf-six-method-curve-comparison/dataset_curve_metrics.csv")
+    macro_metrics = rows("result/qaclf-six-method-curve-comparison/macro_curve_metrics.csv")
     assert len(folds) == 150 and len(dataset_metrics) == 30 and len(macro_metrics) == 6
     metrics = ["c_index", "ibs", "mae_hinge", "km_calibration"]
     for row in dataset_metrics:
@@ -50,11 +50,11 @@ def verify(recompute=False):
             near(statistics.fmean(float(x[metric]) for x in part), row[metric])
         near(row["c_index"], EXPECTED[row["method"]], 2e-8)
         assert sum(int(x["d_calibration_not_rejected"]) for x in part) == int(row["d_calibration_not_rejected"])
-    audit = json.loads((ROOT / "result/ficpf-six-method-curve-comparison/curve_audit.json").read_text())
+    audit = json.loads((ROOT / "result/qaclf-six-method-curve-comparison/curve_audit.json").read_text())
     assert audit["complete"] and audit["fold_metric_rows"] == 150
     verified = 0
     for entry in audit["folds"]:
-        if entry["method"] in {"Matched VLSA", "FICPF"}:
+        if entry["method"] in {"Matched VLSA", "QACLF"}:
             continue
         model = entry["method"].removesuffix("-CONCH")
         run = ROOT / "result/retained-mil-inputs" / model.lower() / f"{entry['dataset']}-{model}-CONCH-fold_{entry['fold']}"
@@ -62,9 +62,9 @@ def verify(recompute=False):
             assert hashlib.sha256((run / name).read_bytes()).hexdigest() == entry[key], (run, name)
         verified += 1
     assert verified == 100
-    stats = rows("result/ficpf-dataset-resource-audit/dataset_statistics.csv")
-    patients = rows("result/ficpf-dataset-resource-audit/patient_pathology_counts.csv")
-    slides = rows("result/ficpf-dataset-resource-audit/slide_patch_counts.csv")
+    stats = rows("result/qaclf-dataset-resource-audit/dataset_statistics.csv")
+    patients = rows("result/qaclf-dataset-resource-audit/patient_pathology_counts.csv")
+    slides = rows("result/qaclf-dataset-resource-audit/slide_patch_counts.csv")
     assert len(patients) == 2831 and len(slides) == 3529
     assert len({(x["dataset"], x["patient_id"]) for x in patients}) == 2831
     assert sum(int(x["patches"]) for x in slides) == 15615143
@@ -80,7 +80,7 @@ def verify(recompute=False):
         near(max(counts), row["patches_per_patient_max"])
         near(sum(counts), row["patches_total"])
         near(sum(int(x["slides"]) for x in pp), row["slides"])
-    bench = json.loads((ROOT / "result/ficpf-dataset-resource-audit/pathology_benchmark.json").read_text())
+    bench = json.loads((ROOT / "result/qaclf-dataset-resource-audit/pathology_benchmark.json").read_text())
     assert bench["trainable_pathology_parameters"] == 284161 and bench["incremental_cox_parameters"] == 65
     assert bench["reproduced_curve_max_absolute_error"] < 2e-5 and bench["repeats"] == 100
     recomputed = 0
@@ -88,9 +88,9 @@ def verify(recompute=False):
         sys.path.insert(0, str(ROOT))
         from compare_paired_survival_predictions import c_index
         import numpy as np
-        sources = ["result/ficpf-six-method-comparison/mil_patient_predictions.csv",
-                   "result/ficpf-seven-method-comparison/ilra_patient_predictions.csv",
-                   "result/ficpf-eight-method-comparison/dsmil_patient_predictions.csv"]
+        sources = ["result/qaclf-six-method-comparison/mil_patient_predictions.csv",
+                   "result/qaclf-seven-method-comparison/ilra_patient_predictions.csv",
+                   "result/qaclf-eight-method-comparison/dsmil_patient_predictions.csv"]
         raw = [x for path in sources for x in rows(path)]
         for row in raw:
             row["canonical"] = row["model"].removesuffix("-CONCH")

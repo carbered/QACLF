@@ -2,7 +2,7 @@
 
 ## Current QACLF release
 
-The method is now named QACLF (formerly FICPF); historical data paths are retained.
+The method and distributed paths use the QACLF name.
 Current summaries and 225 compact probability-curve inputs are under
 `result/qaclf-nested-v1-unified-evaluation-20261027/`. The NPZ inputs contain
 deidentified patient IDs, finite time coordinates, survival probabilities and,
@@ -68,23 +68,23 @@ with the exact archived label-conversion source used to interpret those runs.
 Configs retain original machine paths for provenance; verification uses the
 bundled patient tables and splits instead. No checkpoint weights are included.
 
-`result/ficpf-dataset-resource-audit/` contains per-slide and per-patient patch
+`result/qaclf-dataset-resource-audit/` contains per-slide and per-patient patch
 counts, cohort statistics and the representative resource benchmark. Statistics
 can be re-audited in a full workspace with the omitted patch features:
 
 ```bash
-python tools/audit_ficpf_dataset_resources.py --features-root /path/to/datasets \
+python tools/audit_qaclf_dataset_resources.py --features-root /path/to/datasets \
   --config-root result/retained-mil-inputs/dsmil \
   --output-dir result/reproduced_dataset_statistics
 ```
 
-`tools/benchmark_ficpf_pathology_resources.py` requires the upstream VLSA model
+`tools/benchmark_qaclf_pathology_resources.py` requires the upstream VLSA model
 code/environment, a retained BLCA fold-0 checkpoint, CONCH weights, patch
 features and the omics table. It does not run in this lightweight analysis-only
 repository by itself. Its CLI accepts `--baseline-dir`, `--weights-root`,
 `--features-root` and `--output`; input files are not downloaded by the script.
 
-`figures/ficpf_20260821/real_tcga_inputs/TCGA-3C-AALI/` contains only the small
+`figures/qaclf_20260821/real_tcga_inputs/TCGA-3C-AALI/` contains only the small
 deidentified TCGA example overview, three example regions, omics heatmap and
 provenance needed to regenerate the method schematic, not the raw WSI. These
 source examples are not quantitative experimental evidence for the plotted

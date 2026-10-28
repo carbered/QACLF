@@ -1,8 +1,0 @@
-{
-  "source": "E:\\VLSA-main\\result\\ficpf-omics-robustness-20260821\\fold_complexity.csv",
-  "incremental_gpu_training_required": false,
-  "incremental_deep_trainable_parameters": 0,
-  "cox_parameters_per_fold": 65,
-  "timing_scope": "CPU StandardScaler, randomized PCA64, Cox fitting, and locked PCA-Cox/ECDF/fusion inference; VLSA pathology inference is excluded.",
-  "minimal_state_scope": "Scaler mean/scale, PCA mean/components, Cox weight/bias, and the training-fold sorted Cox predictions required by ECDF calibration."
-}

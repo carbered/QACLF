@@ -1,9 +1,0 @@
-{
-  "source_data": "E:\\VLSA-main\\result\\ficpf-eight-method-comparison\\eight_method_dataset_summary.csv",
-  "paired_intervals": "E:\\VLSA-main\\result\\external_multimodal_comparison_20260821\\unified\\paired_bootstrap_unified.csv",
-  "claim": "Retained comparisons describe current adaptations; paired primary inference concerns FICPF versus matched VLSA.",
-  "archetype": "quantitative grid",
-  "training_protocol_note": "MCAT/CAT use cohort-wide discretization; not fully train-only controls.",
-  "statistics": "Five-fold population SD remains in manuscript table. Plot A shows means, plot B paired patient bootstrap 95% intervals.",
-  "data_integrity": "All 8 methods and all five cohorts plus macro means retained; no generated observations."
-}

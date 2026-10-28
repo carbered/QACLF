@@ -21,9 +21,9 @@ from dataset.label_converter import MetaSurvData
 from eval.SurvivalEVAL.Evaluations.Concordance import concordance
 from eval.SurvivalEVAL.Evaluations.util import predict_mean_survival_time
 
-ARCHIVE = ROOT / "downloads/FICPF_ILRA_results.tar.gz"
-EXTRACT = ROOT / "downloads/FICPF_ILRA_results_no_weights"
-OUT = ROOT / "result/ficpf-seven-method-comparison"
+ARCHIVE = ROOT / "downloads/QACLF_ILRA_results.tar.gz"
+EXTRACT = ROOT / "downloads/QACLF_ILRA_results_no_weights"
+OUT = ROOT / "result/qaclf-seven-method-comparison"
 COHORTS = ["blca", "brca", "gbmlgg", "luad", "ucec"]
 EXPECTED_SHA = "a621c06dde207c9794eed548f472503d4bac0d77a961394ba7561cc5d7a3b6e2"
 
@@ -148,7 +148,7 @@ def main():
     folds.to_csv(OUT / "ilra_fold_metrics.csv", index=False)
     summary.to_csv(OUT / "ilra_dataset_summary.csv", index=False)
     pd.DataFrame(patients).to_csv(OUT / "ilra_patient_predictions.csv", index=False)
-    six = pd.read_csv(ROOT / "result/ficpf-six-method-comparison/six_method_dataset_summary.csv")
+    six = pd.read_csv(ROOT / "result/qaclf-six-method-comparison/six_method_dataset_summary.csv")
     row = {"method": "ILRA-CONCH", "modality": "pathology"}
     for cohort in COHORTS:
         result = summary[summary.dataset == cohort.upper()].iloc[0]

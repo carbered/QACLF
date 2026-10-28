@@ -1,0 +1,57 @@
+{
+  "metric_contract": "SurvivalEVAL_mean_continuous_comparable_all_ties",
+  "locked_primary": {
+    "alpha": 0.2,
+    "pca_components": 64
+  },
+  "alpha_sensitivity": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.5
+  ],
+  "sensitivity_for_reporting_only": true,
+  "test_labels_used_for_parameter_selection": false,
+  "shuffle_control_uses_labels_for_permutation": false,
+  "recomputed_locked_prediction_max_abs_delta": 3.3306690738754696e-16,
+  "recomputed_locked_c_index_max_abs_delta": 0.0,
+  "pathology_ecdf_c_index_max_abs_delta": 0.002042205582028611,
+  "omics_ecdf_c_index_max_abs_delta": 0.0020680147058823595,
+  "ecdf_monotonic_no_inversions": true,
+  "all_patient_sets_equal": true,
+  "all_labels_equal": true,
+  "datasets": {
+    "blca": {
+      "qaclf_source": "E:\\VLSA-main\\result\\blca-frozen-pathomic-fusion-cloud-baseline-outer5-20260820\\patient_predictions.csv",
+      "split_source": "E:\\VLSA-main\\result\\external_multimodal_comparison_20260821\\raw\\results-conch\\5foldcv\\MCAT_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_mcat_CONCH512\\tcga_blca_MCAT_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_s1",
+      "patients": 373,
+      "events": 169
+    },
+    "brca": {
+      "qaclf_source": "E:\\VLSA-main\\result\\brca-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
+      "split_source": "E:\\VLSA-main\\result\\external_multimodal_comparison_20260821\\raw\\results-conch\\5foldcv\\MCAT_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_mcat_CONCH512\\tcga_brca_MCAT_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_s1",
+      "patients": 956,
+      "events": 130
+    },
+    "gbmlgg": {
+      "qaclf_source": "E:\\VLSA-main\\result\\gbmlgg-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
+      "split_source": "E:\\VLSA-main\\result\\external_multimodal_comparison_20260821\\raw\\results-conch\\5foldcv\\MCAT_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_mcat_CONCH512\\tcga_gbmlgg_MCAT_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_s1",
+      "patients": 569,
+      "events": 187
+    },
+    "luad": {
+      "qaclf_source": "E:\\VLSA-main\\result\\luad-frozen-pathomic-fusion-cloud-baseline-outer5-20260820\\patient_predictions.csv",
+      "split_source": "E:\\VLSA-main\\result\\external_multimodal_comparison_20260821\\raw\\results-conch\\5foldcv\\MCAT_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_mcat_CONCH512\\tcga_luad_MCAT_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_s1",
+      "patients": 453,
+      "events": 158
+    },
+    "ucec": {
+      "qaclf_source": "E:\\VLSA-main\\result\\ucec-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
+      "split_source": "E:\\VLSA-main\\result\\external_multimodal_comparison_20260821\\raw\\results-conch\\5foldcv\\MCAT_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_mcat_CONCH512\\tcga_ucec_MCAT_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_s1",
+      "patients": 480,
+      "events": 75
+    }
+  },
+  "locked_macro_c_index": 0.7050168897889689
+}

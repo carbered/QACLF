@@ -24,7 +24,7 @@ COLORS={"VLSA":"#8A8F98","QACLF":"#D55E00","VLSA same projection":"#007D7A"}
 fold=pd.read_csv(DATA/"all_fold_metrics.csv")
 cohort=pd.read_csv(DATA/"dataset_metrics.csv")
 macro=pd.read_csv(DATA/"macro_metrics.csv").set_index("method")
-old=pd.read_csv(ROOT/"result/ficpf-eight-method-comparison/eight_method_dataset_summary.csv")
+old=pd.read_csv(ROOT/"result/qaclf-eight-method-comparison/eight_method_dataset_summary.csv")
 for method,key in [("MCAT","MCAT-CONCH"),("CAT-with-TPL","CAT-TPL-CONCH")]:
     f=fold[fold.method.eq(method)]
     for d in ORDER:

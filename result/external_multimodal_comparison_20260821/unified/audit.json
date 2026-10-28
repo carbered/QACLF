@@ -51,7 +51,7 @@
           "cat_prediction": "E:\\VLSA-main\\result\\external_multimodal_comparison_20260821\\raw\\results-conch\\5foldcv\\MCAT_Clip_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_mcat_clip_CONCH512\\tcga_blca_MCAT_Clip_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_s1\\split_latest_val_4_results.pkl"
         }
       ],
-      "ficpf_source": "E:\\VLSA-main\\result\\blca-frozen-pathomic-fusion-cloud-baseline-outer5-20260820\\patient_predictions.csv",
+      "qaclf_source": "E:\\VLSA-main\\result\\blca-frozen-pathomic-fusion-cloud-baseline-outer5-20260820\\patient_predictions.csv",
       "external_author_vs_unified_max_abs_delta": 9.019562226353361e-05
     },
     "brca": {
@@ -102,7 +102,7 @@
           "cat_prediction": "E:\\VLSA-main\\result\\external_multimodal_comparison_20260821\\raw\\results-conch\\5foldcv\\MCAT_Clip_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_mcat_clip_CONCH512\\tcga_brca_MCAT_Clip_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_s1\\split_latest_val_4_results.pkl"
         }
       ],
-      "ficpf_source": "E:\\VLSA-main\\result\\brca-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
+      "qaclf_source": "E:\\VLSA-main\\result\\brca-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
       "external_author_vs_unified_max_abs_delta": 0.0003126995022824097
     },
     "gbmlgg": {
@@ -153,7 +153,7 @@
           "cat_prediction": "E:\\VLSA-main\\result\\external_multimodal_comparison_20260821\\raw\\results-conch\\5foldcv\\MCAT_Clip_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_mcat_clip_CONCH512\\tcga_gbmlgg_MCAT_Clip_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_s1\\split_latest_val_4_results.pkl"
         }
       ],
-      "ficpf_source": "E:\\VLSA-main\\result\\gbmlgg-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
+      "qaclf_source": "E:\\VLSA-main\\result\\gbmlgg-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
       "external_author_vs_unified_max_abs_delta": 0.0005712747806304597
     },
     "luad": {
@@ -204,7 +204,7 @@
           "cat_prediction": "E:\\VLSA-main\\result\\external_multimodal_comparison_20260821\\raw\\results-conch\\5foldcv\\MCAT_Clip_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_mcat_clip_CONCH512\\tcga_luad_MCAT_Clip_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_s1\\split_latest_val_4_results.pkl"
         }
       ],
-      "ficpf_source": "E:\\VLSA-main\\result\\luad-frozen-pathomic-fusion-cloud-baseline-outer5-20260820\\patient_predictions.csv",
+      "qaclf_source": "E:\\VLSA-main\\result\\luad-frozen-pathomic-fusion-cloud-baseline-outer5-20260820\\patient_predictions.csv",
       "external_author_vs_unified_max_abs_delta": 0.00018930564385111204
     },
     "ucec": {
@@ -255,7 +255,7 @@
           "cat_prediction": "E:\\VLSA-main\\result\\external_multimodal_comparison_20260821\\raw\\results-conch\\5foldcv\\MCAT_Clip_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_mcat_clip_CONCH512\\tcga_ucec_MCAT_Clip_nll_surv_a0.0_lr1e-04_5foldcv_gc16_concat_s1\\split_latest_val_4_results.pkl"
         }
       ],
-      "ficpf_source": "E:\\VLSA-main\\result\\ucec-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
+      "qaclf_source": "E:\\VLSA-main\\result\\ucec-frozen-pathomic-fusion-outer5-20260820\\patient_predictions.csv",
       "external_author_vs_unified_max_abs_delta": 0.00025144792636255797
     }
   },

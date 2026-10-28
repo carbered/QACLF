@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Re-evaluate MCAT, CAT-TPL, matched VLSA, and FICPF under one C-index contract."""
+"""Re-evaluate MCAT, CAT-TPL, matched VLSA, and QACLF under one C-index contract."""
 
 import argparse
 import json
@@ -21,21 +21,21 @@ PAPER_VLSA = {
     "luad": 0.6370,
     "ucec": 0.7571,
 }
-FICPF_DIRS = {
+QACLF_DIRS = {
     "blca": "blca-frozen-pathomic-fusion-cloud-baseline-outer5-20260820",
     "brca": "brca-frozen-pathomic-fusion-outer5-20260820",
     "gbmlgg": "gbmlgg-frozen-pathomic-fusion-outer5-20260820",
     "luad": "luad-frozen-pathomic-fusion-cloud-baseline-outer5-20260820",
     "ucec": "ucec-frozen-pathomic-fusion-outer5-20260820",
 }
-METHODS = ("matched_vlsa", "mcat_conch", "cat_tpl_conch", "ficpf")
+METHODS = ("matched_vlsa", "mcat_conch", "cat_tpl_conch", "qaclf")
 COMPARISONS = (
     ("mcat_vs_matched", "mcat_conch", "matched_vlsa"),
     ("cat_vs_matched", "cat_tpl_conch", "matched_vlsa"),
     ("cat_vs_mcat", "cat_tpl_conch", "mcat_conch"),
-    ("ficpf_vs_matched", "ficpf", "matched_vlsa"),
-    ("ficpf_vs_mcat", "ficpf", "mcat_conch"),
-    ("ficpf_vs_cat", "ficpf", "cat_tpl_conch"),
+    ("qaclf_vs_matched", "qaclf", "matched_vlsa"),
+    ("qaclf_vs_mcat", "qaclf", "mcat_conch"),
+    ("qaclf_vs_cat", "qaclf", "cat_tpl_conch"),
 )
 METRIC_CONTRACT = "SurvivalEVAL_mean_continuous_comparable_all_ties"
 
@@ -170,8 +170,8 @@ def main():
     }
 
     for cohort_index, cohort in enumerate(COHORTS):
-        ficpf_path = ROOT / "result" / FICPF_DIRS[cohort] / "patient_predictions.csv"
-        ficpf = pd.read_csv(ficpf_path, dtype={"patient_id": str})
+        qaclf_path = ROOT / "result" / QACLF_DIRS[cohort] / "patient_predictions.csv"
+        qaclf = pd.read_csv(qaclf_path, dtype={"patient_id": str})
         mcat_dir = find_external_run(raw_root, cohort, "mcat_conch")
         cat_dir = find_external_run(raw_root, cohort, "cat_tpl_conch")
         table = pd.read_csv(
@@ -181,9 +181,9 @@ def main():
 
         dataset_folds = []
         author_metric_max_delta = 0.0
-        cohort_audit = {"folds": [], "ficpf_source": str(ficpf_path)}
+        cohort_audit = {"folds": [], "qaclf_source": str(qaclf_path)}
         for fold in range(5):
-            target = ficpf[ficpf["fold"] == fold].copy().set_index("patient_id")
+            target = qaclf[qaclf["fold"] == fold].copy().set_index("patient_id")
             mcat, mcat_path = load_external_fold(mcat_dir, fold)
             cat, cat_path = load_external_fold(cat_dir, fold)
             patient_sets_equal = set(target.index) == set(mcat.index) == set(cat.index)
@@ -218,7 +218,7 @@ def main():
                 "matched_vlsa": target["pathology_predicted_time"].to_numpy(dtype=float),
                 "mcat_conch": mcat["predicted_time"].to_numpy(dtype=float),
                 "cat_tpl_conch": cat["predicted_time"].to_numpy(dtype=float),
-                "ficpf": target["fused_predicted_time"].to_numpy(dtype=float),
+                "qaclf": target["fused_predicted_time"].to_numpy(dtype=float),
             }
             scores = {
                 method: score(
@@ -234,9 +234,9 @@ def main():
                     "n": len(patient_ids),
                     "events": int(record["event"].sum()),
                     **{f"{method}_c_index": scores[method] for method in METHODS},
-                    "ficpf_vs_matched": scores["ficpf"] - scores["matched_vlsa"],
-                    "ficpf_vs_mcat": scores["ficpf"] - scores["mcat_conch"],
-                    "ficpf_vs_cat": scores["ficpf"] - scores["cat_tpl_conch"],
+                    "qaclf_vs_matched": scores["qaclf"] - scores["matched_vlsa"],
+                    "qaclf_vs_mcat": scores["qaclf"] - scores["mcat_conch"],
+                    "qaclf_vs_cat": scores["qaclf"] - scores["cat_tpl_conch"],
                 }
             )
             for idx, patient_id in enumerate(patient_ids):
@@ -284,9 +284,9 @@ def main():
             row[f"{method}_std"] = float(values.std(ddof=0))
         row.update(
             {
-                "ficpf_vs_matched": row["ficpf"] - row["matched_vlsa"],
-                "ficpf_vs_mcat": row["ficpf"] - row["mcat_conch"],
-                "ficpf_vs_cat": row["ficpf"] - row["cat_tpl_conch"],
+                "qaclf_vs_matched": row["qaclf"] - row["matched_vlsa"],
+                "qaclf_vs_mcat": row["qaclf"] - row["mcat_conch"],
+                "qaclf_vs_cat": row["qaclf"] - row["cat_tpl_conch"],
             }
         )
         dataset_rows.append(row)
@@ -327,9 +327,9 @@ def main():
         macro[f"{method}_std"] = float(dataset_summary[method].std(ddof=0))
     macro.update(
         {
-            "ficpf_vs_matched": macro["ficpf"] - macro["matched_vlsa"],
-            "ficpf_vs_mcat": macro["ficpf"] - macro["mcat_conch"],
-            "ficpf_vs_cat": macro["ficpf"] - macro["cat_tpl_conch"],
+            "qaclf_vs_matched": macro["qaclf"] - macro["matched_vlsa"],
+            "qaclf_vs_mcat": macro["qaclf"] - macro["mcat_conch"],
+            "qaclf_vs_cat": macro["qaclf"] - macro["cat_tpl_conch"],
         }
     )
     dataset_summary = pd.concat([dataset_summary, pd.DataFrame([macro])], ignore_index=True)
@@ -370,13 +370,13 @@ def main():
     print("===== Unified five-dataset comparison =====")
     print(
         dataset_summary[
-            ["dataset", "paper_vlsa", "matched_vlsa", "mcat_conch", "cat_tpl_conch", "ficpf"]
+            ["dataset", "paper_vlsa", "matched_vlsa", "mcat_conch", "cat_tpl_conch", "qaclf"]
         ].to_string(index=False, float_format=lambda value: f"{value:.6f}")
     )
-    print("===== FICPF paired bootstrap =====")
+    print("===== QACLF paired bootstrap =====")
     print(
         bootstrap_summary[
-            bootstrap_summary["comparison"].str.startswith("ficpf_vs_")
+            bootstrap_summary["comparison"].str.startswith("qaclf_vs_")
         ].to_string(index=False, float_format=lambda value: f"{value:.6f}")
     )
     print(f"output_dir={output_dir}")

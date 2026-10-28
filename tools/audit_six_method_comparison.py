@@ -22,9 +22,9 @@ from eval.SurvivalEVAL.Evaluations.Concordance import concordance
 from eval.SurvivalEVAL.Evaluations.util import predict_mean_survival_time
 
 MIL = ROOT / "downloads/matched_mil_backbones_complete_20260903/result/matched-mil-backbones"
-OUT = ROOT / "result/ficpf-six-method-comparison"
+OUT = ROOT / "result/qaclf-six-method-comparison"
 COHORTS = ["blca","brca","gbmlgg","luad","ucec"]
-FICPF = {
+QACLF = {
     "blca":"blca-frozen-pathomic-fusion-cloud-baseline-outer5-20260820",
     "brca":"brca-frozen-pathomic-fusion-outer5-20260820",
     "gbmlgg":"gbmlgg-frozen-pathomic-fusion-outer5-20260820",
@@ -123,7 +123,7 @@ def main():
     table_rows=[]
     methods=[("ABMIL-CONCH","pathology","ABMIL"),("TransMIL-CONCH","pathology","TransMIL"),
              ("Matched VLSA","pathology","matched_vlsa"),("MCAT-CONCH","multimodal","mcat_conch"),
-             ("CAT-TPL-CONCH","multimodal","cat_tpl_conch"),("FICPF","multimodal","ficpf")]
+             ("CAT-TPL-CONCH","multimodal","cat_tpl_conch"),("QACLF","multimodal","qaclf")]
     for name,modality,key in methods:
         row={"method":name,"modality":modality}
         means=[]

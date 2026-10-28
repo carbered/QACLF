@@ -18,7 +18,7 @@ EXPECTED = {'ABMIL': .6215081008075491, 'TransMIL': .6447394828654323,
 KEYS = ['c_index', 'ibs_12_60', 'brier_12', 'brier_36', 'brier_60']
 LABELS = {'ABMIL-CONCH': 'ABMIL', 'TransMIL-CONCH': 'TransMIL', 'ILRA-CONCH': 'ILRA',
           'DSMIL-CONCH': 'DSMIL', 'Matched VLSA': 'VLSA', 'MCAT-CONCH': 'MCAT',
-          'CAT-TPL-CONCH': 'CAT-with-TPL', 'FICPF': 'QACLF'}
+          'CAT-TPL-CONCH': 'CAT-with-TPL', 'QACLF': 'QACLF'}
 
 
 def rows(path):
