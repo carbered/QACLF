@@ -4,11 +4,17 @@
   "locked_macro_c_index": 0.7050168897889689,
   "locked_alpha": 0.2,
   "locked_pca_components": 64,
-  "cohorts": ["blca", "brca", "gbmlgg", "luad", "ucec"],
-  "scope": "GitHub-size FICPF analysis package from frozen pathology predictions",
+  "cohorts": [
+    "blca",
+    "brca",
+    "gbmlgg",
+    "luad",
+    "ucec"
+  ],
+  "scope": "QACLF analysis package; historical FICPF paths retained",
   "package_limit_mib": 50,
   "individual_file_limit_mib": 25,
-  "latest_content_update": "2026-10-20",
+  "latest_content_update": "2026-10-28",
   "current_chinese_word_manuscript_included": false,
   "large_omics_tables_bundled": false,
   "upstream_not_bundled": [
@@ -17,5 +23,8 @@
     "WSI patch features",
     "VLSA checkpoints and full historical runs",
     "preprocessed RNA-seq/CNV tables"
-  ]
+  ],
+  "current_model": "QACLF",
+  "former_model_name": "FICPF",
+  "current_results": "result/qaclf-nested-v1-unified-evaluation-20261027"
 }

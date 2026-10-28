@@ -20,6 +20,8 @@ logs/
 *.pth
 *.pt
 *.ckpt
+*.docx
+*.doc
 
 # Large omics inputs are documented in DATA.md and kept outside Git.
 external/CAT-with-TPL-master/dataset_csv/tcga_*_all_clean.csv.zip

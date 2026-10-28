@@ -1,81 +1,67 @@
-# FICPF GitHub 精简发布版
+# QACLF
 
-FICPF（Frozen Inductively Calibrated Pathomic Fusion）是一种面向病理-组学生存分析的冻结式归纳校准融合方法。方法采用基于 CONCH 图像块特征的 VLSA 病理预测，在每个外层训练折内拟合 RNA-seq/CNV PCA-Cox 分支；随后将两种预测映射到训练折经验分位数空间，并按固定的病理/组学权重 `0.80/0.20` 融合。
+QACLF（Quantile-Aligned Conservative Late Fusion，分位数对齐保守晚期融合）原名
+FICPF。方法复用冻结的 VLSA 病理分支，在外层训练折内拟合 PCA-Cox 组学分支，
+通过训练折 ECDF 对齐得分尺度，再按病理/组学权重 0.80/0.20 融合。组学缺失时
+回退到病理分位数；生存曲线由训练折 Cox-Breslow 映射得到，尺度对齐不等于概率校准。
 
-![FICPF 方法图](figures/ficpf_model_names/FICPF_method_overview.png)
+![QACLF 方法图](figures/qaclf_current/QACLF_method_overview.png)
 
-## 锁定结果
+仓库地址暂保留 `https://github.com/carbered/FICPF`，避免旧链接失效。历史文件名和
+原始结果键保留 `ficpf/FICPF`，用于追溯，不表示两个不同模型。当前中文 Word 初稿不上传。
 
-- VLSA 五队列宏平均 C-index：`0.695782`。
-- FICPF 五队列宏平均 C-index：`0.705017`。
-- 配对宏平均增益：`+0.009235`，95% bootstrap CI 为 `[0.0016, 0.0169]`。
-- 数据集：BLCA、BRCA、GBMLGG、LUAD、UCEC，均采用患者级 outer 5-fold。
-- VLSA 病理主干使用 `42、3404、3405` 三个完整训练种子进行稳定性分析，15 个“种子 × 队列”点估计全部正向。
+## 当前结果
 
-正式主结果仍是锁定的 seed 42 结果，多种子实验只用于稳定性验证，不反向替换主表。
+五个 TCGA 队列共享固定患者级外层五折划分，八种模型使用 CONCH 病理输入。
 
-## 本次更新
+| 方法 | 宏平均 C-index | 宏平均 IBS，12–60个月 |
+|---|---:|---:|
+| ABMIL | 0.6215 | 0.1670 |
+| TransMIL | 0.6447 | 0.1839 |
+| ILRA | 0.6364 | 0.2061 |
+| DSMIL | 0.6591 | 0.1698 |
+| VLSA | 0.6958 | 0.1797 |
+| MCAT | 0.6793 | 0.1641 |
+| CAT-with-TPL | 0.6697 | 0.1659 |
+| QACLF | 0.7050 | 0.1545 |
+| VLSA＋同曲线映射（对照） | 0.6959 | 0.1572 |
 
-- 比较方法补齐为 ABMIL、TransMIL、ILRA、DSMIL、VLSA、MCAT、CAT-with-TPL 和 FICPF，共八种。原始实验编号保留，图表展示名称不再添加 `-CONCH`。
-- 补入 ILRA、DSMIL 的 25 折结果、逐患者预测及审计记录；未完成五队列评估的 MOTCat 不进入主比较。
-- 补入六种方法的生存曲线指标及 100 份 MIL 测试曲线。FICPF 相对 VLSA 的 IBS 和 KM 校准误差下降，但 hinge MAE 增加；D-calibration 折数不是合并样本的整体检验。
-- 补入实际纳入患者对应的切片和图像块统计，共 2,831 名患者、3,529 张切片、15,615,143 个图像块。
-- 补入固定输入的参数与计算开销记录。含曲线输出和均值生存时间积分的中位耗时为 VLSA 25.61 ms、FICPF 62.17 ms，不代表全队列平均或纯网络前向耗时，不据此声称 FICPF 推理更快。
-- 更新彩色方法主图、八方法比较图和曲线指标图。中文 Word 初稿暂不公开，也不在仓库另建新的论文附件。
+同曲线映射对照不是第九种模型架构。IBS 改善很大一部分来自曲线重建，不能全部归因于组学融合。
+QACLF 的锁定主结果未改动，配对宏平均增益为 0.0092，95% bootstrap CI 为 0.0016–0.0169。
 
-MCAT 与 CAT-with-TPL 的保留适配实验使用全队列事件时间分箱，与训练折内分箱的病理对照不同，比较图中的星号保留这一说明。
+- [当前队列级比较](result/qaclf-nested-v1-unified-evaluation-20261027/updated_eight_method_dataset_summary.csv)
+- [当前宏平均曲线指标](result/qaclf-nested-v1-unified-evaluation-20261027/macro_metrics.csv)
+- [225条逐折评价](result/qaclf-nested-v1-unified-evaluation-20261027/all_fold_metrics.csv)
+- [当前八方法图](figures/qaclf_current/QACLF_eight_method_comparison.pdf)
+- [共同窗口概率评价图](figures/qaclf_current/QACLF_unified_probability.pdf)
 
-详细结果见 [八方法性能汇总](result/ficpf-eight-method-comparison/eight_method_dataset_summary.csv)、[六方法曲线指标](result/ficpf-six-method-curve-comparison/macro_curve_metrics.csv) 和 [数据集统计](result/ficpf-dataset-resource-audit/dataset_statistics.csv)。
+## 本次更新及边界
 
-## 发布范围
+- MCAT/CAT-with-TPL 改用已完成的50折 nested-v1 重跑结果：拟合患者内标准化与分箱，
+  内层验证 NLL 选轮、全部外层训练患者重新拟合，外层测试只评价一次。
+- 八种模型及同映射对照统一在12–60个月、97个时点评价概率误差，删失权重仅用外层训练患者估计。
+- D-calibration 在60个月行政删失后计算，不拒绝折数仅作描述，不能解释为整体校准通过。
+- 全时间均值 hinge MAE 仅保留作诊断，不声称已解决曲线尾部外推问题。
+- 方案调整属于事后补充，复用了原有外层划分，不构成独立外部验证。
+- 历史 MCAT/CAT 结果、旧窗口指标及 `docs/FICPF*` 草稿保留，但不是当前稿件，不能混用。
+- 固定输入推理计时仍为 VLSA 25.61 ms、QACLF 62.17 ms，不声称 QACLF 推理更快。
 
-该目录是面向 GitHub 的白名单精简包。它保留：
+## 安装与校验
 
-- FICPF 全部分析和制图代码；
-- 固定数据划分、生存表和逐患者锁定预测；
-- 主结果、消融、敏感性、鲁棒性和多种子统计结果；
-- 已公开的历史草稿、参考文献和正式图件；历史草稿不代表当前中文稿；
-- 环境信息与逐文件 SHA256 清单。
-
-它不包含原始 WSI、CONCH 权重、patch 特征、VLSA checkpoint、大型组学表、W&B、日志、缓存和失败实验。大型组学表的文件名、放置位置和 SHA256 见 [DATA.md](DATA.md)。
-
-当前预算为公开文件合计不超过 50 MiB、单个文件小于 25 MiB，Git 内部文件不计入。方法图所需的少量 TCGA 示例缩略图和区域图属于图件素材，不是原始全分辨率 WSI。
-
-## 安装
+分析包建议 Python 3.10+；云端训练包单独保留原 Python 3.8 协议。
 
 ```bash
-python -m venv .venv
-# Linux/macOS: source .venv/bin/activate
-# Windows: .venv\Scripts\activate
 python -m pip install -r requirements.txt
+python tools/verify_qaclf_release.py
+python tools/verify_qaclf_results.py --recompute-c-index --recompute-probability
 ```
 
-## 无大数据校验
+第一条校验命令检查文件 SHA256、结果汇总、选轮记录和225份曲线输入。
+后一条进一步复算当前概率指标、50折多模态原生 C-index 与100折历史 MIL C-index。
+这些校验不训练模型，也不需要大型组学表、WSI、patch 特征或模型权重。
 
-```bash
-python tools/verify_ficpf_release.py
-```
+原始数据及完整重训仍需按 [DATA.md](DATA.md) 补齐上游输入。
+当前包包含固定患者划分、生存标签、预测曲线、结果和制图代码，不包含权重、原始切片、
+大型组学表、训练日志和当前中文 Word 稿。历史文件保持原始结果身份，不做全局替换改名。
 
-该命令不需要被省略的组学表，会检查文件清单、包体积、主结果、多种子结果和禁止混入的训练产物。
-
-新增结果的详细校验（不训练模型）：
-
-```bash
-python tools/verify_current_results.py --recompute-c-index
-```
-
-重新计算六方法曲线指标：
-
-```bash
-python tools/evaluate_additional_baseline_curves.py --output-dir result/reproduced_curve_comparison
-```
-
-该命令读取仓库内保留的测试曲线、配置、固定划分及训练折时间网格，不需要大型组学表。曲线逐患者积分耗时较长，可先用 `--datasets blca --folds 0` 检查单折。复算输出使用独立目录，不覆盖锁定结果。
-
-## 复算边界
-
-1. 使用 `result/` 中锁定逐患者预测进行汇总复核和制图，可直接运行。
-2. 完整组件消融、外部基线统一比较、重新拟合 PCA-Cox 或组学损坏实验，需要按 [DATA.md](DATA.md) 补齐组学表。
-3. 从原始 WSI 重训 VLSA 还需要上游 VLSA 代码、CONCH 权重和 patch 特征，不属于本精简分析仓库。
-
-完整英文说明见 [README.md](README.md)，许可证和第三方边界见 [NOTICE.md](NOTICE.md)。
+详细边界见 [当前结果说明](docs/CURRENT_RESULTS.md)、[英文说明](README.md) 和 [NOTICE.md](NOTICE.md)。

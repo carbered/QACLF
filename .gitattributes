@@ -4,3 +4,5 @@
 # Preserve generated SVG paths and archived source/config bytes verbatim.
 *.svg -whitespace
 result/retained-mil-inputs/** -whitespace
+# Exact archived runtime bytes are part of the nested protocol hash contract.
+protocol/qaclf_nested_v1/** -whitespace

@@ -1,0 +1,30 @@
+{
+  "spec": {
+    "version": "qaclf-multimodal-nested-v1",
+    "seed": 1,
+    "inner_split_seed": 1729,
+    "inner_validation_fraction": 0.2,
+    "maximum_selection_epochs": 20,
+    "epoch_selection": "minimum inner-validation unweighted NLL; earliest exact tie",
+    "refit": "fresh initialization on all outer-training patients for selected epoch count",
+    "time_bins": "four event-quantile bins fitted on the current fitting patients only",
+    "first_boundary": 0.0,
+    "finite_end": "max observation time among current fitting patients + 1e-6",
+    "beyond_fit_end": "administrative censoring only for the encoded discrete NLL target",
+    "sampling": "uniform shuffled patients, no inverse-class resampling",
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "weight_decay": 1e-05,
+    "accumulation": 16,
+    "loss": "unchanged native hazard NLL, alpha=0",
+    "architecture": "unchanged CONCH-adapted native hazard models",
+    "primary_curve_metrics": "IPCW Brier at 12/36/60 months and IBS[12,60], 97 fixed grid points",
+    "native_ranking": "negative sum of four native survival outputs; canonical untruncated observations",
+    "continuous_curve": "S(0)=1 plus post-interval probabilities at finite right boundaries; linear interpolation",
+    "full_mean_mae": "diagnostic only, additional Mean/Linear tail convention, nonfinite values retained as flags",
+    "outer_test_selection": false,
+    "historical_results_replaced": false,
+    "limitation": "Post-hoc revised protocol; not a replication of VLSA Table 9 or an independent untouched test"
+  },
+  "runtime_contract_sha256": "bceba412caf6421a67c0f460eddb599ac40750aaca9bac15d032fde655272fd2"
+}

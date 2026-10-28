@@ -1,0 +1,877 @@
+[
+  {
+    "method": "ABMIL",
+    "dataset": "blca",
+    "fold": 0,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\blca-ABMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "e36789e7dc4350448498a9b1c0fc6f19db60251a29f6af5f0d2c63674b85864f"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "blca",
+    "fold": 0,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\blca-TransMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "bbed0ff4c8a3ec716123ad3728779554184114d30fdc381521d6a9e62c0be044"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "blca",
+    "fold": 0,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\blca-ILRA-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "cdd95645505f181d7b2ea6fdada5c08f31c87d0988fa801a019be7b803f8e836"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "blca",
+    "fold": 0,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\blca-DSMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "f28c6d2020de668a3ddcd1880612ca31bedd628102bdf8747ef9c4637853014b"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "blca",
+    "fold": 0,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\blca_vlsa_results\\blca-VLSA-CONCH-fold_0-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "3d37e052b8c44e21c74e232e68ad6d0df77f257f720c9c0f62d0345858338da0"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "blca",
+    "fold": 1,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\blca-ABMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "f8e90dd5cef8e577710433d4850802b11a07c3bffb4e3331fee20dec04c67994"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "blca",
+    "fold": 1,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\blca-TransMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "d9bd9a0d983ac971fa97ce32afa1171e5e8aab1eaf920020c7a5fd4d437a9509"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "blca",
+    "fold": 1,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\blca-ILRA-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "978373409de2aa7bb1a33bcaf91a9031e4c21fd38b4510942833bacdae84dd22"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "blca",
+    "fold": 1,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\blca-DSMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "6b73e3401bc44fa11a04606fdcf17247d8cac371b262b45bdb859b09b97cfb30"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "blca",
+    "fold": 1,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\blca_vlsa_results\\blca-VLSA-CONCH-fold_1-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "619c18327abd080c3b1ced6ab965f9349700aabbe9e69838a71275899989d7cc"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "blca",
+    "fold": 2,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\blca-ABMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "a662f399cd1dd304068282d8e872dee238c1731af1cf4eec41d178ffba729cd6"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "blca",
+    "fold": 2,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\blca-TransMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "c447b0762b01f88620d05efaee282f61a287d8e2ea4cb0f4d4114000ce5bbca6"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "blca",
+    "fold": 2,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\blca-ILRA-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "f9944601b2a288443e17072e64cbcb316a49d440417371243800a6a6c0e7425e"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "blca",
+    "fold": 2,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\blca-DSMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "cf5ff49221146cf025a55ea5a81381a44c67cf83290a07be4e8b990106ba15a8"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "blca",
+    "fold": 2,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\blca_vlsa_results\\blca-VLSA-CONCH-fold_2-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "ad4a1713eaad96d17a9a6dc2744a598361eec0fae9714e46c32f888465251deb"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "blca",
+    "fold": 3,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\blca-ABMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "6a493029681d53e6201cc7867ab04497d6fe53347b65703d5ca2032773b2bba3"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "blca",
+    "fold": 3,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\blca-TransMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "0ba00589239ce7ae4aaec13f508e429c678ea86f837447bdab36659c9f9fe226"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "blca",
+    "fold": 3,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\blca-ILRA-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "49cfb03402b8a9d8fe7e786845572e5dc55e78243af8b351983f9d5e544e0093"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "blca",
+    "fold": 3,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\blca-DSMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "d7aad83cbc42e25ad7be561760829115decbd1c3b34cff9058e5a1c283ee3c43"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "blca",
+    "fold": 3,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\blca_vlsa_results\\blca-VLSA-CONCH-fold_3-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "05c583512791dcf3feaee91c875f9f538ded82cf6427a74b752a51558c358f0f"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "blca",
+    "fold": 4,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\blca-ABMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "3bb3c7dbb9147ea527e29ccf56620d909489306bb442b54f60085f51825b9ad1"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "blca",
+    "fold": 4,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\blca-TransMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "3bbe9906e3bc2196e483a37766dbda9e5a16da16abad2a93e8a58c15f6e2ee50"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "blca",
+    "fold": 4,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\blca-ILRA-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "804ed8d74b19791c823232d406af9bcb57b91e5fd8a95a49c90b2c20eba12920"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "blca",
+    "fold": 4,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\blca-DSMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "072768a505b9bd63eee6a9d7031908c56b8e0240babd7605b2c87d6426c387c3"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "blca",
+    "fold": 4,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\blca_vlsa_results\\blca-VLSA-CONCH-fold_4-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "81e658e9dae9785a07556f4647f89f23ec58fc16dad3f89439b1901cd8d9fce7"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "brca",
+    "fold": 0,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\brca-ABMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "aadad9704b63b1ad0224a1a8949c64b912d0eaee3d38c63832837760065cb02a"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "brca",
+    "fold": 0,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\brca-TransMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "657f8e9afbac1f247056cedf1f76183d65fceb5c45d9c8c0a58eabf286fe163a"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "brca",
+    "fold": 0,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\brca-ILRA-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "733410b4f9778ad7361ebe190bfce7ca5b087456f80513285e544daf0bf21229"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "brca",
+    "fold": 0,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\brca-DSMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "e7421d6eecae4a089eb80c2cf353a8c095243a3f02101d89c7ac718d301005f8"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "brca",
+    "fold": 0,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\brca_vlsa_results\\brca-VLSA-CONCH-fold_0-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "daec2b6bb38add6dd049adcf61c0856f56f397ed73d153c6353bea938a58ad90"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "brca",
+    "fold": 1,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\brca-ABMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "5a80013509c18d1b1ab05166e9a0ad9b067de3bbe9466bab4aa5d9faafaf1a5d"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "brca",
+    "fold": 1,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\brca-TransMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "14216539ab3abbcd9d1005abfc171d07ef27c9ff20dd944c17de226e73632b20"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "brca",
+    "fold": 1,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\brca-ILRA-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "42e4750a6e21cbcc02e17ea493953e17954fc3ad6ba185951d974cc4de6f2494"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "brca",
+    "fold": 1,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\brca-DSMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "26bc37cf8da41be35ccfe9819f39c4f1aba67ca52056a91e58dea0f03b8e1278"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "brca",
+    "fold": 1,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\brca_vlsa_results\\brca-VLSA-CONCH-fold_1-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "6c47f4c1ac114b9294fa72042b188f88cbd859135cf9420a03814b566a0f86ee"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "brca",
+    "fold": 2,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\brca-ABMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "a26937e37e019e5ac23f3573d1164899ef84e91e61b66a3fbb5ebc35ed7c94fe"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "brca",
+    "fold": 2,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\brca-TransMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "bfb8cf7751f6c03eca7ec796a747011197dd99dfb6a96923919a981333f3f70e"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "brca",
+    "fold": 2,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\brca-ILRA-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "edf4b1e9167119ee50bc7d7f3de5db7dd6c8e900162cafac821a391288e418ae"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "brca",
+    "fold": 2,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\brca-DSMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "52a95bd4b97f9b2901b3b75fc82915abba63c0e8cae7b8a86c62ad3e6a3d7af6"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "brca",
+    "fold": 2,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\brca_vlsa_results\\brca-VLSA-CONCH-fold_2-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "123759ea4d48628f35491cf484fe32556c71480f410c7365e58a809b9f23b532"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "brca",
+    "fold": 3,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\brca-ABMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "8cf14a09a0ecaeae9bcdb5d36cef9173396919f6c2537b1e65f85e3a67813bb8"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "brca",
+    "fold": 3,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\brca-TransMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "375a86eec64671f7ecbafaf4e94ea262736ee351d70df28696f68138d9fae43d"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "brca",
+    "fold": 3,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\brca-ILRA-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "251732c5a0d3e1820de97fb21df33ac810c6fdc22616c8737c8751aeb823857a"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "brca",
+    "fold": 3,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\brca-DSMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "871aad2ce8ddff295d9b6e1c7ed08fc014fea74e9ae4463bcbffbce656ed7e0b"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "brca",
+    "fold": 3,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\brca_vlsa_results\\brca-VLSA-CONCH-fold_3-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "a3bc47460548e27797489569ea585698b162c302bcf0230a6ac65168b425b354"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "brca",
+    "fold": 4,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\brca-ABMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "6f47d522f76b95ef0bbdba2fdc898d35fbcf91e88bc446a06e3c5d91ee4589b8"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "brca",
+    "fold": 4,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\brca-TransMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "11e3fd93242debdba4c6fab668b7a5438267d7e533cc9b229a3e39677300f1e4"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "brca",
+    "fold": 4,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\brca-ILRA-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "a9bcce83bb0f0cda7aef19b3e4083131babd3d04af49e3491a197c6c9487f234"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "brca",
+    "fold": 4,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\brca-DSMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "7e3802d93ac7b12e7c3b10258afef2599dd9deff61b79c024e45418c8d09eaaa"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "brca",
+    "fold": 4,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\brca_vlsa_results\\brca-VLSA-CONCH-fold_4-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "d4646f908d2c6168435af40e1d444156d15ec3aa36100e08e11358094d031026"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "gbmlgg",
+    "fold": 0,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\gbmlgg-ABMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "52382f68340448e264e09e106efd378ab16d2ce8afbda90b7e8f0be50f3384ea"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "gbmlgg",
+    "fold": 0,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\gbmlgg-TransMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "5e782c21c8ce3f3357f314cd0e1d138687fc0d8ef6a81ea5f95946b055b152b4"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "gbmlgg",
+    "fold": 0,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\gbmlgg-ILRA-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "989ca5cfa0cd3c7b5731a9a9f95dce029fbe3c9303706905e8eb0c83df922193"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "gbmlgg",
+    "fold": 0,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\gbmlgg-DSMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "3a8ea731d2c9d180a5e7cecce86628c5eb7d60b3c44041ebf8b0dba25a8bed0d"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "gbmlgg",
+    "fold": 0,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\gbmlgg_vlsa_results\\gbmlgg-VLSA-CONCH-fold_0-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "0e62e3b6e0e910404da886811ea9dcaaf6796dd024e6bb38a89a9fd97e6223bd"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "gbmlgg",
+    "fold": 1,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\gbmlgg-ABMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "737b495fac25f60e621a653be3b2a29f72b861f656eb26d9d0b6b98d5fedc40a"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "gbmlgg",
+    "fold": 1,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\gbmlgg-TransMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "8b6b7a39a2406daae39237d35db5aa4be65fe2a9913075576b1a40d2a54f9cd8"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "gbmlgg",
+    "fold": 1,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\gbmlgg-ILRA-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "bc41badc52c27a1b140f256b34c73b9a403b10e774d2312321d7a2241e81c955"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "gbmlgg",
+    "fold": 1,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\gbmlgg-DSMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "383854631d23d659883986bfb8d7e29b80eadb4dd00efa392575819339210131"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "gbmlgg",
+    "fold": 1,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\gbmlgg_vlsa_results\\gbmlgg-VLSA-CONCH-fold_1-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "1048c71e9ae9ae72e15ee567b2139751f92468866a5c652c81a2e52bb4de554f"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "gbmlgg",
+    "fold": 2,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\gbmlgg-ABMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "3723d99fd92fa9e95bfbd2d89969720884219a74f12878c9a88f643e43d4f9a8"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "gbmlgg",
+    "fold": 2,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\gbmlgg-TransMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "f4b5b2cc9042420d6e1b0e0c701346c7dc58a97f2edb3ad445a01bd877d650a0"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "gbmlgg",
+    "fold": 2,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\gbmlgg-ILRA-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "393c37720d3f7e403517d75d7902b64bc3498abe371e7728eb352e9387b1b68b"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "gbmlgg",
+    "fold": 2,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\gbmlgg-DSMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "bf0118b5f97460ca8d6165eab768393061afd68bbb37a6d44d8e7be9d09d9319"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "gbmlgg",
+    "fold": 2,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\gbmlgg_vlsa_results\\gbmlgg-VLSA-CONCH-fold_2-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "527275d703d6742e722a2426517b4c3266f24f5391ceda10fcd6eb28b9869a45"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "gbmlgg",
+    "fold": 3,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\gbmlgg-ABMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "4c686c6932e8a65e61f6f4f6979575fb555c0161648970d884cea7011ff17c8b"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "gbmlgg",
+    "fold": 3,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\gbmlgg-TransMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "12cdc2b1721c92074f0f523eae98ce8f288f86dc6c121211b33e8077a78941f5"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "gbmlgg",
+    "fold": 3,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\gbmlgg-ILRA-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "f6a877ed45b0b7a2633c9515097941f5a297c893bbca42c906e3f8f89ba907cf"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "gbmlgg",
+    "fold": 3,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\gbmlgg-DSMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "eb550ce0cbc3b05f634b1451173f4acafcd7c1cc1c7e4da7e8d45e33c722a301"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "gbmlgg",
+    "fold": 3,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\gbmlgg_vlsa_results\\gbmlgg-VLSA-CONCH-fold_3-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "b37e4c52b108d01e1aa93e6d6f4f0803f4eb772a57f7945626fdda71603dac82"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "gbmlgg",
+    "fold": 4,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\gbmlgg-ABMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "0931efbffca5192471a01e1897867653980fe055af2af9e1c02a9c802899bbfe"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "gbmlgg",
+    "fold": 4,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\gbmlgg-TransMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "a27e7ef4840a972416bd4cd1f1abd72529627a8546effc338966fc9c6f17b3d1"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "gbmlgg",
+    "fold": 4,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\gbmlgg-ILRA-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "9aa75415dd9a97a4c1c36518005ab3d6a2afad85679aef65d9863af4248eacb0"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "gbmlgg",
+    "fold": 4,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\gbmlgg-DSMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "fcd2b5d05c821794ae0b8d417aa4db047600745202d632fc99709f39e421318e"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "gbmlgg",
+    "fold": 4,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\gbmlgg_vlsa_results\\gbmlgg-VLSA-CONCH-fold_4-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "71d09b422939b942efb01f3a2e59c04c33db50bd25764eca2fad1bb574b9abb7"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "luad",
+    "fold": 0,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\luad-ABMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "633d6521c4ba7f59c642fdb4053f2498e35f2ce5bb66047fb439dbf3d3899d47"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "luad",
+    "fold": 0,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\luad-TransMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "3832dbd9214de50220e6312fbade6308a5575a23b6a8217642bdb52ecbcfc953"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "luad",
+    "fold": 0,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\luad-ILRA-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "8f3bd21e313995b10b697cbfe357e49e617d89130963e639b8f676ed1314aaf8"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "luad",
+    "fold": 0,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\luad-DSMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "a300c9c7c630d588ef950c6b9a927cab352610ac20221859d07fe380a0eb8708"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "luad",
+    "fold": 0,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\luad-VLSA-CONCH-fold_0-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "4109b1dbe8f0bbe9c173185a5bee7b7c89f9cb73bba88a8672e2e9ed1eb03934"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "luad",
+    "fold": 1,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\luad-ABMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "7760ac289c4059b67901415eb1d59c9eba7fbbc89d08aec24ab55d3f9650d8cb"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "luad",
+    "fold": 1,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\luad-TransMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "4db8b569d19e358e1a75657694e5b06057be8b37043df4ab405b1db24d3e218b"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "luad",
+    "fold": 1,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\luad-ILRA-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "b470c57f455ee5b4a493d8ff337bcf4bcdcd0e8a6f345316aeb2220fa513361f"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "luad",
+    "fold": 1,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\luad-DSMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "6871efdf8261ec5496bf216b62cef25dc7e520b2dc4d702c2260694e4cf99185"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "luad",
+    "fold": 1,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\luad-VLSA-CONCH-fold_1-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "461c13e8c36e6862fedea91eb1832b03dcc796d96f601a3a1b72211e57fdc6a8"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "luad",
+    "fold": 2,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\luad-ABMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "517b74cefdf5219c1e80fe756599a8e6d889d77268253f5118eaccd59e2de324"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "luad",
+    "fold": 2,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\luad-TransMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "61d38bcd7a6ce46b08a533bc0ef063f1486843738494ef72fbce512022165390"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "luad",
+    "fold": 2,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\luad-ILRA-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "cef536ab1cb274514729344166572a1677644ccadf53f725195b7bb76c642884"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "luad",
+    "fold": 2,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\luad-DSMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "a2bb47b244d8ef7a737f1c4ca7fd71ccccd7fd24c63c2cea4574f88744face8a"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "luad",
+    "fold": 2,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\luad-VLSA-CONCH-fold_2-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "bea0e1885b5ab5748685cb28163040e7a33b9049fcf56bb5a32534b638a293f8"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "luad",
+    "fold": 3,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\luad-ABMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "06737a2cce24f81c4f8bf30a5ded4f0f4ac74d86bb67f35114703392d94c832f"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "luad",
+    "fold": 3,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\luad-TransMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "794253a60dd9a049059a88af8ff49dcfff22b37ba8e07fe09c263b0fe596306c"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "luad",
+    "fold": 3,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\luad-ILRA-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "28e9234f8548ec6890e5aa213d66fa9de03b2954a5a787acf489ce62a219612f"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "luad",
+    "fold": 3,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\luad-DSMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "3d3c70a3233069e909aaf5c76969b86c4bf5ad20de680f39652c0c4dfa50ec96"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "luad",
+    "fold": 3,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\luad-VLSA-CONCH-fold_3-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "8e3c4a4b6977b5a60fc0a154b1545cd68403afe39158412bd84ef2cd8310619d"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "luad",
+    "fold": 4,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\luad-ABMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "962cf94117a727dfe5d83440a8082c6cccd008b41b333c0854df495dba1e16fc"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "luad",
+    "fold": 4,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\luad-TransMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "7103a78b1b97701bbfdebc0d702a2aea49dde63cd9cbc772e37661e7738bd88c"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "luad",
+    "fold": 4,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\luad-ILRA-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "f17623c2bdf11f6de4423a6f54573542064a0f86ba51953e9521676832c120b0"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "luad",
+    "fold": 4,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\luad-DSMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "a63431e549e8599d7fa02370aece8b1740958943ca7553308991eae6a0f55a06"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "luad",
+    "fold": 4,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\luad-VLSA-CONCH-fold_4-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "0b15f402dfd86b8c5a08f917ffa9a4ba081f79c5c681c7d3e6671070c06b5a6b"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "ucec",
+    "fold": 0,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\ucec-ABMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "0984b816cedcde9c073a35b66c78c2793bf43a65e9d06cfb167a7eb20e5083a2"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "ucec",
+    "fold": 0,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\ucec-TransMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "98d1951de251106926b60170f5c085d7340397bfc03acc22abf5ffb3488057af"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "ucec",
+    "fold": 0,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\ucec-ILRA-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "67d9539440d95af962f0e324c98144a1ab60eec5d1593e7735942b7bc0d46d0c"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "ucec",
+    "fold": 0,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\ucec-DSMIL-CONCH-fold_0\\bag_clf_train_last_pred_test.csv",
+    "sha256": "d2afd7bb07938c1f9aeafe9d22ca229bb33e62164e32d7f9c657267efdc85793"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "ucec",
+    "fold": 0,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\ucec_vlsa_results\\ucec-VLSA-CONCH-fold_0-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "700d4ed118ce57112ac1f94a949dd30c174954f49b3b0cbbbfd5cad0c316d416"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "ucec",
+    "fold": 1,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\ucec-ABMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "82af0d1ae22f063676d5b2d083d0ca75b46c82ae066e104d4c45b7b1d0474fb8"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "ucec",
+    "fold": 1,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\ucec-TransMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "3ba81ba4b36d7a1e8271b791f6053ace5a0ea7fbc03448c681f95c52384a2ce8"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "ucec",
+    "fold": 1,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\ucec-ILRA-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "e574bc92eb209ae81f31921c646b27fde40e95b24dbda9baba2067a769d29634"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "ucec",
+    "fold": 1,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\ucec-DSMIL-CONCH-fold_1\\bag_clf_train_last_pred_test.csv",
+    "sha256": "f66133cbe3da2df13d85445f7676bcaf065581d109e5077aba848478a05a3815"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "ucec",
+    "fold": 1,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\ucec_vlsa_results\\ucec-VLSA-CONCH-fold_1-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "b86bbda1051c36b1f3cc0481051a11940e79c290c80b56fc8cfb51e01224d6a4"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "ucec",
+    "fold": 2,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\ucec-ABMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "a5d0cd264ed0253ded7f71b847993746a8b166974dcbc2e66abcb5fef5d81edd"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "ucec",
+    "fold": 2,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\ucec-TransMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "d5f1aeee5964b4c7bb4305210bb455813d88839c051259f870d0ce401e8734e3"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "ucec",
+    "fold": 2,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\ucec-ILRA-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "ddc254aa257a3d3d5c2788319db87f2e5f9accbe3fce71ea09c8aafa1381c701"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "ucec",
+    "fold": 2,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\ucec-DSMIL-CONCH-fold_2\\bag_clf_train_last_pred_test.csv",
+    "sha256": "3374a4d5ff287aabb7d015286dcd32fd26d475969f2b2064d453a6c0ebf43454"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "ucec",
+    "fold": 2,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\ucec_vlsa_results\\ucec-VLSA-CONCH-fold_2-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "7806f6cbde2eb74490a7917eec1ccb04367a08672f626e4d8cc0d42376a9cbb1"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "ucec",
+    "fold": 3,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\ucec-ABMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "3fcfcbd635dc5344536754894312b448dd7b56affb3bfeca49243b0a5b89af5d"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "ucec",
+    "fold": 3,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\ucec-TransMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "79967dd8cbc4a56ade415d1490e32700b913009c19cac154377929f6837b5d41"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "ucec",
+    "fold": 3,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\ucec-ILRA-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "d56a561c5112ad3ffa4cd96f6c1fdd5ce70944679b90e1479cb8ab362d2bdc3c"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "ucec",
+    "fold": 3,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\ucec-DSMIL-CONCH-fold_3\\bag_clf_train_last_pred_test.csv",
+    "sha256": "f21368749f66d847bf0c63506d85879d2dfe20087c725573b0983746c57e23e4"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "ucec",
+    "fold": 3,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\ucec_vlsa_results\\ucec-VLSA-CONCH-fold_3-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "2dcea2c28c6c85d785a8fa579f4bedb3577d1fd23bf945bcbd5b24c4b9747ea8"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "ucec",
+    "fold": 4,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\abmil\\ucec-ABMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "1a04fc480358960aee932446cc4c5c43c5173828ca7c9164810fa0440822d671"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "ucec",
+    "fold": 4,
+    "path": "downloads\\matched_mil_backbones_complete_20260903\\result\\matched-mil-backbones\\seed_42\\transmil\\ucec-TransMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "1013135fc6eb5089b89145250b6709855d8e967fe5e0fa8db0057842e13218e2"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "ucec",
+    "fold": 4,
+    "path": "downloads\\FICPF_ILRA_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\ilra\\ucec-ILRA-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "8f3ae281377a6f0c960cb97f187488db4312a93d745688f1ab3acf46581431f8"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "ucec",
+    "fold": 4,
+    "path": "downloads\\FICPF_DSMIL_results_no_weights\\result\\additional-vlsa-baselines\\seed_42\\dsmil\\ucec-DSMIL-CONCH-fold_4\\bag_clf_train_last_pred_test.csv",
+    "sha256": "b5f920d9f469749de564b6e503a96fe7a2698470f76f8dfeb4ea56442ed212ec"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "ucec",
+    "fold": 4,
+    "path": "tmp\\cloud_baseline_locked\\result\\exp-ifmle\\ucec_vlsa_results\\ucec-VLSA-CONCH-fold_4-que_Text-tex_TaskRes-resr_0.5-coop_rank\\bag_clf_train_last_pred_test.csv",
+    "sha256": "76caed6d84b49ad6090cb3796f51f2f2531595fb6f6390de0828848da4ee89f5"
+  }
+]

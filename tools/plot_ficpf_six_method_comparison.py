@@ -23,6 +23,9 @@ parser.add_argument("--include-ilra",action="store_true")
 parser.add_argument("--include-dsmil",action="store_true",help="Include both audited ILRA and DSMIL results")
 parser.add_argument("--canonical-names",action="store_true",help="Remove input-encoder suffixes from display labels only")
 parser.add_argument("--output-stem",type=Path)
+parser.add_argument("--model-label",default="FICPF",help="Display name only; retain original result keys")
+parser.add_argument("--data-summary",type=Path)
+parser.add_argument("--nested-rerun",action="store_true")
 args=parser.parse_args()
 if args.include_dsmil:
     OUT=ROOT/"figures/ficpf_20260821/FICPF_eight_method_comparison"
@@ -32,6 +35,8 @@ else:
     DATA=ROOT/("result/ficpf-seven-method-comparison/seven_method_dataset_summary.csv" if args.include_ilra else "result/ficpf-six-method-comparison/six_method_dataset_summary.csv")
 if args.output_stem:
     OUT=args.output_stem if args.output_stem.is_absolute() else ROOT/args.output_stem
+if args.data_summary:
+    DATA=args.data_summary
 OUT.parent.mkdir(parents=True,exist_ok=True)
 BOOT=ROOT/"result/external_multimodal_comparison_20260821/unified/paired_bootstrap_unified.csv"
 ORDER=["BLCA","BRCA","GBMLGG","LUAD","UCEC","MACRO"]
@@ -50,6 +55,10 @@ if args.canonical_names:
              "DSMIL-CONCH":"DSMIL","Matched VLSA":"VLSA","MCAT-CONCH":"MCAT*",
              "CAT-TPL-CONCH":"CAT-with-TPL*","FICPF":"FICPF"}
     METHODS=[(key,display[key],color,marker) for key,_,color,marker in METHODS]
+METHODS=[(key,args.model_label if key=="FICPF" else label,color,marker)
+         for key,label,color,marker in METHODS]
+if args.nested_rerun:
+    METHODS=[(key,label.rstrip("*"),color,marker) for key,label,color,marker in METHODS]
 
 plt.rcParams.update({"font.family":"sans-serif","font.sans-serif":["Arial","DejaVu Sans"],
                      "font.size":8,"axes.linewidth":.8,"svg.fonttype":"none","pdf.fonttype":42})
@@ -92,6 +101,8 @@ for ax in (left,right):
 fig.text(.042,.805,"A",fontsize=10,weight="bold")
 fig.text(.535,.805,"B",fontsize=10,weight="bold")
 footnote="* Retained MCAT/CAT-with-TPL adaptations use cohort-wide time bins; see Methods." if args.canonical_names else "* Retained MCAT/CAT adaptations use cohort-wide time bins; see Methods."
+if args.nested_rerun:
+    footnote="MCAT/CAT-with-TPL: inner-validation epoch selection, then outer-training refit; see Methods."
 fig.text(.078,.065,footnote,fontsize=7.1,color="#5F6B76")
 if require_matplotlib_panel_alignment is not None:
     require_matplotlib_panel_alignment(
@@ -110,7 +121,7 @@ OUT.with_suffix(".provenance.json").write_text(json.dumps({
     "source_data":str(DATA),"paired_intervals":str(BOOT),
     "claim":"Retained comparisons describe current adaptations; paired primary inference concerns FICPF versus matched VLSA.",
     "archetype":"quantitative grid",
-    "training_protocol_note":"MCAT/CAT use cohort-wide discretization; not fully train-only controls.",
+    "training_protocol_note":"Post-hoc nested MCAT/CAT rerun; other frozen baselines retained." if args.nested_rerun else "MCAT/CAT use cohort-wide discretization; not fully train-only controls.",
     "statistics":"Five-fold population SD remains in manuscript table. Plot A shows means, plot B paired patient bootstrap 95% intervals.",
     "data_integrity":"All "+str(len(METHODS))+" methods and all five cohorts plus macro means retained; no generated observations."},indent=2))
 print(OUT)

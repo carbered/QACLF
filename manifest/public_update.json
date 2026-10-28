@@ -1,22 +1,22 @@
 {
-  "updated_utc": "2026-10-20T14:00:45.936279+00:00",
-  "new_word_manuscript_uploaded": false,
-  "scope": "Code, locked/derived result files, figure assets and reproducibility metadata only.",
-  "primary_results_changed": false,
-  "partial_motcat_experiment_included": false,
-  "methods": [
-    "ABMIL",
-    "TransMIL",
-    "ILRA",
-    "DSMIL",
-    "VLSA",
-    "MCAT",
-    "CAT-with-TPL",
-    "FICPF"
-  ],
-  "retained_mil_test_curve_files": 100,
-  "archived_cloud_label_converter_sha256": "070a435c1c03b644b96f43a21b14dbd6465c76eacb807ca247126be2d7b2b87f",
-  "source_sha256": {
-    "tools\\refine_ficpf_main_figure.py": "9e4cfea20bd20ea140d8c7887f3e06fe35708c7b56390dbc9e55005e2b7d737f"
-  }
+  "model": "QACLF",
+  "full_name": "Quantile-Aligned Conservative Late Fusion",
+  "former_name": "FICPF",
+  "updated_date": "2026-10-28",
+  "current_result_directory": "result/qaclf-nested-v1-unified-evaluation-20261027",
+  "frozen_qaclf_primary_result_unchanged": true,
+  "comparator_protocol": "qaclf-multimodal-nested-v1; 50 complete MCAT/CAT runs",
+  "probability_evaluation": "12-60 months; 97 points; training-only censoring weights",
+  "methods": 8,
+  "controls": 1,
+  "curve_input_files": 225,
+  "private_manuscript_included": false,
+  "model_weights_included": false,
+  "historical_results_preserved": true,
+  "repository_url_unchanged": "https://github.com/carbered/FICPF",
+  "limitations": [
+    "Post-hoc protocol/evaluation revision reuses previous outer splits.",
+    "Full-time mean MAE is diagnostic; no claim to repair extrapolated tails.",
+    "No independent external cohort validation."
+  ]
 }

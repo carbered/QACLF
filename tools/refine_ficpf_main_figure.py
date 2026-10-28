@@ -20,6 +20,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--tinted", action="store_true", help="Export a separate soft-color preview.")
 parser.add_argument("--canonical-names", action="store_true", help="Use the original model names in display labels.")
 parser.add_argument("--output-stem", type=Path, help="Write separate assets without replacing previous figures.")
+parser.add_argument("--model-label", default="FICPF", help="Display name only; experiment IDs remain unchanged.")
 parser.add_argument("--source-wsi", type=Path,
                     help="Optional original SVS for a fresh pixel/crop audit; otherwise verify bundled source-image hashes.")
 args = parser.parse_args()
@@ -167,7 +168,7 @@ else:
     crop, full_shape = record["overview_crop_box"], record["overview_full_shape"]
 assert overview.shape[:2] == (crop[3]-crop[1],crop[2]-crop[0])
 
-text(.024,.961,"FICPF",13,INK,"bold",ha="left")
+text(.024,.961,args.model_label,13,INK,"bold",ha="left")
 text(.163,.961,"Pathology–omics survival fusion",10.4,INK,"bold",ha="left")
 for x,c,name in [(.62,BLUE,"Pathology"),(.758,GREEN,"Omics"),(.865,RED,"Fusion")]:
     arrow(x,.961,x+.027,.961,c,1.4)

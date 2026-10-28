@@ -1,0 +1,1802 @@
+[
+  {
+    "method": "ABMIL",
+    "dataset": "BLCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/blca/fold_0.npz",
+    "sha256": "fd702be0d6a37c0e4a19c3ee4eee6aaf16f42b3e38a141e966cc171c031ced59",
+    "original_source_sha256": "e36789e7dc4350448498a9b1c0fc6f19db60251a29f6af5f0d2c63674b85864f"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "BLCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/blca/fold_0.npz",
+    "sha256": "24a1d74519d3d2a6399f3c870c8f521c5c4b49e7d04d48ac9d535b72186d6cdd",
+    "original_source_sha256": "bbed0ff4c8a3ec716123ad3728779554184114d30fdc381521d6a9e62c0be044"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "BLCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/blca/fold_0.npz",
+    "sha256": "e7abb9ea44911c625551fd8921bd57e709f194bce6c0b48559ff95d1ebaaab9d",
+    "original_source_sha256": "cdd95645505f181d7b2ea6fdada5c08f31c87d0988fa801a019be7b803f8e836"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "BLCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/blca/fold_0.npz",
+    "sha256": "6c0c494946bd2d3f6defd60db2954c4c8097ab54ef80002da45578a5410fbc87",
+    "original_source_sha256": "f28c6d2020de668a3ddcd1880612ca31bedd628102bdf8747ef9c4637853014b"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "BLCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/blca/fold_0.npz",
+    "sha256": "fcd0a81211a6888d9712c981a39b26dccd9d4c4a266ac43367eb468fc6ef5f94",
+    "original_source_sha256": "3d37e052b8c44e21c74e232e68ad6d0df77f257f720c9c0f62d0345858338da0"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "BLCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/blca/fold_0.npz",
+    "sha256": "fe1e05d1cb75bfa61a553a20beb95a26dae542d348bf439cb79a7acda7e33f25",
+    "original_source_sha256": "54fd49a6d8daece4ac216a9c04e47449525934a1362f96c2fb275cccab68c8a5"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "BLCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/blca/fold_0.npz",
+    "sha256": "ad4d1abb39a1498d6db08ed11d5829306e734cba61fbf099812dd984a835ab2f",
+    "original_source_sha256": "1bb9dab5bba0f736572aabec852189cac3d754d40b7e8c5edfcce616630347a4"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "BLCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/blca/fold_0.npz",
+    "sha256": "7dc6831ebca7d4e2177a67717253e841a9259b09232db911cd23334be53d1b84",
+    "original_source_sha256": "fe35520348518067bf42882f5f9246e1c9dcce69a5544e758ec2825cd0d84286"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "BLCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/blca/fold_0.npz",
+    "sha256": "c8b5a07b9dce12f6b98f38ac7390a1f0f833f80562025e2bd1358019c21af2ad",
+    "original_source_sha256": "d41334461a093b8334d0d19d4bbc6d6f806238c68d94d11bbc5a27a7bcc27086"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "BLCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/blca/fold_1.npz",
+    "sha256": "b26de02a5fb53af231dd60a43d9c1283b5f3b9a6074ba1c5dd1a80650b10a64a",
+    "original_source_sha256": "f8e90dd5cef8e577710433d4850802b11a07c3bffb4e3331fee20dec04c67994"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "BLCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/blca/fold_1.npz",
+    "sha256": "f327ca0b89dd4d8bcc40c1647c2e1ec1d9ac9b4ee9ba17bbc09899ddeedb8f76",
+    "original_source_sha256": "d9bd9a0d983ac971fa97ce32afa1171e5e8aab1eaf920020c7a5fd4d437a9509"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "BLCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/blca/fold_1.npz",
+    "sha256": "724cfcc92398963d0e75daa3412709672dd9f685895b388d6bb4406097fee716",
+    "original_source_sha256": "978373409de2aa7bb1a33bcaf91a9031e4c21fd38b4510942833bacdae84dd22"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "BLCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/blca/fold_1.npz",
+    "sha256": "33368c4ecbde4dd5d1ffcf28d48a2c9c706991561dfff1c1ba28c9ab02f8dc6d",
+    "original_source_sha256": "6b73e3401bc44fa11a04606fdcf17247d8cac371b262b45bdb859b09b97cfb30"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "BLCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/blca/fold_1.npz",
+    "sha256": "7eb60217406cf8b8c85458cec1061709e0aa118399133b38454dc209370b4fe0",
+    "original_source_sha256": "619c18327abd080c3b1ced6ab965f9349700aabbe9e69838a71275899989d7cc"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "BLCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/blca/fold_1.npz",
+    "sha256": "970e4505c8b35b1409bf4299df2fef22ec390fc202f8c6060d1ed41a91fd0450",
+    "original_source_sha256": "247ae649f08a30681c1e39696c57f118b2312006888a98fa16a9629761e8ec4a"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "BLCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/blca/fold_1.npz",
+    "sha256": "2899218e17b549c6fec4a30d5eb900b6b7ea49822211c51f521be94e3cd90493",
+    "original_source_sha256": "aafd115fffe5115e8ecd6610ff5faa574a38c3a86d0b9252c6ad755505efb802"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "BLCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/blca/fold_1.npz",
+    "sha256": "dc28951c05010ff7a1e67d870d71872790245f73d5b2e57e5b936ffa3f840a6b",
+    "original_source_sha256": "71d730b0b28f8ac4062d0acd8e975500f5a34109a0b132e3c7df861feea0990d"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "BLCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/blca/fold_1.npz",
+    "sha256": "27e11e2487c73f4f035971f0826e60ad93fc9861a7a19cac21d5074c8cf4aa71",
+    "original_source_sha256": "5d784caf6e505ede9f38964986cee9070858981af8ebf072b6af7c094cb5f856"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "BLCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/blca/fold_2.npz",
+    "sha256": "0aaa4a7ebb64861689a65e5b4932018e617c2d9787a27334efc31cdb8d5ce40c",
+    "original_source_sha256": "a662f399cd1dd304068282d8e872dee238c1731af1cf4eec41d178ffba729cd6"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "BLCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/blca/fold_2.npz",
+    "sha256": "7f109c9c2ac97c8e0625610354d471af55d1519dfc66a8859230e4fc8b4af09f",
+    "original_source_sha256": "c447b0762b01f88620d05efaee282f61a287d8e2ea4cb0f4d4114000ce5bbca6"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "BLCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/blca/fold_2.npz",
+    "sha256": "29f3c11b0deac065484b2495859fcf9e74d97ca4472de685f1d9135274525ec2",
+    "original_source_sha256": "f9944601b2a288443e17072e64cbcb316a49d440417371243800a6a6c0e7425e"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "BLCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/blca/fold_2.npz",
+    "sha256": "0392992b617c1fb54e7951367066fa2bfa2f93b612b590038cd8956256083e06",
+    "original_source_sha256": "cf5ff49221146cf025a55ea5a81381a44c67cf83290a07be4e8b990106ba15a8"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "BLCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/blca/fold_2.npz",
+    "sha256": "da7d6f31d87218c00d7fd9bd412fd7e35fef860aac3ea5b21bc0d4e00f57f759",
+    "original_source_sha256": "ad4a1713eaad96d17a9a6dc2744a598361eec0fae9714e46c32f888465251deb"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "BLCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/blca/fold_2.npz",
+    "sha256": "dd1832c9946877fb1efdebe06693338304300c65a7e07a5d6333ff319cefcd6f",
+    "original_source_sha256": "96f4966901fe6577f6a317719a9f8a6c43a3fd354ef56ab80fd90ed2761dc03c"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "BLCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/blca/fold_2.npz",
+    "sha256": "b826637020b789ddf130bf68090de02429c86a77cf96a9b085ba6229a4d27439",
+    "original_source_sha256": "a5a2b2b81283311482145359ae35ef7a29a955a5c71b4a53ff7dd9d2661bc462"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "BLCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/blca/fold_2.npz",
+    "sha256": "5cf2e2a9fa09ff5887ae349cc9405f35f24d78291a4bc9da83d7f594e47a1357",
+    "original_source_sha256": "3a13ebdbfdb667a21bc00f0568b9be1e9bdf132a78d0c74c1662646afd7ad1aa"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "BLCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/blca/fold_2.npz",
+    "sha256": "6c3a1cba12445e3bd717ac2c029ccb22494d97765b97f022f58aeac752c396b8",
+    "original_source_sha256": "0865be714153219a49274e973b8659daaf9ad5806f2f83aae416a4296d1542a8"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "BLCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/blca/fold_3.npz",
+    "sha256": "a3abfd20571ce1b589ab142e7032aae65b2e04baa1f330ee11a52ebbaf78e2fd",
+    "original_source_sha256": "6a493029681d53e6201cc7867ab04497d6fe53347b65703d5ca2032773b2bba3"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "BLCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/blca/fold_3.npz",
+    "sha256": "5c405e6208f442ae2bee5cee96a091eb8a36caa808d0dc16b21042e8f4d093f7",
+    "original_source_sha256": "0ba00589239ce7ae4aaec13f508e429c678ea86f837447bdab36659c9f9fe226"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "BLCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/blca/fold_3.npz",
+    "sha256": "86b365f02c7298e8d375fe7fbe30231d062bf8050074300db4718118c1f1e4ae",
+    "original_source_sha256": "49cfb03402b8a9d8fe7e786845572e5dc55e78243af8b351983f9d5e544e0093"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "BLCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/blca/fold_3.npz",
+    "sha256": "f4b4fe14d2feaacd636cd77a480111a7d26a4b5842d6279b8754d6ce4155e5a8",
+    "original_source_sha256": "d7aad83cbc42e25ad7be561760829115decbd1c3b34cff9058e5a1c283ee3c43"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "BLCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/blca/fold_3.npz",
+    "sha256": "2315ab5cd69f5d583ec0b0e78bbe4215afdfe2c64fbd25cd5438eaedec508df2",
+    "original_source_sha256": "05c583512791dcf3feaee91c875f9f538ded82cf6427a74b752a51558c358f0f"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "BLCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/blca/fold_3.npz",
+    "sha256": "4d9eacda9e7a599adb12bc36a2180af5be349c7f98d72aa52308418adb1aaf6a",
+    "original_source_sha256": "aea305a0b38e0ae647caaef270f8ccf0593b9d9ed25b3a9c1276f03fb8f4d423"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "BLCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/blca/fold_3.npz",
+    "sha256": "6f38c4e8a4a5f11da20e8a00a00a619f9e64b31b357ee75c540018665bf033cd",
+    "original_source_sha256": "d319c6b84103656aa0684ef83162a76bcc1967fcc278fc28ada3ca7337d2f454"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "BLCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/blca/fold_3.npz",
+    "sha256": "b52338a444c04870442f39dd13fe662022c5568b62ec34501886938dcd6aff1c",
+    "original_source_sha256": "9de55e4e0d9684c5a1c6444909566518900df1fe5721fe98161164c0272afade"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "BLCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/blca/fold_3.npz",
+    "sha256": "a11b37b2a96938e298df4ce8f1c2f05b7a93a6f0b111c0f9b3afb7d78259132b",
+    "original_source_sha256": "afdfc005b8755fbec2648d4c9547e3aa21be754fd60ecd8e121f56bb67138ffb"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "BLCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/blca/fold_4.npz",
+    "sha256": "cf9a8908a88f28b09413fa51c639756fc4b5ee137a3eb0deef232fd4531d2db4",
+    "original_source_sha256": "3bb3c7dbb9147ea527e29ccf56620d909489306bb442b54f60085f51825b9ad1"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "BLCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/blca/fold_4.npz",
+    "sha256": "4b1be851c1375a56a7ce6f847cdb6e2e7fb1c365a6aef81d73ae44adaddbcd1b",
+    "original_source_sha256": "3bbe9906e3bc2196e483a37766dbda9e5a16da16abad2a93e8a58c15f6e2ee50"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "BLCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/blca/fold_4.npz",
+    "sha256": "57e858ba3042d2f53e9ab5a1dd8302059e412fd407cbddcebf1d1a34f8cf2fcc",
+    "original_source_sha256": "804ed8d74b19791c823232d406af9bcb57b91e5fd8a95a49c90b2c20eba12920"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "BLCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/blca/fold_4.npz",
+    "sha256": "345f36e8d875a00c5bf151d0b4dd197f080066662e016ad0fecaa385ca51d2d7",
+    "original_source_sha256": "072768a505b9bd63eee6a9d7031908c56b8e0240babd7605b2c87d6426c387c3"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "BLCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/blca/fold_4.npz",
+    "sha256": "9dd8bf38f63d29005f1892c3360aeeb2b087ab31c63d954bf8e663a4f3ccb721",
+    "original_source_sha256": "81e658e9dae9785a07556f4647f89f23ec58fc16dad3f89439b1901cd8d9fce7"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "BLCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/blca/fold_4.npz",
+    "sha256": "eaf3d3960ddbc725b539abbe9c16b43cba151b3ea27c4b4aafb630d020140627",
+    "original_source_sha256": "b110633775abe4d7bfb250dbdeaca5b7b7577573b700c8a08308b62ec35e9ae2"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "BLCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/blca/fold_4.npz",
+    "sha256": "e428e0bedc6022eef05b1071fe810430f5ebc0300441fbae185087dd874b5c44",
+    "original_source_sha256": "b5776983a1659a4ba23ae223c8643df034ceb1ee0944bdb5d01f55e1b57a0b42"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "BLCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/blca/fold_4.npz",
+    "sha256": "5866f42a07f0b56f73dce4a73468826358898b4ff5eeb3d27839df0fc7aa4c16",
+    "original_source_sha256": "9a04b42edb61598a93e7af40b6e772413b8be607d7474ee721e28c99e4509c6d"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "BLCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/blca/fold_4.npz",
+    "sha256": "5cbdb83d5969874de72689c4cf00fb27da318f15e00512be8a6581f6ca11ddd2",
+    "original_source_sha256": "21fa25195c8643ef83861a428170f3e79f45dbc5d805dcc31e4fe46667634be6"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "BRCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/brca/fold_0.npz",
+    "sha256": "89ad8cbb49f22292527a957f9043646286d20c858aed2d686c51e7d101256bfa",
+    "original_source_sha256": "aadad9704b63b1ad0224a1a8949c64b912d0eaee3d38c63832837760065cb02a"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "BRCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/brca/fold_0.npz",
+    "sha256": "2afb16b05be409f3cb151f8e89012766ade97da8f872c3b89fabd7e0dec63bcd",
+    "original_source_sha256": "657f8e9afbac1f247056cedf1f76183d65fceb5c45d9c8c0a58eabf286fe163a"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "BRCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/brca/fold_0.npz",
+    "sha256": "7c3c9d53630c54fef9aa16b5d213e38fc671b7af692274e6425e04d401469b82",
+    "original_source_sha256": "733410b4f9778ad7361ebe190bfce7ca5b087456f80513285e544daf0bf21229"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "BRCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/brca/fold_0.npz",
+    "sha256": "9d9dcb42901b0c902237caae1ffd5924c3364b90ae2d7e9da0a4018458974592",
+    "original_source_sha256": "e7421d6eecae4a089eb80c2cf353a8c095243a3f02101d89c7ac718d301005f8"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "BRCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/brca/fold_0.npz",
+    "sha256": "1551b3b09c3a349f477aeb8cf93d1169ee29d1c50da79223af9f259ec7349646",
+    "original_source_sha256": "daec2b6bb38add6dd049adcf61c0856f56f397ed73d153c6353bea938a58ad90"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "BRCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/brca/fold_0.npz",
+    "sha256": "194169e0efd18886bf5ee96377c3a9af0d886ca42b1fd4a66a124de923830c4a",
+    "original_source_sha256": "bdbd908e6ec6b6b29d5d1b8b6afc5c0b311dd5e4c6ce88a705db0ef8f9ca0835"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "BRCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/brca/fold_0.npz",
+    "sha256": "0624d82a0e9ffbe180a26b7b66dd5d077e7f49f79165ce27a788cedf6f78e6a8",
+    "original_source_sha256": "943b2ccbe03e77fea4935f39b10a0b01e258501ab88673290c117875f6c0d58a"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "BRCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/brca/fold_0.npz",
+    "sha256": "39d5f9563e3c2faeb685dea8b2ea3983bb9a56e6d0a2521e56573f2336b1442a",
+    "original_source_sha256": "57c42ede5ef22e442b6063a4e09cab97fba7f5968ced95ef5f61f9f70486d910"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "BRCA",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/brca/fold_0.npz",
+    "sha256": "e2c242fece5dc389076c593b9c5929bd0779fa4c7cc910f28031532d95cafd9e",
+    "original_source_sha256": "01ac6c3d277a97c661fd59fc49664d2994b3d6ff9fe1da4d9e800ae99370b61b"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "BRCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/brca/fold_1.npz",
+    "sha256": "a51836848d0bb0c7b1f8761ccdcc2e926e2cad6703069b897acb38169af0b8ed",
+    "original_source_sha256": "5a80013509c18d1b1ab05166e9a0ad9b067de3bbe9466bab4aa5d9faafaf1a5d"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "BRCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/brca/fold_1.npz",
+    "sha256": "cc8e34c62f946a2f2105058ad8887aaf91d6824558fee4e5e0588228a9d366a2",
+    "original_source_sha256": "14216539ab3abbcd9d1005abfc171d07ef27c9ff20dd944c17de226e73632b20"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "BRCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/brca/fold_1.npz",
+    "sha256": "ffdf866745081326e68bca62f0c0c40eba6071f397ac9cfcd2ba31607f81d85c",
+    "original_source_sha256": "42e4750a6e21cbcc02e17ea493953e17954fc3ad6ba185951d974cc4de6f2494"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "BRCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/brca/fold_1.npz",
+    "sha256": "2f69cccf540ebc41ee3c9658b1da6cb0e45d7d83a0ce35d6180788c7a2f8d23c",
+    "original_source_sha256": "26bc37cf8da41be35ccfe9819f39c4f1aba67ca52056a91e58dea0f03b8e1278"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "BRCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/brca/fold_1.npz",
+    "sha256": "c3809ad9bff1aa9fffe991e3ac5c27aa08ef6786e05e2108f46fa959a8fe94a0",
+    "original_source_sha256": "6c47f4c1ac114b9294fa72042b188f88cbd859135cf9420a03814b566a0f86ee"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "BRCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/brca/fold_1.npz",
+    "sha256": "4f180368f57f948e60f7b74cfea9bff9825283d40a9ad1c3308fc7655744294a",
+    "original_source_sha256": "1d97774ea7d74bd6b9609d200cbca218fe1c7c209839f056d8aa056e64ec9aff"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "BRCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/brca/fold_1.npz",
+    "sha256": "fb8cd7e3f4fd9ad2b482ee9b8fc176c76c4c44dd3bd0d739e1ae138fa2ec555f",
+    "original_source_sha256": "5bbe6c7aaf3b0a49934c2b072418dbd098318588af2adbd9f155a1d831d042b1"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "BRCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/brca/fold_1.npz",
+    "sha256": "021a9ab5671c138ebec31ebe4064dc7854f32e8d1a3065ae4d1084816bf07967",
+    "original_source_sha256": "0d880948c073b8ce53ca910cbbaa0885056ff4d00cf66eba7bb9fb2fdd5563e0"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "BRCA",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/brca/fold_1.npz",
+    "sha256": "c21b6cb8b93b3bb66d16b9ad6c409d7f37d45d30bed6477f5cffa2698e7334fb",
+    "original_source_sha256": "cd8ee2743f38018b8cef42dc77757768cf2b768bef7ceab802fdbc9e9555de89"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "BRCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/brca/fold_2.npz",
+    "sha256": "c79412db02eee5e22426dbc49198ebbcae2fd9bed4f9a98dad18f6e973fc03ca",
+    "original_source_sha256": "a26937e37e019e5ac23f3573d1164899ef84e91e61b66a3fbb5ebc35ed7c94fe"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "BRCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/brca/fold_2.npz",
+    "sha256": "cc83ea0be1ef429a188ed811f33f9569b539f591862e5ef0adba2c70d40bedab",
+    "original_source_sha256": "bfb8cf7751f6c03eca7ec796a747011197dd99dfb6a96923919a981333f3f70e"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "BRCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/brca/fold_2.npz",
+    "sha256": "17df8738ba4118c4d21c18a80fb805454695ef3caf0a8335315d791694cac492",
+    "original_source_sha256": "edf4b1e9167119ee50bc7d7f3de5db7dd6c8e900162cafac821a391288e418ae"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "BRCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/brca/fold_2.npz",
+    "sha256": "5a48e54763f17fe8f1ccdf2ca64dfe177ac490dbc0580e710670cf12be7016ba",
+    "original_source_sha256": "52a95bd4b97f9b2901b3b75fc82915abba63c0e8cae7b8a86c62ad3e6a3d7af6"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "BRCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/brca/fold_2.npz",
+    "sha256": "541c37cca42c542acdbae13db6caa336cefc1c06e5dae9e79d226bf27314fd1a",
+    "original_source_sha256": "123759ea4d48628f35491cf484fe32556c71480f410c7365e58a809b9f23b532"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "BRCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/brca/fold_2.npz",
+    "sha256": "725ad14e9218bb4149818d33f674442476d263b27791292af9bc734255afef2e",
+    "original_source_sha256": "caf6cd00c20ca071acca525266dce29e9080c439be212b123628f937848218e1"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "BRCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/brca/fold_2.npz",
+    "sha256": "890dde64cbd61d5e1d55362026649c44421ca66e311c6bd5808589fdeaf4c2f0",
+    "original_source_sha256": "ec845e3f090a243dc3f62fd0db940a5a9c3a629d2de2309a627268565bdf9c12"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "BRCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/brca/fold_2.npz",
+    "sha256": "16e6144311bbda52b6320787f964132af4e7b81c154173784d74b6dbad41da38",
+    "original_source_sha256": "f3ceb8627abd7261afb143de25f0316955996629565d6572fb17e4c87bfd6c65"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "BRCA",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/brca/fold_2.npz",
+    "sha256": "d438fd8fd42205a411af830a3041d68e204494d17ca1c728347ef4cc3f355542",
+    "original_source_sha256": "4c568e2140405225754002695713109cc8b980277c9d489da1106230ebfd26e7"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "BRCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/brca/fold_3.npz",
+    "sha256": "6b55bc20fc6925ddb5d68ea0f9815c4f56e197ca8f6fbd53def3a0ef55daaabc",
+    "original_source_sha256": "8cf14a09a0ecaeae9bcdb5d36cef9173396919f6c2537b1e65f85e3a67813bb8"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "BRCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/brca/fold_3.npz",
+    "sha256": "135d9022926cbe315fae994522d3a13ff2e7c126f6ac7a9c0a8e54b7747501b1",
+    "original_source_sha256": "375a86eec64671f7ecbafaf4e94ea262736ee351d70df28696f68138d9fae43d"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "BRCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/brca/fold_3.npz",
+    "sha256": "2041f115df4f044a081fa327d4268f72028df6e96485384802d9a7685ef9789e",
+    "original_source_sha256": "251732c5a0d3e1820de97fb21df33ac810c6fdc22616c8737c8751aeb823857a"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "BRCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/brca/fold_3.npz",
+    "sha256": "2f0d20287e40ffadd745a5ef62d8bd05beba86fec9c84488b2cff5c0b5a435c0",
+    "original_source_sha256": "871aad2ce8ddff295d9b6e1c7ed08fc014fea74e9ae4463bcbffbce656ed7e0b"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "BRCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/brca/fold_3.npz",
+    "sha256": "6b3c105156574243f79570c864a73e6b4e267a15c7af73f2bfc1024223368f9c",
+    "original_source_sha256": "a3bc47460548e27797489569ea585698b162c302bcf0230a6ac65168b425b354"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "BRCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/brca/fold_3.npz",
+    "sha256": "3403d5efb2a8ef41605cb31269a358f1f45507cf45dc209ea556c24bc608236d",
+    "original_source_sha256": "4c25644e4201d1824b4312205cf0f584aee621b927fe9e295068dde2b6e913e2"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "BRCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/brca/fold_3.npz",
+    "sha256": "e0a1de207484c76bbcaf0d8cd42e45fecc9cba118beadecabce7595a24ede5d2",
+    "original_source_sha256": "8e4a912b59b8780b7f4f9562d8dcf5df69a38034d6aee6f603ab4e2edbe50ea1"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "BRCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/brca/fold_3.npz",
+    "sha256": "68fe95af5b673c63def2df45e7dc365638b5996f1d40c252af4dd60b62de7960",
+    "original_source_sha256": "8c369d180358ab14fe9a44ec597499218cbc62b602a3c18f870ecf9c70f63566"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "BRCA",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/brca/fold_3.npz",
+    "sha256": "07e42ca9a09be3b6c8715f110ee42a9698bb8001b60ed0a8d6b90d24f20efee6",
+    "original_source_sha256": "89e29805aee546c215823d1ef5bacbbaddc0bd51296b81388f3ca7e063d8cfa1"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "BRCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/brca/fold_4.npz",
+    "sha256": "ef54068c03240280b340fc47f54c258c2255ca153318f9d59ce9dc2a93cbec1f",
+    "original_source_sha256": "6f47d522f76b95ef0bbdba2fdc898d35fbcf91e88bc446a06e3c5d91ee4589b8"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "BRCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/brca/fold_4.npz",
+    "sha256": "0f7e4cd8aea87eee67813de0789e756d55f84a8a90d7f1fd0d867ab415b9a2f2",
+    "original_source_sha256": "11e3fd93242debdba4c6fab668b7a5438267d7e533cc9b229a3e39677300f1e4"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "BRCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/brca/fold_4.npz",
+    "sha256": "080cc2d284c4c818d1a27e57a04090d1309ef4441898f6989727ede978340e61",
+    "original_source_sha256": "a9bcce83bb0f0cda7aef19b3e4083131babd3d04af49e3491a197c6c9487f234"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "BRCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/brca/fold_4.npz",
+    "sha256": "8ff737e21db3861114236ecaafc414c5bf33ebf838fd7d4f3424a88330da8b67",
+    "original_source_sha256": "7e3802d93ac7b12e7c3b10258afef2599dd9deff61b79c024e45418c8d09eaaa"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "BRCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/brca/fold_4.npz",
+    "sha256": "a9f93943e030eb9be2a297b8e0cc8e205816ad79e888f023e2179807fa75f5f8",
+    "original_source_sha256": "d4646f908d2c6168435af40e1d444156d15ec3aa36100e08e11358094d031026"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "BRCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/brca/fold_4.npz",
+    "sha256": "10e74c4044bf2cda630cda0d4b03505c9ba44bff58ebf2e02329ebc6c349ab73",
+    "original_source_sha256": "ab00a01e3c6354b12b10e7c90614d5a541e2ae110f40b5bec2553e27dcfadacd"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "BRCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/brca/fold_4.npz",
+    "sha256": "01f3ff7d711f9a4fc3b60416c9067173eb02f79e1adc0361ad1ea5d9176fea8f",
+    "original_source_sha256": "d376afcba7c7339fc67160e97748df0cd0c5b3d4c08efdd5fb78c0dc1cff2ff9"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "BRCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/brca/fold_4.npz",
+    "sha256": "0edc80ca608a10ff353566ac590f2fa74484aa2d268220742a3c0d5d5149c58a",
+    "original_source_sha256": "6ab7ab47a4a679c476781d5290267af885c4f26c9c37a0e583a9830598f8140b"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "BRCA",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/brca/fold_4.npz",
+    "sha256": "e82f302959c4475cbf10c9739abee3ce829e1e967883ffd4d808abfee86c4454",
+    "original_source_sha256": "85263e32ea9a90e03ede640deb1289c9ff92f21d93fba1e3fe6dc36f0fa580c2"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "GBMLGG",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/gbmlgg/fold_0.npz",
+    "sha256": "57b51599058040559b5a822269057a9275b734de2979f34103ac3a384845424b",
+    "original_source_sha256": "52382f68340448e264e09e106efd378ab16d2ce8afbda90b7e8f0be50f3384ea"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "GBMLGG",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/gbmlgg/fold_0.npz",
+    "sha256": "8cbb33367781be4d90693ee777c47c599283d48968a09c4a9eba9a1b17e8f99c",
+    "original_source_sha256": "5e782c21c8ce3f3357f314cd0e1d138687fc0d8ef6a81ea5f95946b055b152b4"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "GBMLGG",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/gbmlgg/fold_0.npz",
+    "sha256": "91743b1f189be7f8e7061a29a9f65290d3c085d6510840c8a91bcc3a99b0880a",
+    "original_source_sha256": "989ca5cfa0cd3c7b5731a9a9f95dce029fbe3c9303706905e8eb0c83df922193"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "GBMLGG",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/gbmlgg/fold_0.npz",
+    "sha256": "6a197a5b17ddb1718892df052d4d17357df9be37c5bf733cb6ae83e2554b547e",
+    "original_source_sha256": "3a8ea731d2c9d180a5e7cecce86628c5eb7d60b3c44041ebf8b0dba25a8bed0d"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "GBMLGG",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/gbmlgg/fold_0.npz",
+    "sha256": "d9b7d8c269d426301b601710a4265ef71182e67739008627d81873839a1963a4",
+    "original_source_sha256": "0e62e3b6e0e910404da886811ea9dcaaf6796dd024e6bb38a89a9fd97e6223bd"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "GBMLGG",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/gbmlgg/fold_0.npz",
+    "sha256": "b274e773797dc298a21a859e519fdb297617f0676db02d4d015020a1c81ad8a4",
+    "original_source_sha256": "4c4369ee3159d95647fdddb0eae86f85705d781f8edf73d34b3cc12144372688"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "GBMLGG",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/gbmlgg/fold_0.npz",
+    "sha256": "3885564ff49f92f4cc7a9a2a1c35a082e062129ba5d6281d4536370cc10a1aa8",
+    "original_source_sha256": "11aef14807c26041aa61775ddffdf633ce59b8aced2cfb7a907994d36fa6d0ff"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "GBMLGG",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/gbmlgg/fold_0.npz",
+    "sha256": "35ca267b66b0fc35fe4a52b39e4a4f3ccadedf5bf6cf2025d4bf9dc870de86db",
+    "original_source_sha256": "f13eae0b04cbcfc9469c3855dd4dd720309daebd34ceb0411f1a90a444e5599f"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "GBMLGG",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/gbmlgg/fold_0.npz",
+    "sha256": "ab637e44bdea3f475f314480f6735bc6ae4293e6d686ce0148d225b7ef7a95e1",
+    "original_source_sha256": "919c29809352b34d4a517d08aa2b2c2d6b8f39b1fe72d6d547b22ce4c1bed1a0"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "GBMLGG",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/gbmlgg/fold_1.npz",
+    "sha256": "7b1d0f465692c2549249d0058f61d40cc28ac1f143db9da8a8b42d0d74e4c917",
+    "original_source_sha256": "737b495fac25f60e621a653be3b2a29f72b861f656eb26d9d0b6b98d5fedc40a"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "GBMLGG",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/gbmlgg/fold_1.npz",
+    "sha256": "ecab8c5019ebf61b0ecc8c2f438b0855363c77e10982435a777941e5a9e386af",
+    "original_source_sha256": "8b6b7a39a2406daae39237d35db5aa4be65fe2a9913075576b1a40d2a54f9cd8"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "GBMLGG",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/gbmlgg/fold_1.npz",
+    "sha256": "89171d3e2910234f734ecaa5e76a4e2c50f231c77b50b183ac1fceb4025d4546",
+    "original_source_sha256": "bc41badc52c27a1b140f256b34c73b9a403b10e774d2312321d7a2241e81c955"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "GBMLGG",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/gbmlgg/fold_1.npz",
+    "sha256": "db16f4d72888f3c64a9182ef580517dd595849edddfe4a801dcaa8627e9ce584",
+    "original_source_sha256": "383854631d23d659883986bfb8d7e29b80eadb4dd00efa392575819339210131"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "GBMLGG",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/gbmlgg/fold_1.npz",
+    "sha256": "8638e10edc43e054359299f4aebc982d01791c55ab1547cfaf173e6f052f0236",
+    "original_source_sha256": "1048c71e9ae9ae72e15ee567b2139751f92468866a5c652c81a2e52bb4de554f"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "GBMLGG",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/gbmlgg/fold_1.npz",
+    "sha256": "dc440ce01273197e6790e41797be6da215a1e4ff57dabfc5686398b0dfee8978",
+    "original_source_sha256": "84e8076066769fc37b86c6dc209d96c62fe8b6d974ab50a9cbdcd680949385af"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "GBMLGG",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/gbmlgg/fold_1.npz",
+    "sha256": "04c5908cc7318cc30dd593079a9cf8e7237bd58f559e8cdb7542d357f1cf78e5",
+    "original_source_sha256": "949ac687870fafbbf0bd1bb164de49315409e8e6fa741cf21347f4f14ad8a4b0"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "GBMLGG",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/gbmlgg/fold_1.npz",
+    "sha256": "f5e9904e8fd9827f69aa797fa7158f238ca1d8e9e6406bd70ed2f2146fa1865c",
+    "original_source_sha256": "fcc02e30ae46db6ecebef775a491588fd5df5c23f9b161d86299699e11de1144"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "GBMLGG",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/gbmlgg/fold_1.npz",
+    "sha256": "086420f294e931914a1035d8a2454ff0fb9eb57508fa57f103bb61d980d43639",
+    "original_source_sha256": "8ab07a51231d329d548f0fde2056f036e962f2d8db95b54f97bfba8226be06f8"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "GBMLGG",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/gbmlgg/fold_2.npz",
+    "sha256": "5944747d01c2514465e67cfe93b2a1b750106021fc15d5dbf11244fb5c1e624d",
+    "original_source_sha256": "3723d99fd92fa9e95bfbd2d89969720884219a74f12878c9a88f643e43d4f9a8"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "GBMLGG",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/gbmlgg/fold_2.npz",
+    "sha256": "71770f65af55cbc8721d20b727e9c3e933c78144a889eda70655d52e3f4784a0",
+    "original_source_sha256": "f4b5b2cc9042420d6e1b0e0c701346c7dc58a97f2edb3ad445a01bd877d650a0"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "GBMLGG",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/gbmlgg/fold_2.npz",
+    "sha256": "886f08a809e4c8c8898aeb5c059dbc94d2d5278e3a4044d2ec44e4526c8542fa",
+    "original_source_sha256": "393c37720d3f7e403517d75d7902b64bc3498abe371e7728eb352e9387b1b68b"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "GBMLGG",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/gbmlgg/fold_2.npz",
+    "sha256": "eaee0acc816e57a48d48e7e75dede14b32babb0e625324dee01218cd60dddf30",
+    "original_source_sha256": "bf0118b5f97460ca8d6165eab768393061afd68bbb37a6d44d8e7be9d09d9319"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "GBMLGG",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/gbmlgg/fold_2.npz",
+    "sha256": "099c5bf631311de4c7f116e6ae4f80e5338eadc39f9218f9f1ca90a43aff18fa",
+    "original_source_sha256": "527275d703d6742e722a2426517b4c3266f24f5391ceda10fcd6eb28b9869a45"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "GBMLGG",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/gbmlgg/fold_2.npz",
+    "sha256": "75efd1b571c75cc8961eb7a52b395adc725b4612c88cb5e6333e63cf3adcb239",
+    "original_source_sha256": "9e1cd84eabc2d946cce08435c4f16562d419ce2407005773fd0db23078fa130a"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "GBMLGG",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/gbmlgg/fold_2.npz",
+    "sha256": "43ad42a978476d145cf1ea2ebb1b11643f033421633444eb6763e6499b433b64",
+    "original_source_sha256": "a410b38073ba75e7e8052207c3ff53df0ccbaae7405b63cf92473d21328b3e71"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "GBMLGG",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/gbmlgg/fold_2.npz",
+    "sha256": "2fb95041f4cbe5c502de26a25c8a6dceea9ae5559458e22e39e8304873ef0b22",
+    "original_source_sha256": "e2f813a223014a09534253c41c26fa5c9345b38fc319e3742be952f79c831669"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "GBMLGG",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/gbmlgg/fold_2.npz",
+    "sha256": "1740c1f4151edc43f607eda14470f9c4cfd7145ab4eb9fca983413efffabf6f6",
+    "original_source_sha256": "34efb68caf33ca13c28c7cd7e4dfb7f954857595595cec039f253945eb022713"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "GBMLGG",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/gbmlgg/fold_3.npz",
+    "sha256": "7f1ba2f40529c7c46ab25661835776b7461a9bff6c9c75fc3864c97308cbcca7",
+    "original_source_sha256": "4c686c6932e8a65e61f6f4f6979575fb555c0161648970d884cea7011ff17c8b"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "GBMLGG",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/gbmlgg/fold_3.npz",
+    "sha256": "f8ee3d308006a3f725477b2da570b5bfe181c53992a0a0be230ac4011cf5f6f7",
+    "original_source_sha256": "12cdc2b1721c92074f0f523eae98ce8f288f86dc6c121211b33e8077a78941f5"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "GBMLGG",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/gbmlgg/fold_3.npz",
+    "sha256": "5acf19fdcc951dc3c45e43f9ae1838182406afde42ac2a3a8e301f829bcee751",
+    "original_source_sha256": "f6a877ed45b0b7a2633c9515097941f5a297c893bbca42c906e3f8f89ba907cf"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "GBMLGG",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/gbmlgg/fold_3.npz",
+    "sha256": "0f0b7aa3be1fa65b59f0c17438c1c1b8445452fd51c28055ca624a9b3ef998eb",
+    "original_source_sha256": "eb550ce0cbc3b05f634b1451173f4acafcd7c1cc1c7e4da7e8d45e33c722a301"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "GBMLGG",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/gbmlgg/fold_3.npz",
+    "sha256": "5dd0e9e33d84eabdf25d15608853874b8a9471f846517706f81d86a6f4d02de6",
+    "original_source_sha256": "b37e4c52b108d01e1aa93e6d6f4f0803f4eb772a57f7945626fdda71603dac82"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "GBMLGG",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/gbmlgg/fold_3.npz",
+    "sha256": "1498ad0d5422083a4883c8e48c1c7d658a2d9811c9489cfe93e08dbc132f2041",
+    "original_source_sha256": "a00fd9efcec54b592bac7f6abc9b315862a2a2b817584f77d8628251b6dc0b54"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "GBMLGG",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/gbmlgg/fold_3.npz",
+    "sha256": "45b20e7a325069a42015e9eef732b7851a7a324b3ec7bf73ba17fb46dde1a162",
+    "original_source_sha256": "17e16d3ddfe87e8715c99296966d145e8f72b5911250e768895ce16e8fc96cf8"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "GBMLGG",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/gbmlgg/fold_3.npz",
+    "sha256": "f34cb153456ee77a1417d350c3b255036d9296da762536078fe63590f36f9914",
+    "original_source_sha256": "923e1011e34c3745bccf7f05159e48aa7b71042bdb1998674fb9560d31f58de8"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "GBMLGG",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/gbmlgg/fold_3.npz",
+    "sha256": "4d03a7fc2b3c5fd500c99e154c6dd7691455a6864f63a88547131fa7692dc967",
+    "original_source_sha256": "5d1157d94a483d88ed1c1408a0c9846db24cb5a7087153eec9a2cdb7b2519ca5"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "GBMLGG",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/gbmlgg/fold_4.npz",
+    "sha256": "4d4a0cb834d7d212dcdb306619199f93138bb75429fbbb7a8ff763efd8a50d04",
+    "original_source_sha256": "0931efbffca5192471a01e1897867653980fe055af2af9e1c02a9c802899bbfe"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "GBMLGG",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/gbmlgg/fold_4.npz",
+    "sha256": "c435fe5ada37ccff4b84c43d922e72c5635e67e95af5c67aa23fe7e79e4b2a00",
+    "original_source_sha256": "a27e7ef4840a972416bd4cd1f1abd72529627a8546effc338966fc9c6f17b3d1"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "GBMLGG",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/gbmlgg/fold_4.npz",
+    "sha256": "161d70c23aa2fe77b26c811598b5330623dfe60be222627074e2d05a5721c376",
+    "original_source_sha256": "9aa75415dd9a97a4c1c36518005ab3d6a2afad85679aef65d9863af4248eacb0"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "GBMLGG",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/gbmlgg/fold_4.npz",
+    "sha256": "11c357fc52e09101f2f8505b0119f30999230dc59aa401dcbc09cd89a0616101",
+    "original_source_sha256": "fcd2b5d05c821794ae0b8d417aa4db047600745202d632fc99709f39e421318e"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "GBMLGG",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/gbmlgg/fold_4.npz",
+    "sha256": "fcf18d7b269f194a7cfb89e269dd64e5fc9597b5a44d27253dca170d888191c8",
+    "original_source_sha256": "71d09b422939b942efb01f3a2e59c04c33db50bd25764eca2fad1bb574b9abb7"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "GBMLGG",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/gbmlgg/fold_4.npz",
+    "sha256": "7da8ef582f9e86fc980c6a787a147c70bfb2fed0c9955355a14821507815e7d8",
+    "original_source_sha256": "ceaf4d8fed7255106585d7ffec075eb887c7c7fdcd279d35d07a94050bcb1970"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "GBMLGG",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/gbmlgg/fold_4.npz",
+    "sha256": "415c83296efd1ba5d9d8b37c5e6884e01106e2946301713eba557624d2ffa194",
+    "original_source_sha256": "96687818ebbfef7b918932896793294b074419b4b4ad68bd6d015edbd608777e"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "GBMLGG",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/gbmlgg/fold_4.npz",
+    "sha256": "bcf2e25fa237a59b85b12ba859a23c32e15eb50f1fd900bd261388a174ac8dc8",
+    "original_source_sha256": "c8921e797ef209d6b1d2cef327bc31d000aad72e39393ce31c6bbad8c1751c3f"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "GBMLGG",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/gbmlgg/fold_4.npz",
+    "sha256": "542a980324422f9b578c595731e69e057797bd84627735ec95029b4216a2c82b",
+    "original_source_sha256": "81fc59491be86d79301babbfbb87a380c8487af4e5a2127ef0af1696f2808582"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "LUAD",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/luad/fold_0.npz",
+    "sha256": "34b34cddcadff62d9d217e5ad19fe5d3066a2a84d07a7c176a6b7c4781552c12",
+    "original_source_sha256": "633d6521c4ba7f59c642fdb4053f2498e35f2ce5bb66047fb439dbf3d3899d47"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "LUAD",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/luad/fold_0.npz",
+    "sha256": "72a660cd872360dee7c27d681822c7f8528a065e3d5ac96409f244796f10c54f",
+    "original_source_sha256": "3832dbd9214de50220e6312fbade6308a5575a23b6a8217642bdb52ecbcfc953"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "LUAD",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/luad/fold_0.npz",
+    "sha256": "fd4aa3110103586fc362bc0b8735f8bf34f64a4941a024aa7a7e36f18e6c2ddf",
+    "original_source_sha256": "8f3bd21e313995b10b697cbfe357e49e617d89130963e639b8f676ed1314aaf8"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "LUAD",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/luad/fold_0.npz",
+    "sha256": "bb070d91f5de8d64d7cd22c75b8cfbd5f9c10568b5f65249aa63050b329e7d3e",
+    "original_source_sha256": "a300c9c7c630d588ef950c6b9a927cab352610ac20221859d07fe380a0eb8708"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "LUAD",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/luad/fold_0.npz",
+    "sha256": "4d2e84039427ef7c2cf18b6f284b972d822a762aa416ab6fbbb7780b0bbe7bba",
+    "original_source_sha256": "4109b1dbe8f0bbe9c173185a5bee7b7c89f9cb73bba88a8672e2e9ed1eb03934"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "LUAD",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/luad/fold_0.npz",
+    "sha256": "27fd54f3c59e1ec4f755348d7effc0d12da6e07589f716db9874a04d7a0e59ed",
+    "original_source_sha256": "425add474b62f4c18018ae10caf51ae6f14db2efcb8049562ca1d5ea2dfa057e"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "LUAD",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/luad/fold_0.npz",
+    "sha256": "06076a6438559a743c8028a0f673c46341b7719e4694e3cb17f9c04d31cc4d14",
+    "original_source_sha256": "51acc1b7c15ca7dc3710349ca8542567f1b24a93cba7c7cdf11a192ba86e6423"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "LUAD",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/luad/fold_0.npz",
+    "sha256": "98121fa0fc0c4e21baf6029b748e110a340804ffa68822366b375dc5ad389d98",
+    "original_source_sha256": "7bf44273d74a87fecb9e19fefb12e6a36719923e1864da52b500859f38c64130"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "LUAD",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/luad/fold_0.npz",
+    "sha256": "9fb3427600cff927e2dd6731e07371896022d23683a33127f0ac582b1ca48a2a",
+    "original_source_sha256": "5355f31b58ca88c43c19906dedf69358c6099c91fc269ccef808c4c65bfd4f7b"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "LUAD",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/luad/fold_1.npz",
+    "sha256": "464cb2aefc6b4c58e8b39852fb0b30998e5f3e57489943321ad64c8ae7fc11da",
+    "original_source_sha256": "7760ac289c4059b67901415eb1d59c9eba7fbbc89d08aec24ab55d3f9650d8cb"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "LUAD",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/luad/fold_1.npz",
+    "sha256": "1db9cd32e38b3a06bd6d0825495982a2ce15ac2b015f48b26f968f52a797a532",
+    "original_source_sha256": "4db8b569d19e358e1a75657694e5b06057be8b37043df4ab405b1db24d3e218b"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "LUAD",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/luad/fold_1.npz",
+    "sha256": "9351d6a5f999f6eddd4ee24558c616a972ad373fe7ae3f7697a534382377708c",
+    "original_source_sha256": "b470c57f455ee5b4a493d8ff337bcf4bcdcd0e8a6f345316aeb2220fa513361f"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "LUAD",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/luad/fold_1.npz",
+    "sha256": "dee88b4764b4cfb13a310488d4ee4a02108ce6f80e74eda4c4521c2f8613865a",
+    "original_source_sha256": "6871efdf8261ec5496bf216b62cef25dc7e520b2dc4d702c2260694e4cf99185"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "LUAD",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/luad/fold_1.npz",
+    "sha256": "d0ddcd937eb9a7d13d028986379d03d80e440f347054777bc7a6491b2fa33a2a",
+    "original_source_sha256": "461c13e8c36e6862fedea91eb1832b03dcc796d96f601a3a1b72211e57fdc6a8"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "LUAD",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/luad/fold_1.npz",
+    "sha256": "3af585e3a7bd57e626df729452ca9798c0873f735fef8e47f93df896167db7e4",
+    "original_source_sha256": "fb3c1507bd21f0c1cdaa9980958820b51d24c89199af04895a5b045549129de7"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "LUAD",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/luad/fold_1.npz",
+    "sha256": "a70c7c8834f40ac98bf90df92789735c2cb561cc5fd3cb62cef20e0d1c9234a1",
+    "original_source_sha256": "c4f9830de2f6132934394f2663ba2ab0742b63958b4b3db236dd2c0772118a79"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "LUAD",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/luad/fold_1.npz",
+    "sha256": "f0abd8b17f382d3f11bcf608964f8ea7c246a7ea03c0c5175187ef7a50e277a5",
+    "original_source_sha256": "912b0e25b036353997bdd01067a7fdf019078b1f47b2e333ffa085d476372b86"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "LUAD",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/luad/fold_1.npz",
+    "sha256": "4ca26f9229880e45737ff228870cd61dca9e324a7b622a9a3ef1f4b4e235de1f",
+    "original_source_sha256": "76ebef32ef9e90dd78faade2e313b69584b6bae1d1e1180bded1f6ef9e69cf23"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "LUAD",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/luad/fold_2.npz",
+    "sha256": "c10df7c67b8744ef0284fd0b6cded15f07f612e044f411dbb4e80084bab81d57",
+    "original_source_sha256": "517b74cefdf5219c1e80fe756599a8e6d889d77268253f5118eaccd59e2de324"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "LUAD",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/luad/fold_2.npz",
+    "sha256": "e48d9b2c816a08dcc421d7d532fc0af2c68f98a098263e03c0baaae4cae8b0d3",
+    "original_source_sha256": "61d38bcd7a6ce46b08a533bc0ef063f1486843738494ef72fbce512022165390"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "LUAD",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/luad/fold_2.npz",
+    "sha256": "34e5af4e86f3f44f20c350d9df50abc59dca4aa19f7a5726fe1389e365d1290d",
+    "original_source_sha256": "cef536ab1cb274514729344166572a1677644ccadf53f725195b7bb76c642884"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "LUAD",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/luad/fold_2.npz",
+    "sha256": "17ca8d7a10ce655dbeeedd7b8fb8201f988fd0a286da61b23ef69fb5ec69031a",
+    "original_source_sha256": "a2bb47b244d8ef7a737f1c4ca7fd71ccccd7fd24c63c2cea4574f88744face8a"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "LUAD",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/luad/fold_2.npz",
+    "sha256": "d5282160d4ae1561e57ebf498389b75278ce12a7860b59ed945248ed957ef278",
+    "original_source_sha256": "bea0e1885b5ab5748685cb28163040e7a33b9049fcf56bb5a32534b638a293f8"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "LUAD",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/luad/fold_2.npz",
+    "sha256": "dc4fb2e042d8597664b17e5bbd3f4078a9c8a4d09d26be91e4aed2e276f06297",
+    "original_source_sha256": "4a3c54a4ee33f44267399db51fe06568f80b0c2180fe6bba2bc495d41ab9587a"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "LUAD",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/luad/fold_2.npz",
+    "sha256": "091b26b73d7394068de60587f0601292ef234cea488b04eb9d203b7c00367ccc",
+    "original_source_sha256": "1fe458ded7c9a5dfbc31d13a4cd6ddf75bb660718cbef388fe909176321bb879"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "LUAD",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/luad/fold_2.npz",
+    "sha256": "46655c644b1c0b03f73804669d4de33a624ccbe2410e99e769ed9821831c0788",
+    "original_source_sha256": "35a5cc0c426605c6c796229d61ae39ae533db0a04d2ecf3457b83589f60775f8"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "LUAD",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/luad/fold_2.npz",
+    "sha256": "b53517987d5c7de2ca62004824b4f302cb02c0e28f42c8203d92b503ee951145",
+    "original_source_sha256": "c7bba1c4e3682fa4c28682895f1b06c39bde6eb5ac444454e2c33938654acae6"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "LUAD",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/luad/fold_3.npz",
+    "sha256": "0b85b8658282041826320239f703b178413a5ab8d76401fe75bbd1d38fb2705e",
+    "original_source_sha256": "06737a2cce24f81c4f8bf30a5ded4f0f4ac74d86bb67f35114703392d94c832f"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "LUAD",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/luad/fold_3.npz",
+    "sha256": "f4b516a29613dd15f07dd8ebb78c0d1a92e10e619ad681852dfd79c12a6fd0b2",
+    "original_source_sha256": "794253a60dd9a049059a88af8ff49dcfff22b37ba8e07fe09c263b0fe596306c"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "LUAD",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/luad/fold_3.npz",
+    "sha256": "2708075c33d4f771529c5fc478f6eea1c5f50c7a16c190c7b92d6bf914a838c2",
+    "original_source_sha256": "28e9234f8548ec6890e5aa213d66fa9de03b2954a5a787acf489ce62a219612f"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "LUAD",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/luad/fold_3.npz",
+    "sha256": "34e5d901c2057db4a01818e5cc6f1af4ef3a3c42a9d9aa3c173096bbbab4d23d",
+    "original_source_sha256": "3d3c70a3233069e909aaf5c76969b86c4bf5ad20de680f39652c0c4dfa50ec96"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "LUAD",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/luad/fold_3.npz",
+    "sha256": "3f2194e3525aefd5d0e987b8bc7091aed39650f62a83fbe0351dd1cc02672c86",
+    "original_source_sha256": "8e3c4a4b6977b5a60fc0a154b1545cd68403afe39158412bd84ef2cd8310619d"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "LUAD",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/luad/fold_3.npz",
+    "sha256": "5332cca41d1fc1d9ffc6c3c83f597e57c5d05554af153b7b6b42f1a7b51bf833",
+    "original_source_sha256": "d8bd4b04e8529e5378eaf991e5bb5f497fc5af0cb595b1d0e4790871767f3904"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "LUAD",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/luad/fold_3.npz",
+    "sha256": "e25247b1b02e65c3429543929b08fb162386a49ab2697c9071851789414275e5",
+    "original_source_sha256": "913661f64b4b0655d80cc11088bee8434b047f8ed47a96a35c717c508d0a6ffc"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "LUAD",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/luad/fold_3.npz",
+    "sha256": "45d170237b2d3948c7f37b8dec083572969ab0ae18bad44e7300d1cd977cd12d",
+    "original_source_sha256": "1e1639cffcdfe93bc5300fce1d037723b3bca2ed3c7aa50a1841bf3abc5cdb57"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "LUAD",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/luad/fold_3.npz",
+    "sha256": "afd79afee9d52286b8234b2e5bc274c87e12e8634e2c2c53c0d0e58f9a86b7c1",
+    "original_source_sha256": "92f80c546f510e66b5abd282c9f40c8e67cea930e130f5de3b70206739116640"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "LUAD",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/luad/fold_4.npz",
+    "sha256": "7dd1a1cd947b3ab5a5cb3abd977eae9134899a63f97a4098aebad3d1e1f270c9",
+    "original_source_sha256": "962cf94117a727dfe5d83440a8082c6cccd008b41b333c0854df495dba1e16fc"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "LUAD",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/luad/fold_4.npz",
+    "sha256": "5a32dace0391aa6c1ee098e781688b8dc4267450eedec92403f8bd85d26209f9",
+    "original_source_sha256": "7103a78b1b97701bbfdebc0d702a2aea49dde63cd9cbc772e37661e7738bd88c"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "LUAD",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/luad/fold_4.npz",
+    "sha256": "4a3c6ba515ef62530f05e4b9435eee92ba26610c5a5cf6f93d07b3fb99486344",
+    "original_source_sha256": "f17623c2bdf11f6de4423a6f54573542064a0f86ba51953e9521676832c120b0"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "LUAD",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/luad/fold_4.npz",
+    "sha256": "902a929c882a16a5886dc50b17ff8fd6af9a188395dbab74ac22ea57134dd2be",
+    "original_source_sha256": "a63431e549e8599d7fa02370aece8b1740958943ca7553308991eae6a0f55a06"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "LUAD",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/luad/fold_4.npz",
+    "sha256": "50d71aea406f3a6c43e1565f436bdb7e8e3f17a84d6254b894cda606deca236a",
+    "original_source_sha256": "0b15f402dfd86b8c5a08f917ffa9a4ba081f79c5c681c7d3e6671070c06b5a6b"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "LUAD",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/luad/fold_4.npz",
+    "sha256": "d5061563ef2b139b814299a73517886658d761867795870d698aa97eb0aeacae",
+    "original_source_sha256": "817078c083fd6ac876255bfc4b2c8afd605c078e91bed0c0397489707733dbbf"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "LUAD",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/luad/fold_4.npz",
+    "sha256": "ec56ff739ef64b42d94a05afeb1cf1ea96fb28cd02eaf45c79ab9ce27774fcf4",
+    "original_source_sha256": "47713d196fdf9bfa060d8913af038b8cb0e91de37721075435f711760be62064"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "LUAD",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/luad/fold_4.npz",
+    "sha256": "fa6d4219c575950b69d116ce2b57efd2662137fe52bf59c5b0e7aa143701e162",
+    "original_source_sha256": "0716612e1304c50aa138883a4420cf128a7f95a80c037818b1def75b7c542d16"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "LUAD",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/luad/fold_4.npz",
+    "sha256": "14e03ac2bccfccd169e400a8d029fef5947658ae62e69c6a9aa5884bd2c70a0d",
+    "original_source_sha256": "1e7ccf90f77eeefa39f91af41b45f4ff4c6de8ba54403905badab5e30ef8e588"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "UCEC",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/ucec/fold_0.npz",
+    "sha256": "d4b15404abcf835b506f8b699e6e3c99c1e707b0f94d6b4b88564a05cf2018a3",
+    "original_source_sha256": "0984b816cedcde9c073a35b66c78c2793bf43a65e9d06cfb167a7eb20e5083a2"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "UCEC",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/ucec/fold_0.npz",
+    "sha256": "78ec108865e5366c62d51cab782a158499310b958705fd1aa00b636c59fcc40a",
+    "original_source_sha256": "98d1951de251106926b60170f5c085d7340397bfc03acc22abf5ffb3488057af"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "UCEC",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/ucec/fold_0.npz",
+    "sha256": "08930cfa783af56305c74fc3e4192bd3ebbb221b47a5cea78f3e6e7188e6838b",
+    "original_source_sha256": "67d9539440d95af962f0e324c98144a1ab60eec5d1593e7735942b7bc0d46d0c"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "UCEC",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/ucec/fold_0.npz",
+    "sha256": "31721ba27759958b023d69c8185be484797711c135b959b5b4b17c5ca487ae7c",
+    "original_source_sha256": "d2afd7bb07938c1f9aeafe9d22ca229bb33e62164e32d7f9c657267efdc85793"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "UCEC",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/ucec/fold_0.npz",
+    "sha256": "1ab03e91ced524aa0746ed43f3df504aa2cbfd57aab22e767359ce8596ce31c3",
+    "original_source_sha256": "700d4ed118ce57112ac1f94a949dd30c174954f49b3b0cbbbfd5cad0c316d416"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "UCEC",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/ucec/fold_0.npz",
+    "sha256": "e21c519f68a1a21d083868a90984a79ace7be12c3ed9151c644fe956c3128869",
+    "original_source_sha256": "3841eeb821da2f620bd6b7dee321beeba03f15ce8fb43fa530aeb9fe2d90fbd8"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "UCEC",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/ucec/fold_0.npz",
+    "sha256": "4378d5a2baf8c6ecf201341bd2b44bd69d3171ae86fa10ca63483deacb75f47c",
+    "original_source_sha256": "be3017a7f4e38e2f6473cfdd7bbd2624aa93993915fb92c33915af4b9a97e451"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "UCEC",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/ucec/fold_0.npz",
+    "sha256": "67bc97894c78e7fce3b5f2d0ff8950cf33b23093e5907cb65265eb40d68c7a07",
+    "original_source_sha256": "6c29837a70c96a505d8e5bd6b55903f7582f77be52d8dc72eecb10843334abb5"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "UCEC",
+    "fold": 0,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/ucec/fold_0.npz",
+    "sha256": "d6d6b780dc6e1089ff848ce3e10fc2044c48f165763fa08d881f6aa514505896",
+    "original_source_sha256": "8cdf12bd2ab3085e32073520b80931d85046b135d56d37cf70af0c2bc404a442"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "UCEC",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/ucec/fold_1.npz",
+    "sha256": "eefcd30bf40cf2c99a5f79f03de29c5ea04c385f0e2896139c81ce472cd7a1ad",
+    "original_source_sha256": "82af0d1ae22f063676d5b2d083d0ca75b46c82ae066e104d4c45b7b1d0474fb8"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "UCEC",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/ucec/fold_1.npz",
+    "sha256": "6fbeffcc106c2b365204693c4ee74418fec67fd39e41ab8871cda9fbaba21ee1",
+    "original_source_sha256": "3ba81ba4b36d7a1e8271b791f6053ace5a0ea7fbc03448c681f95c52384a2ce8"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "UCEC",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/ucec/fold_1.npz",
+    "sha256": "d701a6696253a3ca9bf10b2177728594f4cd40a8d9617028107309ebb74d55ee",
+    "original_source_sha256": "e574bc92eb209ae81f31921c646b27fde40e95b24dbda9baba2067a769d29634"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "UCEC",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/ucec/fold_1.npz",
+    "sha256": "1dda9d6969a8239862982691762685e97de636093520e32727b0702da018b6ae",
+    "original_source_sha256": "f66133cbe3da2df13d85445f7676bcaf065581d109e5077aba848478a05a3815"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "UCEC",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/ucec/fold_1.npz",
+    "sha256": "2266679092fe543174b8897a408e4896ee6729e5734df401a335bf23f748b3f1",
+    "original_source_sha256": "b86bbda1051c36b1f3cc0481051a11940e79c290c80b56fc8cfb51e01224d6a4"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "UCEC",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/ucec/fold_1.npz",
+    "sha256": "b588e74cfd7eefb8211e2438fda93f79e69542a9eb04727f8237ba3a8d6dca52",
+    "original_source_sha256": "c493ac8f316cfc5790701cd9aee00a5a7385fdf14d84eff9c66b69c6ebfc45ab"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "UCEC",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/ucec/fold_1.npz",
+    "sha256": "4e5667eb402ef7025a6caa3989841d58f678b1b484124ec00f5b76649042c781",
+    "original_source_sha256": "7d191ad2db8e917c0ce6f0d0fe46508c57b7b4a64f84a7b84bcc2887bbbdc189"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "UCEC",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/ucec/fold_1.npz",
+    "sha256": "54c8c1a38806c434e408da7dd1cb9d26232d411cedc430ebcf874610254fe114",
+    "original_source_sha256": "00666fa28eccd2d04d1c3fe9329f0eb7d06e48e35e0a81d5eb4140585720c568"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "UCEC",
+    "fold": 1,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/ucec/fold_1.npz",
+    "sha256": "98ac545c39c354783ef09084de72103fc0c8cf4538216f63248b0381f3078981",
+    "original_source_sha256": "c16ff2a48cea8280b4fab5576b3ade2a0e8b7fdc71b9e33b1e40436fd26211fb"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "UCEC",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/ucec/fold_2.npz",
+    "sha256": "edd801091568ba531905ca387b9a76765410064a5ef19db1656b6e74ad33e1e0",
+    "original_source_sha256": "a5d0cd264ed0253ded7f71b847993746a8b166974dcbc2e66abcb5fef5d81edd"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "UCEC",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/ucec/fold_2.npz",
+    "sha256": "563a1102345be29856a47ff3176b15129ef89e7d74fd008cdf957f72fa7d24e5",
+    "original_source_sha256": "d5f1aeee5964b4c7bb4305210bb455813d88839c051259f870d0ce401e8734e3"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "UCEC",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/ucec/fold_2.npz",
+    "sha256": "2c7f698656e5cd5246a7713e621c45bddfc72d9742255b89562e790c9b4e32dc",
+    "original_source_sha256": "ddc254aa257a3d3d5c2788319db87f2e5f9accbe3fce71ea09c8aafa1381c701"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "UCEC",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/ucec/fold_2.npz",
+    "sha256": "488ed02ce82adee88426f1df3d7c6bdf121059856f62c1e088a87e448f63e35d",
+    "original_source_sha256": "3374a4d5ff287aabb7d015286dcd32fd26d475969f2b2064d453a6c0ebf43454"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "UCEC",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/ucec/fold_2.npz",
+    "sha256": "bfef74687ef3dfbe76d3a73ee30f5ed605c0af43ff6cd7419da67b31b0e0b89e",
+    "original_source_sha256": "7806f6cbde2eb74490a7917eec1ccb04367a08672f626e4d8cc0d42376a9cbb1"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "UCEC",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/ucec/fold_2.npz",
+    "sha256": "c307b72f7e3286f2e845206ce29fb048f72286b12ec3b76865f7e2a5ff900858",
+    "original_source_sha256": "450ebce061f5e8f8ce5bf9381fe54c68837cd696ff8532d69823a55e85c5b085"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "UCEC",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/ucec/fold_2.npz",
+    "sha256": "0761cfb92a5a43b171503fed42e4d6e37f0bfa0eac2ecf614fe5c32336289024",
+    "original_source_sha256": "afd8d8596ed1ba0b261af09745ebd00bb661e7d0508c36e4be2e58f554bdcca4"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "UCEC",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/ucec/fold_2.npz",
+    "sha256": "7e15283c40d3c3196dc92b9bb0efe5c8c656e81098661b9d39a21e8e6c15fa7d",
+    "original_source_sha256": "c230a1fb4401bd6344d0b63e1207bd056e5515f69f2e0af355618a4d5ec128a6"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "UCEC",
+    "fold": 2,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/ucec/fold_2.npz",
+    "sha256": "8fe5fd07447b865b3a04621c1c327e5e1e65100034248be8a0389076c9f9a78f",
+    "original_source_sha256": "2f762c19b14d9c68f493fd95d9848f1f56eb79bcc10c406850e26b052ec32dd9"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "UCEC",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/ucec/fold_3.npz",
+    "sha256": "40f4639fb91c6ae86acc9ee74b941ed5da1300e920f02bc931bff6866ccc0b7f",
+    "original_source_sha256": "3fcfcbd635dc5344536754894312b448dd7b56affb3bfeca49243b0a5b89af5d"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "UCEC",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/ucec/fold_3.npz",
+    "sha256": "2c4b1f040ddd4db035e7f7bdde0dbf969dd6b0b8b79998abfc906afad8881194",
+    "original_source_sha256": "79967dd8cbc4a56ade415d1490e32700b913009c19cac154377929f6837b5d41"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "UCEC",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/ucec/fold_3.npz",
+    "sha256": "2f2afd0eeb73c25af892947fe54b3e285907c393723fa9fff74581a2efb0c21e",
+    "original_source_sha256": "d56a561c5112ad3ffa4cd96f6c1fdd5ce70944679b90e1479cb8ab362d2bdc3c"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "UCEC",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/ucec/fold_3.npz",
+    "sha256": "28b94106106dc281872e90d411ccbde26b2ca92e467f4b7f2d24f6d55a7aced6",
+    "original_source_sha256": "f21368749f66d847bf0c63506d85879d2dfe20087c725573b0983746c57e23e4"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "UCEC",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/ucec/fold_3.npz",
+    "sha256": "ea809fa55d22b76310bc9c408b19347cdbdf5884c83cdf9f706596250baecbf1",
+    "original_source_sha256": "2dcea2c28c6c85d785a8fa579f4bedb3577d1fd23bf945bcbd5b24c4b9747ea8"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "UCEC",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/ucec/fold_3.npz",
+    "sha256": "c6e862e824344d68ce5d7c40260d464022b514803ca850c0443a78f96a79e453",
+    "original_source_sha256": "c8d58797acd247aada51fc03fb8b0fbbd87dc33561f3c0c7a5ec3a74f861483b"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "UCEC",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/ucec/fold_3.npz",
+    "sha256": "9418a94f0815fc8891de5323ce694ef45093fe1d011a4e12b45f535d27de6866",
+    "original_source_sha256": "0a92200266badbe9bc002d0f99a31233f555db94085bf3b43e70c4e9803dce45"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "UCEC",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/ucec/fold_3.npz",
+    "sha256": "19c02c4ea594fe65d42faf207f1ac1c31dd22e3dc4e8cf65db6f1d3c0b5f3bf9",
+    "original_source_sha256": "4d4c7e291e7980ba299a5cdc6cf31171cee4618949a8c3c88863f00f18c065b3"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "UCEC",
+    "fold": 3,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/ucec/fold_3.npz",
+    "sha256": "2d895d94fe3fd38f486d458d7719bdec616a5cbac05d17aabbd568c4047f97cf",
+    "original_source_sha256": "0f4e3cad676282666689c6046d3cd8eb42ba7ad0e26e7e8388fbaaed4e12e7dd"
+  },
+  {
+    "method": "ABMIL",
+    "dataset": "UCEC",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/abmil/ucec/fold_4.npz",
+    "sha256": "d5968eacc6f69d1432e6e39743ed1f8ec7fbf9d41090e0ff1f6f29a9ba8539fe",
+    "original_source_sha256": "1a04fc480358960aee932446cc4c5c43c5173828ca7c9164810fa0440822d671"
+  },
+  {
+    "method": "TransMIL",
+    "dataset": "UCEC",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/transmil/ucec/fold_4.npz",
+    "sha256": "03fa6da0eceb3d2f171318df74be84ebeba715e1259ca2260cc4e309f9b07dff",
+    "original_source_sha256": "1013135fc6eb5089b89145250b6709855d8e967fe5e0fa8db0057842e13218e2"
+  },
+  {
+    "method": "ILRA",
+    "dataset": "UCEC",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/ilra/ucec/fold_4.npz",
+    "sha256": "78baa0fc2b25e7c8c90b35721b8a45a3c0fbd3bfc64e5e6a4b37ddc75fed0d19",
+    "original_source_sha256": "8f3ae281377a6f0c960cb97f187488db4312a93d745688f1ab3acf46581431f8"
+  },
+  {
+    "method": "DSMIL",
+    "dataset": "UCEC",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/dsmil/ucec/fold_4.npz",
+    "sha256": "d88861b28e6aebd5b85fbb9665b5836f062659de8c4c8fa7933ee6e55860002f",
+    "original_source_sha256": "b5f920d9f469749de564b6e503a96fe7a2698470f76f8dfeb4ea56442ed212ec"
+  },
+  {
+    "method": "VLSA",
+    "dataset": "UCEC",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa/ucec/fold_4.npz",
+    "sha256": "9890fd624b5613bd780d37f7bd6eb487f68847b7712a3fca310542c02aa52dac",
+    "original_source_sha256": "76caed6d84b49ad6090cb3796f51f2f2531595fb6f6390de0828848da4ee89f5"
+  },
+  {
+    "method": "QACLF",
+    "dataset": "UCEC",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/qaclf/ucec/fold_4.npz",
+    "sha256": "fa5cc7620acab296d92603ccf50066afadb8e5b4ab9a6f57aa7e4635df2c53c9",
+    "original_source_sha256": "8037b7da694edaf954eb0b3c1c8f7ebcc45891d11306acecd65dcd2d0926fc21"
+  },
+  {
+    "method": "VLSA same projection",
+    "dataset": "UCEC",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/vlsa_same_projection/ucec/fold_4.npz",
+    "sha256": "4732d560a7d9ed85f10020baecae09ae9e414b67e15154d03fb009a1d197a4d6",
+    "original_source_sha256": "6e5a0c083de9a75715d78beb8e262d8d98897f2461008b6f9aef6bdb5724d47d"
+  },
+  {
+    "method": "MCAT",
+    "dataset": "UCEC",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/mcat/ucec/fold_4.npz",
+    "sha256": "5be14de3b039708a8828d5d0dc3343e30aa4f678bfae50101af6ec2d36ca3a74",
+    "original_source_sha256": "53253f2e4873804c7803e6c1c4b8f8fea2d0d7b47c279e93b73fc20fab9ae29b"
+  },
+  {
+    "method": "CAT-with-TPL",
+    "dataset": "UCEC",
+    "fold": 4,
+    "path": "result/qaclf-nested-v1-unified-evaluation-20261027/curve_inputs/cat_tpl/ucec/fold_4.npz",
+    "sha256": "5058b0acc3e4223501be728b08b137712f5566821d3c69941294e9e1b0df5a6c",
+    "original_source_sha256": "da116280618b6784d088f6ea5628ee7a3b382a10b3a5c0269330dacc5dad66ef"
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "case_id": "TCGA-3C-AALI",
+  "overview_crop_box": [
+    0,
+    0,
+    3162,
+    2326
+  ],
+  "overview_full_shape": [
+    2326,
+    3162,
+    3
+  ],
+  "registered_rectangles": [
+    [
+      1697.0,
+      1039.0,
+      28.0,
+      28.0
+    ],
+    [
+      1081.0,
+      2131.0,
+      28.0,
+      28.0
+    ],
+    [
+      1725.0,
+      2187.0,
+      28.0,
+      28.0
+    ]
+  ],
+  "original_wsi_rechecked": false,
+  "source_check": "Bundled-image SHA256 verification against retained pixel-audit record",
+  "selected_level0_coords": [
+    [
+      54304,
+      33248
+    ],
+    [
+      34592,
+      68192
+    ],
+    [
+      55200,
+      69984
+    ]
+  ],
+  "input_sha256": {
+    "omics_heatmap.png": "3424be932ec3bb34be28ad1cac4a75c60f3249b65e0a92a5e0ebbf85d8a74ca0",
+    "patch_01.png": "7bae428c9c1bd4ef81dbedca38728e37bfd464b97b4af03d76219c8588dbb93d",
+    "patch_02.png": "b6b7c94d44a212f3b14b7e78dbb961c95184eaeaf8d3651d2df89fc55fed4277",
+    "patch_03.png": "5be74f629f2abe588eae45616c56bbbc7a97baa552a0504bc2c1a4842d22b43b",
+    "wsi_overview.png": "44de43334ad85aa51049fe5a5c4aa4a7686534390d19e96f7869f3c887d0fedb"
+  },
+  "physical_scale_bar": false,
+  "schematic_elements": [
+    "feature geometry",
+    "PCA",
+    "ECDFs",
+    "raw score inset",
+    "survival curves",
+    "rank bars"
+  ],
+  "inset_scope": "Same-patient scores, separate ECDFs, common range; no equality of ranks implied.",
+  "adaptation_level": "Structural adaptation of retained Python schematic; unchanged input assets.",
+  "color_variant": "soft module fills",
+  "module_fills": {
+    "#286AA0": "#EDF5FC",
+    "#128273": "#EDF8F2",
+    "#B47416": "#FFF7E8",
+    "#202A33": "#F7F8FA",
+    "#775096": "#F6F5FA"
+  },
+  "claim": "Train-fold ECDFs place matched pathology and omics scores on a common scale for conservative late fusion.",
+  "archetype": "schematic-led composite",
+  "preview_scope": "Model-name labels only; no changes to inputs, geometry or palette."
+}

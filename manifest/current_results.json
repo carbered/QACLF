@@ -1,0 +1,22 @@
+{
+  "model": "QACLF",
+  "full_name": "Quantile-Aligned Conservative Late Fusion",
+  "former_name": "FICPF",
+  "updated_date": "2026-10-28",
+  "current_result_directory": "result/qaclf-nested-v1-unified-evaluation-20261027",
+  "frozen_qaclf_primary_result_unchanged": true,
+  "comparator_protocol": "qaclf-multimodal-nested-v1; 50 complete MCAT/CAT runs",
+  "probability_evaluation": "12-60 months; 97 points; training-only censoring weights",
+  "methods": 8,
+  "controls": 1,
+  "curve_input_files": 225,
+  "private_manuscript_included": false,
+  "model_weights_included": false,
+  "historical_results_preserved": true,
+  "repository_url_unchanged": "https://github.com/carbered/FICPF",
+  "limitations": [
+    "Post-hoc protocol/evaluation revision reuses previous outer splits.",
+    "Full-time mean MAE is diagnostic; no claim to repair extrapolated tails.",
+    "No independent external cohort validation."
+  ]
+}

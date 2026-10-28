@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "models": 8,
+  "controls": 1,
+  "fold_metric_rows": 225,
+  "horizon_months": [
+    12,
+    60
+  ],
+  "grid_points": 97,
+  "interpolation": "linear within native finite support",
+  "censoring_distribution": "outer training patients only",
+  "d_calibration": "10 bins; administrative censoring at 60 months; counts descriptive",
+  "original_prediction_files_modified": false,
+  "new_deep_training": false,
+  "control_refitting": "training-fold-only scalar Cox-Breslow, alpha=0",
+  "full_mean_mae": "retained diagnostic only; no claim that tail extrapolation has been repaired",
+  "limitation": "Post-hoc revised comparator protocol; original and revised versions not cherry-picked",
+  "fixed_metrics_source_sha256": "228375b1bfcbad6f609f4a66ddddc011a0534e46511abcb19934921c1ae9dd56",
+  "archive_sha256": "3560a32591de06c4c76caad3e9108fc416d7925290e4359369d39b56c7dde91f"
+}

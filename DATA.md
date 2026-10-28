@@ -1,5 +1,22 @@
 # Data setup
 
+## Current QACLF release
+
+The method is now named QACLF (formerly FICPF); historical data paths are retained.
+Current summaries and 225 compact probability-curve inputs are under
+`result/qaclf-nested-v1-unified-evaluation-20261027/`. The NPZ inputs contain
+deidentified patient IDs, finite time coordinates, survival probabilities and,
+for MCAT/CAT-with-TPL, native risk scores. They are not checkpoints or features.
+`curve_inputs_manifest.json` records public-file and original-source SHA256 values.
+Canonical outcomes and train/test membership come from `data_split/5foldcv/`.
+
+`protocol/qaclf_nested_v1/` includes the exact cloud code, contracts and frozen
+inner plans. The `results/` subdirectory includes 50 completed-run summaries and
+epoch-selection records, not weights, scaler feature states or training logs.
+Current metric verification needs no additional patient data. Re-training and
+refitting still require the omitted upstream inputs below. Historical full-window
+and old-comparator directories are retained for audit, not current tables.
+
 ## Included data
 
 This repository includes fixed patient-level survival tables and outer five-fold

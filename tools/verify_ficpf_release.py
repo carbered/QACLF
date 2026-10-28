@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the integrity and locked headline result of a FICPF release bundle."""
+"""Verify QACLF integrity; retain this historical entry point for compatibility."""
 
 import csv
 import hashlib
@@ -198,10 +198,10 @@ def main():
     checked = verify_manifest()
     values, macro = verify_primary_result()
     backbone_rows = verify_backbone_seed_stability()
-    from verify_current_results import verify
+    from verify_qaclf_results import verify
     current = verify()
     print(f"current_evidence_verified={current}")
-    print("FICPF clean release verification passed.")
+    print("QACLF clean release verification passed (historical FICPF paths retained).")
     print(f"checked_files={checked}")
     print(f"package_files={file_count}")
     print(f"package_size_mib={total_bytes / 1024 / 1024:.2f}")
